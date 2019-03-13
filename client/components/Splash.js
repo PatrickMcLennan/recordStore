@@ -84,7 +84,7 @@ class Splash extends Component {
           <input
             type="checkbox"
             name="register"
-            onClick={() => this.setState({ register: !register })}
+            onChange={() => this.setState({ register: !register })}
             id="register"
           />
           <label htmlFor="register">
@@ -95,7 +95,7 @@ class Splash extends Component {
             type="checkbox"
             name="remember"
             checked={remember}
-            onClick={() => this.setState({ remember: !remember })}
+            onChange={() => this.setState({ remember: !remember })}
             id="remember"
           />
           <label htmlFor="remember">

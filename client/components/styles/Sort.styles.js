@@ -32,10 +32,10 @@ const SortList = styled.ul`
     }
 
     &:nth-of-type(2) {
-      right: 35%;
+      right: 50%;
     }
     &:nth-of-type(3) {
-      left: 35%;
+      left: 50%;
     }
 
     &:hover,

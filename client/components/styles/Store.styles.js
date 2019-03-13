@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StoreSection = styled.section`
   display: grid;
-  grid-template-rows: auto auto minmax(250px, auto);
+  grid-template-rows: auto auto minmax(150px, auto);
   grid-template-columns: auto;
 
   h4 {
@@ -15,9 +15,11 @@ export const StoreSection = styled.section`
 
 export const RecordGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 450px));
   grid-template-rows: repeat(auto-fill, auto);
   grid-area: 3 / 1 / -1 / -1;
-  grid-gap: 1vw;
-  padding: 1vw;
+  grid-gap: 2.5rem;
+  justify-content: center;
+  align-content: center;
+  padding-top: 2.5rem;
 `;

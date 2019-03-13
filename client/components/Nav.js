@@ -5,12 +5,11 @@ import Badge from './styles/UserBadge.styles';
 
 class Nav extends Component {
   state = {
-    mobileMenu: 'hidden'
+    status: 'hidden'
   };
 
   render() {
     const { user, page, logout, changePage } = this.props;
-    const { mobile, mobileMenu } = this.state;
     return (
       <NavBar>
         <div>
@@ -22,41 +21,32 @@ class Nav extends Component {
             <>
               <li
                 onClick={() => logout()}
-                mobileMenu={mobileMenu}
-                current={page === 'splash' ? true : false}>
+                current={page === 'splash' ? '1' : '0'}>
                 Sign Out
               </li>
               <li
                 onClick={() => changePage('account')}
-                mobileMenu={mobileMenu}
-                current={page === 'account' ? true : false}>
+                current={page === 'account' ? '1' : '0'}>
                 Account
               </li>
               <li
                 onClick={() => changePage('store')}
-                mobileMenu={mobileMenu}
-                current={page === 'store' ? true : false}>
+                current={page === 'store' ? '1' : '0'}>
                 My Store
               </li>
               <li
                 onClick={() => changePage('add')}
-                mobileMenu={mobileMenu}
-                current={page === 'add' ? true : false}>
+                current={page === 'add' ? '1' : '0'}>
                 +
               </li>
-              <li>
-                <Badge
-                  src={user.picture}
-                  alt={user.name.first}
-                  onClick={() => this.setState({ mobile: !mobile })}
-                  mobile={mobile}
-                />
-              </li>
+              {/* <li>
+                <Badge src={user.picture} alt={user.name.first} />
+              </li> */}
             </>
           ) : (
             <li
               onClick={() => changePage('splash')}
-              current={page === 'splash' ? true : false}>
+              current={page === 'splash' ? '1' : '0'}>
               Sign In
             </li>
           )}
@@ -67,7 +57,7 @@ class Nav extends Component {
 }
 
 Nav.propTypes = {
-  user: PropTypes.object.isRequired,
+  user: PropTypes.object,
   changePage: PropTypes.func.isRequired,
   logout: PropTypes.func.isRequired,
   page: PropTypes.string.isRequired

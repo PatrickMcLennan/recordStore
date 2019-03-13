@@ -16,8 +16,12 @@ class Store extends Component {
     if (page === 'store') return loaded();
   }
 
-  changeSort = property => {
+  changeSort = (property = 'artist') => {
     this.setState({ sort: property });
+  };
+
+  reRender = () => {
+    this.renderGrid();
   };
 
   renderGrid = () => {
@@ -34,6 +38,7 @@ class Store extends Component {
         key={record.id}
         id={record.id}
         deleteRecord={deleteRecord}
+        renderGrid={this.renderGrid}
       />
     ));
   };

@@ -82,7 +82,7 @@ class Home extends Component {
   deleteRecord = async id => {
     const { email } = this.state.user;
     const user = await dbDeleteRecord(id, email);
-    this.setState({ user });
+    this.editUser(user);
   };
 
   renderPage = page => {

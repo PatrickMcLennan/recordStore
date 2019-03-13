@@ -9,7 +9,7 @@ class Sort extends Component {
     const { changeSort } = this.props;
     return (
       <SortList>
-        <li show={show} onClick={() => this.setState({ show: !show })}>
+        <li show={show ? 1 : 0} onClick={() => this.setState({ show: !show })}>
           Sort
         </li>
         {show && (
