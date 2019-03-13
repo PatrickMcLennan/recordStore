@@ -20,6 +20,7 @@ const RecordFigure = styled.figure`
     grid-area: 1 / 2 / 2 / 3;
     padding-left: 1vw;
     ${({ theme: { flexin } }) => flexin('space-evenly', 'flex-start', 'column')}
+    position: relative;
 
     & > * {
       ${({ theme: { typo } }) => typo.letterSpacingPrimary}

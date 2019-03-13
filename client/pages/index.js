@@ -5,7 +5,8 @@ import {
   dbRegister,
   dbLogout,
   dbAccountEditor,
-  dbCreateRecord
+  dbCreateRecord,
+  dbDeleteRecord
 } from '../firebase';
 import { GlobalStyle, Content, theme } from '../components/styles/index.styles';
 import Meta from '../components/Meta';
@@ -78,6 +79,12 @@ class Home extends Component {
     this.editUser(this.state.user);
   };
 
+  deleteRecord = async id => {
+    const { email } = this.state.user;
+    const user = await dbDeleteRecord(id, email);
+    this.setState({ user });
+  };
+
   renderPage = page => {
     const { user } = this.state;
     if (page === 'splash') {
@@ -89,6 +96,7 @@ class Home extends Component {
           loaded={this.loaded}
           user={user}
           changePage={this.changePage}
+          deleteRecord={this.deleteRecord}
         />
       );
     } else if (page === 'account') {

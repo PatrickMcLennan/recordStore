@@ -10,7 +10,6 @@ const Form = styled.form`
     position: relative;
 
     > * {
-      ${({ theme: { transitions } }) => transitions.main};
       ${({ theme: { typo } }) => typo.letterSpacingPrimary}
     }
 
@@ -18,17 +17,12 @@ const Form = styled.form`
       position: absolute;
       font-size: 2rem;
       text-transform: uppercase;
+      font-style: italic;
+      top: 1.5vh;
+      left: 2.5vw;
       color: ${({ theme: { colors } }) => colors.whiteOpaque};
+      ${({ theme: { transitions } }) => transitions.main};
       ${({ theme: { typo } }) => typo.letterSpacingPrimary};
-    }
-
-    &[for='email'],
-    &[for='password'] {
-      p {
-        font-style: italic;
-        top: 1.5vh;
-        left: 2.5vw;
-      }
     }
 
     &[for='register'],
@@ -62,19 +56,17 @@ const Form = styled.form`
     border: none;
     border-bottom: 1px solid ${({ theme: { colors } }) => colors.whitePrimary};
     font-size: 2.5rem;
-    width: 100%;
-
-    /* &[type='email']:focus:invalid + p,
-    &[type='password']:focus:invalid + p {
-      color: red;
-    } */
+    width: 80%;
+    margin: 0 10%;
 
     &:not([type='submit']):active + p,
     &:not([type='submit']):focus + p,
     &:not([type='checkbox']):valid + p,
     &[type='checkbox']:checked + label p {
       font-size: 1.75rem;
+      font-style: normal;
       top: -2.5vh;
+      left: 10%;
       color: ${({ theme: { colors } }) => colors.whitePrimary};
       letter-spacing: 0.75rem;
 

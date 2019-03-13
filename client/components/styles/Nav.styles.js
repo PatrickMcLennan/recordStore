@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from './queries';
 
 const NavBar = styled.nav`
   grid-row-start: 1;
@@ -31,6 +32,10 @@ const NavBar = styled.nav`
     }
   }
 
+  ul {
+    position: relative;
+  }
+
   li {
     display: inline-block;
     cursor: pointer;
@@ -59,6 +64,16 @@ const NavBar = styled.nav`
       &::after {
         transform: scale(1);
       }
+    }
+
+    img {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      ${media.eight`
+        display: block;
+      `}
     }
   }
 `;

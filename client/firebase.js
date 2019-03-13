@@ -68,12 +68,9 @@ export const dbCreateRecord = async record => {
   return await dbQuery(records, record.title);
 };
 
-export const dbEditRecord = async record => {
-  const editedRecord = await records
-    .doc(id)
-    .set({ record })
-    .then(record => record);
-  return editedRecord;
+export const dbDeleteRecord = async (id, email) => {
+  await users
+    .doc(email)
+    .set({ records: records.filter(record => record.id !== id) });
+  return await dbQuery(users, email);
 };
-
-export const dbDeleteRecord = record => {};

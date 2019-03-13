@@ -22,7 +22,7 @@ class Store extends Component {
 
   renderGrid = () => {
     const { records, sort } = this.state;
-    const { editRating } = this.props;
+    const { deleteRecord } = this.props;
     const sorted = records.sort((a, b) =>
       a[sort].toLowerCase() > b[sort].toLowerCase() ? 1 : -1
     );
@@ -32,6 +32,8 @@ class Store extends Component {
         title={record.title}
         cover={record.cover}
         key={record.id}
+        id={record.id}
+        deleteRecord={deleteRecord}
       />
     ));
   };
@@ -58,7 +60,8 @@ Store.propTypes = {
   page: PropTypes.string.isRequired,
   loaded: PropTypes.func.isRequired,
   user: PropTypes.object.isRequired,
-  changePage: PropTypes.func.isRequired
+  changePage: PropTypes.func.isRequired,
+  deleteRecord: PropTypes.func.isRequired
 };
 
 export default Store;

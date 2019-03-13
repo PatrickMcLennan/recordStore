@@ -1,9 +1,13 @@
 import { css } from 'styled-components';
 
 const sizes = {
-  phone: 376,
-  tablet: 768,
-  desktop: 992
+  ten: 1000,
+  nine: 900,
+  eight: 800,
+  seven: 700,
+  six: 600,
+  six: 500,
+  six: 400
 };
 
 const media = Object.keys(sizes).reduce((final, size) => {

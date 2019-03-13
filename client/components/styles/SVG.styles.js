@@ -55,3 +55,14 @@ export const VinylSuccess = styled(Vinyl)`
   right: 5vh;
   animation: ${showMsg} 2s ease-in-out, ${rotate} 10s linear infinite;
 `;
+
+export const Garbage = styled.svg`
+  stroke: ${({ theme: { colors } }) => colors.whitePrimary};
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  transform-origin: bottom-right;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+`;
