@@ -12,24 +12,26 @@ const rotate = keyframes`
 
 const showMsg = keyframes`
   0% {
+    opacity: 0;
     right: -5vh;
   }
 
   10% {
+    opacity: 1;
     right: 5vh;
   }
 
   90% {
+    opacity: 1;
     right: 5vh;
   }
-
   100% {
-    right: -5vh
+    opacity: 0;
+    right: -5vh;
   }
 `;
 
 export const Vinyl = styled.svg`
-  ${({ theme: { flexin } }) => flexin()}
   stroke: ${({ theme: { colors } }) => colors.whitePrimary};
   fill: rgba(255, 255, 255, 0.25);
   height: 10rem;
@@ -38,22 +40,21 @@ export const Vinyl = styled.svg`
   z-index: 10;
 `;
 
-export const VinylError = styled(Vinyl)`
-  stroke: red;
-  fill: red;
+const VinylMsg = styled(Vinyl)`
   position: fixed;
   bottom: 0;
   right: 5vh;
-  animation: ${showMsg} 2s ease-in-out, ${rotate} 10s linear infinite;
+  animation: ${showMsg} 2s ease-in-out 0, ${rotate} 10s linear infinite;
 `;
 
-export const VinylSuccess = styled(Vinyl)`
+export const VinylError = styled(VinylMsg)`
+  stroke: red;
+  fill: rgba(255, 255, 255, 0.7);
+`;
+
+export const VinylSuccess = styled(VinylMsg)`
   stroke: green;
-  fill: green;
-  position: fixed;
-  bottom: 0;
-  right: 5vh;
-  animation: ${showMsg} 2s ease-in-out, ${rotate} 10s linear infinite;
+  fill: rgba(255, 255, 255, 0.3);
 `;
 
 export const Garbage = styled.svg`

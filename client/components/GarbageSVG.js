@@ -1,13 +1,9 @@
 import { Garbage } from './styles/SVG.styles';
 import PropTypes from 'prop-types';
 
-const GarbageSVG = ({ deleteRecord, id, renderGrid }) => {
-  const doubleDuty = () => {
-    deleteRecord(id);
-    renderGrid();
-  };
+const GarbageSVG = ({ updateStore, id }) => {
   return (
-    <Garbage viewBox="0 0 60 60" onClick={() => doubleDuty()}>
+    <Garbage viewBox="0 0 60 60" onClick={() => updateStore(id)}>
       <g>
         <path d="M29.5,51c0.552,0,1-0.447,1-1V17c0-0.553-0.448-1-1-1s-1,0.447-1,1v33C28.5,50.553,28.948,51,29.5,51z" />
         <path d="M19.5,51c0.552,0,1-0.447,1-1V17c0-0.553-0.448-1-1-1s-1,0.447-1,1v33C18.5,50.553,18.948,51,19.5,51z" />
@@ -41,8 +37,7 @@ const GarbageSVG = ({ deleteRecord, id, renderGrid }) => {
 };
 
 GarbageSVG.propTypes = {
-  deleteRecord: PropTypes.func.isRequired,
-  renderGrid: PropTypes.func.isRequired,
+  updateStore: PropTypes.func.isRequired,
   id: PropTypes.string.isRequired
 };
 

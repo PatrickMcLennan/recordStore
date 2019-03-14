@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SectionHeader from './SectionHeader';
-import { StoreSection, RecordGrid } from './styles/Store.styles';
+import { StoreSection, RecordGrid, AddHeader } from './styles/Store.styles';
 import Record from './Record';
 import Sort from './Sort';
 import PropTypes from 'prop-types';
@@ -17,30 +17,17 @@ class Store extends Component {
   }
 
   changeSort = (property = 'artist') => {
-    this.setState({ sort: property });
-  };
-
-  reRender = () => {
-    this.renderGrid();
-  };
-
-  renderGrid = () => {
-    const { records, sort } = this.state;
-    const { deleteRecord } = this.props;
-    const sorted = records.sort((a, b) =>
-      a[sort].toLowerCase() > b[sort].toLowerCase() ? 1 : -1
+    const { records } = this.state;
+    const sortedRecords = records.sort((a, b) =>
+      a[property].toLowerCase() > b[property].toLowerCase() ? 1 : -1
     );
-    return sorted.map(record => (
-      <Record
-        artist={record.artist}
-        title={record.title}
-        cover={record.cover}
-        key={record.id}
-        id={record.id}
-        deleteRecord={deleteRecord}
-        renderGrid={this.renderGrid}
-      />
-    ));
+    this.setState({ records: sortedRecords, sort: property });
+  };
+
+  updateStore = async id => {
+    const { deleteRecord } = this.props;
+    const user = await deleteRecord(id);
+    this.setState({ records: user.records });
   };
 
   render() {
@@ -51,9 +38,18 @@ class Store extends Component {
         <Sort changeSort={this.changeSort} />
         <RecordGrid>
           {records.length >= 1 ? (
-            this.renderGrid()
+            records.map(record => (
+              <Record
+                artist={record.artist}
+                title={record.title}
+                cover={record.cover}
+                key={record.id}
+                id={record.id}
+                updateStore={this.updateStore}
+              />
+            ))
           ) : (
-            <h6>Get Started by adding some records!</h6>
+            <AddHeader>Get Started by adding some records!</AddHeader>
           )}
         </RecordGrid>
       </StoreSection>

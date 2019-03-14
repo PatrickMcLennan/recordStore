@@ -621,60 +621,77 @@ var _jsxFileName = "/Users/patrickmclennan/Documents/record_store/client/compone
 
 
 var GarbageSVG = function GarbageSVG(_ref) {
-  var deleteRecord = _ref.deleteRecord,
-      id = _ref.id,
-      renderGrid = _ref.renderGrid;
-
-  var doubleDuty = function doubleDuty() {
-    deleteRecord(id);
-    renderGrid();
-  };
-
+  var updateStore = _ref.updateStore,
+      id = _ref.id;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__["Garbage"], {
     viewBox: "0 0 60 60",
     onClick: function onClick() {
-      return doubleDuty();
+      return updateStore(id);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 6
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "M29.5,51c0.552,0,1-0.447,1-1V17c0-0.553-0.448-1-1-1s-1,0.447-1,1v33C28.5,50.553,28.948,51,29.5,51z",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 8
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "M19.5,51c0.552,0,1-0.447,1-1V17c0-0.553-0.448-1-1-1s-1,0.447-1,1v33C18.5,50.553,18.948,51,19.5,51z",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 9
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "M39.5,51c0.552,0,1-0.447,1-1V17c0-0.553-0.448-1-1-1s-1,0.447-1,1v33C38.5,50.553,38.948,51,39.5,51z",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 10
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "M52.5,6H38.456c-0.11-1.25-0.495-3.358-1.813-4.711C35.809,0.434,34.751,0,33.499,0H23.5c-1.252,0-2.31,0.434-3.144,1.289\r C19.038,2.642,18.653,4.75,18.543,6H6.5c-0.552,0-1,0.447-1,1s0.448,1,1,1h2.041l1.915,46.021C10.493,55.743,11.565,59,15.364,59\r h28.272c3.799,0,4.871-3.257,4.907-4.958L50.459,8H52.5c0.552,0,1-0.447,1-1S53.052,6,52.5,6z M21.792,2.681\r C22.24,2.223,22.799,2,23.5,2h9.999c0.701,0,1.26,0.223,1.708,0.681c0.805,0.823,1.128,2.271,1.24,3.319H20.553\r C20.665,4.952,20.988,3.504,21.792,2.681z M46.544,53.979C46.538,54.288,46.4,57,43.636,57H15.364\r c-2.734,0-2.898-2.717-2.909-3.042L10.542,8h37.915L46.544,53.979z",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 11
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
@@ -740,36 +757,11 @@ var GarbageSVG = function GarbageSVG(_ref) {
       lineNumber: 34
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
   }));
 };
 
 GarbageSVG.propTypes = {
-  deleteRecord: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
-  renderGrid: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
+  updateStore: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
   id: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (GarbageSVG);
@@ -1091,9 +1083,8 @@ var Record = function Record(_ref) {
   var cover = _ref.cover,
       title = _ref.title,
       artist = _ref.artist,
-      deleteRecord = _ref.deleteRecord,
-      id = _ref.id,
-      renderGrid = _ref.renderGrid;
+      updateStore = _ref.updateStore,
+      id = _ref.id;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Record_styles__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
@@ -1133,9 +1124,8 @@ var Record = function Record(_ref) {
     },
     __self: this
   }, artist), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GarbageSVG__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    deleteRecord: deleteRecord,
+    updateStore: updateStore,
     id: id,
-    renderGrid: renderGrid,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
@@ -1148,8 +1138,7 @@ Record.propTypes = {
   cover: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
   title: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
   artist: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
-  deleteRecord: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
-  renderGrid: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired
+  updateStore: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Record);
 
@@ -1645,22 +1634,27 @@ Splash.propTypes = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _SectionHeader__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./SectionHeader */ "./components/SectionHeader.js");
-/* harmony import */ var _styles_Store_styles__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./styles/Store.styles */ "./components/styles/Store.styles.js");
-/* harmony import */ var _Record__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Record */ "./components/Record.js");
-/* harmony import */ var _Sort__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Sort */ "./components/Sort.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _SectionHeader__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./SectionHeader */ "./components/SectionHeader.js");
+/* harmony import */ var _styles_Store_styles__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./styles/Store.styles */ "./components/styles/Store.styles.js");
+/* harmony import */ var _Record__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Record */ "./components/Record.js");
+/* harmony import */ var _Sort__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./Sort */ "./components/Sort.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_15__);
+
+
 
 
 
@@ -1680,67 +1674,77 @@ var _jsxFileName = "/Users/patrickmclennan/Documents/record_store/client/compone
 var Store =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Store, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_8__["default"])(Store, _Component);
 
   function Store() {
     var _getPrototypeOf2;
 
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Store);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Store);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Store)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__["default"])(Store)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "state", Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _this.props.user, {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this), "state", Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__["default"])({}, _this.props.user, {
       sort: 'artist'
     }));
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "changeSort", function () {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this), "changeSort", function () {
       var property = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'artist';
+      var records = _this.state.records;
+      var sortedRecords = records.sort(function (a, b) {
+        return a[property].toLowerCase() > b[property].toLowerCase() ? 1 : -1;
+      });
 
       _this.setState({
+        records: sortedRecords,
         sort: property
       });
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "reRender", function () {
-      _this.renderGrid();
-    });
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this), "updateStore",
+    /*#__PURE__*/
+    function () {
+      var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(id) {
+        var deleteRecord, user;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                deleteRecord = _this.props.deleteRecord;
+                _context.next = 3;
+                return deleteRecord(id);
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "renderGrid", function () {
-      var _this$state = _this.state,
-          records = _this$state.records,
-          sort = _this$state.sort;
-      var deleteRecord = _this.props.deleteRecord;
-      var sorted = records.sort(function (a, b) {
-        return a[sort].toLowerCase() > b[sort].toLowerCase() ? 1 : -1;
-      });
-      return sorted.map(function (record) {
-        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Record__WEBPACK_IMPORTED_MODULE_11__["default"], {
-          artist: record.artist,
-          title: record.title,
-          cover: record.cover,
-          key: record.id,
-          id: record.id,
-          deleteRecord: deleteRecord,
-          renderGrid: _this.renderGrid,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 34
-          },
-          __self: this
-        });
-      });
-    });
+              case 3:
+                user = _context.sent;
+
+                _this.setState({
+                  records: user.records
+                });
+
+              case 5:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      return function (_x) {
+        return _ref.apply(this, arguments);
+      };
+    }());
 
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Store, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(Store, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       var _this$props = this.props,
@@ -1751,38 +1755,54 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       var records = this.state.records;
-      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_styles_Store_styles__WEBPACK_IMPORTED_MODULE_10__["StoreSection"], {
+      return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_styles_Store_styles__WEBPACK_IMPORTED_MODULE_12__["StoreSection"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 36
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_SectionHeader__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_SectionHeader__WEBPACK_IMPORTED_MODULE_11__["default"], {
         first: "My",
         last: "Store",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 37
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Sort__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_Sort__WEBPACK_IMPORTED_MODULE_14__["default"], {
         changeSort: this.changeSort,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 38
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_styles_Store_styles__WEBPACK_IMPORTED_MODULE_10__["RecordGrid"], {
+      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_styles_Store_styles__WEBPACK_IMPORTED_MODULE_12__["RecordGrid"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, records.length >= 1 ? records.map(function (record) {
+        return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_Record__WEBPACK_IMPORTED_MODULE_13__["default"], {
+          artist: record.artist,
+          title: record.title,
+          cover: record.cover,
+          key: record.id,
+          id: record.id,
+          updateStore: _this2.updateStore,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 42
+          },
+          __self: this
+        });
+      }) : react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_styles_Store_styles__WEBPACK_IMPORTED_MODULE_12__["AddHeader"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 52
-        },
-        __self: this
-      }, records.length >= 1 ? this.renderGrid() : react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h6", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 56
         },
         __self: this
       }, "Get Started by adding some records!")));
@@ -1790,14 +1810,14 @@ function (_Component) {
   }]);
 
   return Store;
-}(react__WEBPACK_IMPORTED_MODULE_8__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_10__["Component"]);
 
 Store.propTypes = {
-  page: prop_types__WEBPACK_IMPORTED_MODULE_13___default.a.string.isRequired,
-  loaded: prop_types__WEBPACK_IMPORTED_MODULE_13___default.a.func.isRequired,
-  user: prop_types__WEBPACK_IMPORTED_MODULE_13___default.a.object.isRequired,
-  changePage: prop_types__WEBPACK_IMPORTED_MODULE_13___default.a.func.isRequired,
-  deleteRecord: prop_types__WEBPACK_IMPORTED_MODULE_13___default.a.func.isRequired
+  page: prop_types__WEBPACK_IMPORTED_MODULE_15___default.a.string.isRequired,
+  loaded: prop_types__WEBPACK_IMPORTED_MODULE_15___default.a.func.isRequired,
+  user: prop_types__WEBPACK_IMPORTED_MODULE_15___default.a.object.isRequired,
+  changePage: prop_types__WEBPACK_IMPORTED_MODULE_15___default.a.func.isRequired,
+  deleteRecord: prop_types__WEBPACK_IMPORTED_MODULE_15___default.a.func.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Store);
 
@@ -2454,30 +2474,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 var rotate = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["keyframes"])(["from{transform:rotate(0deg);}to{transform:rotate(360deg);}"]);
-var showMsg = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["keyframes"])(["0%{right:-5vh;}10%{right:5vh;}90%{right:5vh;}100%{right:-5vh}"]);
+var showMsg = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["keyframes"])(["0%{opacity:0;right:-5vh;}10%{opacity:1;right:5vh;}90%{opacity:1;right:5vh;}100%{opacity:0;right:-5vh;}"]);
 var Vinyl = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.svg.withConfig({
   displayName: "SVGstyles__Vinyl",
   componentId: "l14jxn-0"
-})(["", " stroke:", ";fill:rgba(255,255,255,0.25);height:10rem;margin-bottom:5vh;animation:", " 10s linear infinite;z-index:10;"], function (_ref) {
-  var flexin = _ref.theme.flexin;
-  return flexin();
-}, function (_ref2) {
-  var colors = _ref2.theme.colors;
+})(["stroke:", ";fill:rgba(255,255,255,0.25);height:10rem;margin-bottom:5vh;animation:", " 10s linear infinite;z-index:10;"], function (_ref) {
+  var colors = _ref.theme.colors;
   return colors.whitePrimary;
 }, rotate);
-var VinylError = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(Vinyl).withConfig({
-  displayName: "SVGstyles__VinylError",
+var VinylMsg = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(Vinyl).withConfig({
+  displayName: "SVGstyles__VinylMsg",
   componentId: "l14jxn-1"
-})(["stroke:red;fill:red;position:fixed;bottom:0;right:5vh;animation:", " 2s ease-in-out,", " 10s linear infinite;"], showMsg, rotate);
-var VinylSuccess = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(Vinyl).withConfig({
-  displayName: "SVGstyles__VinylSuccess",
+})(["position:fixed;bottom:0;right:5vh;animation:", " 2s ease-in-out 0,", " 10s linear infinite;"], showMsg, rotate);
+var VinylError = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(VinylMsg).withConfig({
+  displayName: "SVGstyles__VinylError",
   componentId: "l14jxn-2"
-})(["stroke:green;fill:green;position:fixed;bottom:0;right:5vh;animation:", " 2s ease-in-out,", " 10s linear infinite;"], showMsg, rotate);
+})(["stroke:red;fill:rgba(255,255,255,0.7);"]);
+var VinylSuccess = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(VinylMsg).withConfig({
+  displayName: "SVGstyles__VinylSuccess",
+  componentId: "l14jxn-3"
+})(["stroke:green;fill:rgba(255,255,255,0.3);"]);
 var Garbage = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.svg.withConfig({
   displayName: "SVGstyles__Garbage",
-  componentId: "l14jxn-3"
-})(["stroke:", ";cursor:pointer;height:25px;width:25px;transform-origin:bottom-right;position:absolute;bottom:1rem;right:1rem;"], function (_ref3) {
-  var colors = _ref3.theme.colors;
+  componentId: "l14jxn-4"
+})(["stroke:", ";cursor:pointer;height:25px;width:25px;transform-origin:bottom-right;position:absolute;bottom:1rem;right:1rem;"], function (_ref2) {
+  var colors = _ref2.theme.colors;
   return colors.whitePrimary;
 });
 
@@ -2575,13 +2596,14 @@ var Section = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.section.w
 /*!*******************************************!*\
   !*** ./components/styles/Store.styles.js ***!
   \*******************************************/
-/*! exports provided: StoreSection, RecordGrid */
+/*! exports provided: StoreSection, RecordGrid, AddHeader */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StoreSection", function() { return StoreSection; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecordGrid", function() { return RecordGrid; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddHeader", function() { return AddHeader; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -2593,6 +2615,13 @@ var RecordGrid = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.wi
   displayName: "Storestyles__RecordGrid",
   componentId: "sc-177xmln-1"
 })(["display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,450px));grid-template-rows:repeat(auto-fill,auto);grid-area:3 / 1 / -1 / -1;grid-gap:2.5rem;justify-content:center;align-content:center;padding-top:2.5rem;"]);
+var AddHeader = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h6.withConfig({
+  displayName: "Storestyles__AddHeader",
+  componentId: "sc-177xmln-2"
+})(["", ";grid-area:1 / 1 / -1 / -1;font-size:2rem;font-weight:100;text-transform:uppercase;text-align:center;"], function (_ref) {
+  var typo = _ref.theme.typo;
+  return typo.letterSpacingPrimary;
+});
 
 /***/ }),
 
@@ -3062,13 +3091,9 @@ function () {
             user.records = user.records.filter(function (record) {
               return record.id !== id;
             });
-            _context7.next = 6;
-            return dbAccountEditor(user);
+            return _context7.abrupt("return", user);
 
-          case 6:
-            return _context7.abrupt("return", _context7.sent);
-
-          case 7:
+          case 5:
           case "end":
             return _context7.stop();
         }
@@ -3692,6 +3717,16 @@ function (_Component) {
       });
     });
 
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "logout", function () {
+      Object(_firebase__WEBPACK_IMPORTED_MODULE_11__["dbLogout"])();
+
+      _this.setState({
+        user: {},
+        page: 'splash',
+        loading: true
+      });
+    });
+
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "showMessage", function (response) {
       response === 'error' ? _this.setState({
         error: true
@@ -3797,16 +3832,6 @@ function (_Component) {
       };
     }());
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "logout", function () {
-      Object(_firebase__WEBPACK_IMPORTED_MODULE_11__["dbLogout"])();
-
-      _this.setState({
-        user: {},
-        page: 'splash',
-        loading: true
-      });
-    });
-
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "createRecord",
     /*#__PURE__*/
     function () {
@@ -3861,7 +3886,9 @@ function (_Component) {
 
                 _this.editUser(user);
 
-              case 5:
+                return _context4.abrupt("return", user);
+
+              case 6:
               case "end":
                 return _context4.stop();
             }
@@ -3883,7 +3910,7 @@ function (_Component) {
           loaded: _this.loaded,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 91
+            lineNumber: 92
           },
           __self: this
         });
@@ -3896,7 +3923,7 @@ function (_Component) {
           deleteRecord: _this.deleteRecord,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 94
+            lineNumber: 95
           },
           __self: this
         });
@@ -3908,7 +3935,7 @@ function (_Component) {
           editUser: _this.editUser,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 104
+            lineNumber: 105
           },
           __self: this
         });
@@ -3920,7 +3947,7 @@ function (_Component) {
           createRecord: _this.createRecord,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 113
+            lineNumber: 114
           },
           __self: this
         });
@@ -3942,19 +3969,19 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 128
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["GlobalStyle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 129
         },
         __self: this
       }), loading && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Loader__WEBPACK_IMPORTED_MODULE_19__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 130
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Nav__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -3964,32 +3991,32 @@ function (_Component) {
         page: page,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 131
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_10__["ThemeProvider"], {
         theme: _components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["theme"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 136
+          lineNumber: 137
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["Content"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137
+          lineNumber: 138
         },
         __self: this
       }, this.renderPage(page), error && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_VinylSVG__WEBPACK_IMPORTED_MODULE_20__["VinylErrorSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 139
+          lineNumber: 140
         },
         __self: this
       }), success && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_VinylSVG__WEBPACK_IMPORTED_MODULE_20__["VinylSuccessSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 141
         },
         __self: this
       }))));

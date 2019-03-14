@@ -33,6 +33,15 @@ class Home extends Component {
     });
   };
 
+  logout = () => {
+    dbLogout();
+    this.setState({
+      user: {},
+      page: 'splash',
+      loading: true
+    });
+  };
+
   showMessage = response => {
     response === 'error'
       ? this.setState({ error: true })
@@ -63,15 +72,6 @@ class Home extends Component {
     this.showMessage('success');
   };
 
-  logout = () => {
-    dbLogout();
-    this.setState({
-      user: {},
-      page: 'splash',
-      loading: true
-    });
-  };
-
   createRecord = async record => {
     const { records } = this.state.user;
     const newRecord = await dbCreateRecord(record);
@@ -83,6 +83,7 @@ class Home extends Component {
     const { email } = this.state.user;
     const user = await dbDeleteRecord(id, email);
     this.editUser(user);
+    return user;
   };
 
   renderPage = page => {

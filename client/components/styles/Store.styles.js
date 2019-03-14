@@ -23,3 +23,12 @@ export const RecordGrid = styled.div`
   align-content: center;
   padding-top: 2.5rem;
 `;
+
+export const AddHeader = styled.h6`
+  ${({ theme: { typo } }) => typo.letterSpacingPrimary};
+  grid-area: 1 / 1 / -1 / -1;
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+`;
