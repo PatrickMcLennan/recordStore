@@ -19,6 +19,14 @@ const Section = styled.section`
     p {
       font-size: 2rem;
       margin-bottom: 10vh;
+      ${({theme: {typo}}) => typo.letterSpacingSecondary}
+    }
+
+    div {
+      ${({theme: {flexin}}) => flexin('space-around')}
+      ${media.eight`
+        margin-bottom: 5vh;
+      `}
     }
   }
 `;

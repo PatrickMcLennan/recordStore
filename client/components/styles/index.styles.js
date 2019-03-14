@@ -72,7 +72,8 @@ export const theme = {
     }
   },
   typo: {
-    letterSpacingPrimary: `letter-spacing: .35rem;`
+    letterSpacingPrimary: `letter-spacing: .35rem;`,
+    letterSpacingSecondary: `letter-spacing: .175rem;`
   }
 };
 

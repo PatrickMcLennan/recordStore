@@ -16,7 +16,7 @@ import Store from '../components/Store';
 import Account from '../components/Account';
 import AddRecord from '../components/AddRecord';
 import Loader from '../components/Loader';
-import { VinylErrorSVG, VinylSuccessSVG } from './../components/VinylSVG';
+import { VinylErrorSVG, VinylSuccessSVG } from './../components/SVGs';
 
 class Home extends Component {
   state = {

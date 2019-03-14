@@ -508,173 +508,6 @@ AddRecord.propTypes = {
 
 /***/ }),
 
-/***/ "./components/GarbageSVG.js":
-/*!**********************************!*\
-  !*** ./components/GarbageSVG.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/SVG.styles */ "./components/styles/SVG.styles.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/patrickmclennan/Documents/record_store/client/components/GarbageSVG.js";
-
-
-
-
-var GarbageSVG = function GarbageSVG(_ref) {
-  var updateStore = _ref.updateStore,
-      id = _ref.id;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__["Garbage"], {
-    viewBox: "0 0 60 60",
-    onClick: function onClick() {
-      return updateStore(id);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M29.5,51c0.552,0,1-0.447,1-1V17c0-0.553-0.448-1-1-1s-1,0.447-1,1v33C28.5,50.553,28.948,51,29.5,51z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M19.5,51c0.552,0,1-0.447,1-1V17c0-0.553-0.448-1-1-1s-1,0.447-1,1v33C18.5,50.553,18.948,51,19.5,51z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M39.5,51c0.552,0,1-0.447,1-1V17c0-0.553-0.448-1-1-1s-1,0.447-1,1v33C38.5,50.553,38.948,51,39.5,51z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M52.5,6H38.456c-0.11-1.25-0.495-3.358-1.813-4.711C35.809,0.434,34.751,0,33.499,0H23.5c-1.252,0-2.31,0.434-3.144,1.289\r C19.038,2.642,18.653,4.75,18.543,6H6.5c-0.552,0-1,0.447-1,1s0.448,1,1,1h2.041l1.915,46.021C10.493,55.743,11.565,59,15.364,59\r h28.272c3.799,0,4.871-3.257,4.907-4.958L50.459,8H52.5c0.552,0,1-0.447,1-1S53.052,6,52.5,6z M21.792,2.681\r C22.24,2.223,22.799,2,23.5,2h9.999c0.701,0,1.26,0.223,1.708,0.681c0.805,0.823,1.128,2.271,1.24,3.319H20.553\r C20.665,4.952,20.988,3.504,21.792,2.681z M46.544,53.979C46.538,54.288,46.4,57,43.636,57H15.364\r c-2.734,0-2.898-2.717-2.909-3.042L10.542,8h37.915L46.544,53.979z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }));
-};
-
-GarbageSVG.propTypes = {
-  updateStore: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
-  id: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (GarbageSVG);
-
-/***/ }),
-
 /***/ "./components/Loader.js":
 /*!******************************!*\
   !*** ./components/Loader.js ***!
@@ -979,7 +812,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_Record_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/Record.styles */ "./components/styles/Record.styles.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _GarbageSVG__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./GarbageSVG */ "./components/GarbageSVG.js");
+/* harmony import */ var _SVGs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SVGs */ "./components/SVGs.js");
 var _jsxFileName = "/Users/patrickmclennan/Documents/record_store/client/components/Record.js";
 
 
@@ -1030,7 +863,7 @@ var Record = function Record(_ref) {
       lineNumber: 12
     },
     __self: this
-  }, artist), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GarbageSVG__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, artist), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SVGs__WEBPACK_IMPORTED_MODULE_3__["GarbageSVG"], {
     updateStore: updateStore,
     id: id,
     __source: {
@@ -1048,6 +881,769 @@ Record.propTypes = {
   updateStore: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Record);
+
+/***/ }),
+
+/***/ "./components/SVGs.js":
+/*!****************************!*\
+  !*** ./components/SVGs.js ***!
+  \****************************/
+/*! exports provided: VinylPrimarySVG, VinylErrorSVG, VinylSuccessSVG, GarbageSVG, GithubSVG, LinkedInSVG */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VinylPrimarySVG", function() { return VinylPrimarySVG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VinylErrorSVG", function() { return VinylErrorSVG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VinylSuccessSVG", function() { return VinylSuccessSVG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GarbageSVG", function() { return GarbageSVG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GithubSVG", function() { return GithubSVG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkedInSVG", function() { return LinkedInSVG; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/SVG.styles */ "./components/styles/SVG.styles.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/patrickmclennan/Documents/record_store/client/components/SVGs.js";
+
+
+
+var VinylPrimarySVG = function VinylPrimarySVG() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__["Vinyl"], {
+    viewBox: "0 0 75 75",
+    xmlns: "http://www.w3.org/2000/svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    "data-name": "Layer 2",
+    id: "Layer_2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    "data-name": "Layer 1",
+    id: "Layer_1-2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M54.94,5.27a36.47,36.47,0,0,1,3.91,2.58",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M49,2.55a36.19,36.19,0,0,1,4.07,1.72",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M2.69,49.39A36.45,36.45,0,0,1,46,1.64",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M11.33,62.83a36.59,36.59,0,0,1-5.14-6.35",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M59.11,65.8a36.43,36.43,0,0,1-44.21.14",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M62.53,11a36.42,36.42,0,0,1,1.19,50.56",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M11.91,51.36A28.74,28.74,0,0,1,8,36.92",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M36.92,65.79A28.82,28.82,0,0,1,14.41,55",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M65.16,30.87a29,29,0,0,1,.63,6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M61.33,21.5a28.78,28.78,0,0,1,2.38,4.64",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M36.92,8A28.81,28.81,0,0,1,59.24,18.6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M14.91,41.57a22.58,22.58,0,0,1-.48-4.65",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M24.58,55.73a22.58,22.58,0,0,1-8.15-9.52",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M36.92,59.41A22.41,22.41,0,0,1,28,57.57",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M57.64,28.17a22.42,22.42,0,0,1,1.77,8.75",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M50,18.6a22.61,22.61,0,0,1,6.19,6.66",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M36.92,14.43A22.39,22.39,0,0,1,47,16.82",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
+    className: "cls-1",
+    cx: "36.92",
+    cy: "36.92",
+    r: "13.79",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-2",
+    d: "M36.92,25.67A11.25,11.25,0,1,0,48.17,36.92,11.25,11.25,0,0,0,36.92,25.67Zm0,14.11a2.86,2.86,0,1,1,2.86-2.86A2.86,2.86,0,0,1,36.92,39.78Z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }))));
+};
+var VinylErrorSVG = function VinylErrorSVG() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__["VinylError"], {
+    viewBox: "0 0 75 75",
+    xmlns: "http://www.w3.org/2000/svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    "data-name": "Layer 2",
+    id: "Layer_2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    "data-name": "Layer 1",
+    id: "Layer_1-2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M54.94,5.27a36.47,36.47,0,0,1,3.91,2.58",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M49,2.55a36.19,36.19,0,0,1,4.07,1.72",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M2.69,49.39A36.45,36.45,0,0,1,46,1.64",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M11.33,62.83a36.59,36.59,0,0,1-5.14-6.35",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M59.11,65.8a36.43,36.43,0,0,1-44.21.14",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M62.53,11a36.42,36.42,0,0,1,1.19,50.56",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M11.91,51.36A28.74,28.74,0,0,1,8,36.92",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M36.92,65.79A28.82,28.82,0,0,1,14.41,55",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M65.16,30.87a29,29,0,0,1,.63,6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M61.33,21.5a28.78,28.78,0,0,1,2.38,4.64",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M36.92,8A28.81,28.81,0,0,1,59.24,18.6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M14.91,41.57a22.58,22.58,0,0,1-.48-4.65",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M24.58,55.73a22.58,22.58,0,0,1-8.15-9.52",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M36.92,59.41A22.41,22.41,0,0,1,28,57.57",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M57.64,28.17a22.42,22.42,0,0,1,1.77,8.75",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M50,18.6a22.61,22.61,0,0,1,6.19,6.66",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M36.92,14.43A22.39,22.39,0,0,1,47,16.82",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
+    className: "cls-1",
+    cx: "36.92",
+    cy: "36.92",
+    r: "13.79",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-2",
+    d: "M36.92,25.67A11.25,11.25,0,1,0,48.17,36.92,11.25,11.25,0,0,0,36.92,25.67Zm0,14.11a2.86,2.86,0,1,1,2.86-2.86A2.86,2.86,0,0,1,36.92,39.78Z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }))));
+};
+var VinylSuccessSVG = function VinylSuccessSVG() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__["VinylSuccess"], {
+    viewBox: "0 0 75 75",
+    xmlns: "http://www.w3.org/2000/svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    "data-name": "Layer 2",
+    id: "Layer_2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    "data-name": "Layer 1",
+    id: "Layer_1-2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M54.94,5.27a36.47,36.47,0,0,1,3.91,2.58",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M49,2.55a36.19,36.19,0,0,1,4.07,1.72",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M2.69,49.39A36.45,36.45,0,0,1,46,1.64",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M11.33,62.83a36.59,36.59,0,0,1-5.14-6.35",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M59.11,65.8a36.43,36.43,0,0,1-44.21.14",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M62.53,11a36.42,36.42,0,0,1,1.19,50.56",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M11.91,51.36A28.74,28.74,0,0,1,8,36.92",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M36.92,65.79A28.82,28.82,0,0,1,14.41,55",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M65.16,30.87a29,29,0,0,1,.63,6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M61.33,21.5a28.78,28.78,0,0,1,2.38,4.64",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M36.92,8A28.81,28.81,0,0,1,59.24,18.6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M14.91,41.57a22.58,22.58,0,0,1-.48-4.65",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M24.58,55.73a22.58,22.58,0,0,1-8.15-9.52",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M36.92,59.41A22.41,22.41,0,0,1,28,57.57",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M57.64,28.17a22.42,22.42,0,0,1,1.77,8.75",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M50,18.6a22.61,22.61,0,0,1,6.19,6.66",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M36.92,14.43A22.39,22.39,0,0,1,47,16.82",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
+    className: "cls-1",
+    cx: "36.92",
+    cy: "36.92",
+    r: "13.79",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-2",
+    d: "M36.92,25.67A11.25,11.25,0,1,0,48.17,36.92,11.25,11.25,0,0,0,36.92,25.67Zm0,14.11a2.86,2.86,0,1,1,2.86-2.86A2.86,2.86,0,0,1,36.92,39.78Z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88
+    },
+    __self: this
+  }))));
+};
+var GarbageSVG = function GarbageSVG(_ref) {
+  var updateStore = _ref.updateStore,
+      id = _ref.id;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__["Garbage"], {
+    viewBox: "0 0 60 60",
+    onClick: function onClick() {
+      return updateStore(id);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M29.5,51c0.552,0,1-0.447,1-1V17c0-0.553-0.448-1-1-1s-1,0.447-1,1v33C28.5,50.553,28.948,51,29.5,51z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 100
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M19.5,51c0.552,0,1-0.447,1-1V17c0-0.553-0.448-1-1-1s-1,0.447-1,1v33C18.5,50.553,18.948,51,19.5,51z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M39.5,51c0.552,0,1-0.447,1-1V17c0-0.553-0.448-1-1-1s-1,0.447-1,1v33C38.5,50.553,38.948,51,39.5,51z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M52.5,6H38.456c-0.11-1.25-0.495-3.358-1.813-4.711C35.809,0.434,34.751,0,33.499,0H23.5c-1.252,0-2.31,0.434-3.144,1.289 C19.038,2.642,18.653,4.75,18.543,6H6.5c-0.552,0-1,0.447-1,1s0.448,1,1,1h2.041l1.915,46.021C10.493,55.743,11.565,59,15.364,59 h28.272c3.799,0,4.871-3.257,4.907-4.958L50.459,8H52.5c0.552,0,1-0.447,1-1S53.052,6,52.5,6z M21.792,2.681 C22.24,2.223,22.799,2,23.5,2h9.999c0.701,0,1.26,0.223,1.708,0.681c0.805,0.823,1.128,2.271,1.24,3.319H20.553 C20.665,4.952,20.988,3.504,21.792,2.681z M46.544,53.979C46.538,54.288,46.4,57,43.636,57H15.364 c-2.734,0-2.898-2.717-2.909-3.042L10.542,8h37.915L46.544,53.979z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 112
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 120
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 121
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126
+    },
+    __self: this
+  }));
+};
+GarbageSVG.propTypes = {
+  updateStore: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
+  id: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired
+};
+var GithubSVG = function GithubSVG() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://github.com/PatrickMcLennan",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__["Social"], {
+    viewBox: "0 0 512 512",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 138
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "m256 0c-140.609375 0-256 115.390625-256 256 0 119.988281 84.195312 228.984375 196 256v-84.695312c-11.078125 2.425781-21.273438 2.496093-32.550781-.828126-15.128907-4.464843-27.421875-14.542968-36.546875-29.910156-5.816406-9.8125-16.125-20.453125-26.878906-19.671875l-2.636719-29.882812c23.253906-1.992188 43.371093 14.167969 55.3125 34.230469 5.304687 8.921874 11.410156 14.152343 19.246093 16.464843 7.574219 2.230469 15.707032 1.160157 25.183594-2.1875 2.378906-18.972656 11.070313-26.074219 17.636719-36.074219v-.015624c-66.679687-9.945313-93.253906-45.320313-103.800781-73.242188-13.976563-37.074219-6.476563-83.390625 18.238281-112.660156.480469-.570313 1.347656-2.0625 1.011719-3.105469-11.332032-34.230469 2.476562-62.546875 2.984375-65.550781 13.078125 3.867187 15.203125-3.890625 56.808593 21.386718l7.191407 4.320313c3.007812 1.792969 2.0625.769531 5.070312.542969 17.371094-4.71875 35.683594-7.324219 53.726563-7.558594 18.179687.234375 36.375 2.839844 54.464844 7.75l2.328124.234375c-.203124-.03125.632813-.148437 2.035157-.984375 51.972656-31.480469 50.105469-21.191406 64.042969-25.722656.503906 3.007812 14.128906 31.785156 2.917968 65.582031-1.511718 4.65625 45.058594 47.300781 19.246094 115.753906-10.546875 27.933594-37.117188 63.308594-103.796875 73.253907v.015624c8.546875 13.027344 18.816406 19.957032 18.761719 46.832032v105.722656c111.808594-27.015625 196-136.011719 196-256 .003906-140.609375-115.386719-256-255.996094-256zm0 0",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 138
+    },
+    __self: this
+  })));
+};
+var LinkedInSVG = function LinkedInSVG() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://linkedin.com/in/patrick-mclennan-42002a172",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 142
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__["Social"], {
+    viewBox: "0 0 512 512",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143
+    },
+    __self: this
+  })), " ");
+};
 
 /***/ }),
 
@@ -1243,7 +1839,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_Splash_styles__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./styles/Splash.styles */ "./components/styles/Splash.styles.js");
 /* harmony import */ var _styles_form_styles__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./styles/form.styles */ "./components/styles/form.styles.js");
 /* harmony import */ var _SectionHeader__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./SectionHeader */ "./components/SectionHeader.js");
-/* harmony import */ var _VinylSVG__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./VinylSVG */ "./components/VinylSVG.js");
+/* harmony import */ var _SVGs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./SVGs */ "./components/SVGs.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_15__);
 
@@ -1373,7 +1969,7 @@ function (_Component) {
           lineNumber: 51
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_VinylSVG__WEBPACK_IMPORTED_MODULE_14__["VinylPrimarySVG"], {
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_SVGs__WEBPACK_IMPORTED_MODULE_14__["VinylPrimarySVG"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 52
@@ -1391,11 +1987,35 @@ function (_Component) {
           lineNumber: 54
         },
         __self: this
-      }, "recordStore is a digital library for you to upload your record collection.")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_styles_form_styles__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }, "recordStore is a digital library for you to upload your record collection.  Enter your email & a password to get started."), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
+      }, "Made by Patrick McLennan"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_SVGs__WEBPACK_IMPORTED_MODULE_14__["GithubSVG"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_SVGs__WEBPACK_IMPORTED_MODULE_14__["LinkedInSVG"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_styles_form_styles__WEBPACK_IMPORTED_MODULE_12__["default"], {
         onSubmit: this.handleSubmit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_SectionHeader__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -1403,14 +2023,14 @@ function (_Component) {
         last: "Register",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 67
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("label", {
         htmlFor: "email",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 69
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("input", {
@@ -1421,20 +2041,20 @@ function (_Component) {
         onChange: this.handleChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 70
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 77
         },
         __self: this
       }, "Email...")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("label", {
         htmlFor: "password",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 80
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("input", {
@@ -1445,13 +2065,13 @@ function (_Component) {
         onChange: this.handleChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 81
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 88
         },
         __self: this
       }, "Password...")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("input", {
@@ -1465,20 +2085,20 @@ function (_Component) {
         id: "register",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 91
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("label", {
         htmlFor: "register",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 97
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 98
         },
         __self: this
       }, "Register This Email")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("input", {
@@ -1493,20 +2113,20 @@ function (_Component) {
         id: "remember",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 101
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("label", {
         htmlFor: "remember",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 108
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 109
         },
         __self: this
       }, "Remember Me")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("input", {
@@ -1514,7 +2134,7 @@ function (_Component) {
         value: "Log In",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 112
         },
         __self: this
       })));
@@ -1730,570 +2350,6 @@ Store.propTypes = {
 
 /***/ }),
 
-/***/ "./components/VinylSVG.js":
-/*!********************************!*\
-  !*** ./components/VinylSVG.js ***!
-  \********************************/
-/*! exports provided: VinylPrimarySVG, VinylErrorSVG, VinylSuccessSVG */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VinylPrimarySVG", function() { return VinylPrimarySVG; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VinylErrorSVG", function() { return VinylErrorSVG; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VinylSuccessSVG", function() { return VinylSuccessSVG; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/SVG.styles */ "./components/styles/SVG.styles.js");
-var _jsxFileName = "/Users/patrickmclennan/Documents/record_store/client/components/VinylSVG.js";
-
-
-var VinylPrimarySVG = function VinylPrimarySVG() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__["Vinyl"], {
-    viewBox: "0 0 75 75",
-    xmlns: "http://www.w3.org/2000/svg",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    "data-name": "Layer 2",
-    id: "Layer_2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    "data-name": "Layer 1",
-    id: "Layer_1-2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M54.94,5.27a36.47,36.47,0,0,1,3.91,2.58",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M49,2.55a36.19,36.19,0,0,1,4.07,1.72",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M2.69,49.39A36.45,36.45,0,0,1,46,1.64",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M11.33,62.83a36.59,36.59,0,0,1-5.14-6.35",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M59.11,65.8a36.43,36.43,0,0,1-44.21.14",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M62.53,11a36.42,36.42,0,0,1,1.19,50.56",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M11.91,51.36A28.74,28.74,0,0,1,8,36.92",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M36.92,65.79A28.82,28.82,0,0,1,14.41,55",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M65.16,30.87a29,29,0,0,1,.63,6",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M61.33,21.5a28.78,28.78,0,0,1,2.38,4.64",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M36.92,8A28.81,28.81,0,0,1,59.24,18.6",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M14.91,41.57a22.58,22.58,0,0,1-.48-4.65",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M24.58,55.73a22.58,22.58,0,0,1-8.15-9.52",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M36.92,59.41A22.41,22.41,0,0,1,28,57.57",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M57.64,28.17a22.42,22.42,0,0,1,1.77,8.75",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M50,18.6a22.61,22.61,0,0,1,6.19,6.66",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M36.92,14.43A22.39,22.39,0,0,1,47,16.82",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
-    className: "cls-1",
-    cx: "36.92",
-    cy: "36.92",
-    r: "13.79",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-2",
-    d: "M36.92,25.67A11.25,11.25,0,1,0,48.17,36.92,11.25,11.25,0,0,0,36.92,25.67Zm0,14.11a2.86,2.86,0,1,1,2.86-2.86A2.86,2.86,0,0,1,36.92,39.78Z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }))));
-};
-var VinylErrorSVG = function VinylErrorSVG() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__["VinylError"], {
-    viewBox: "0 0 75 75",
-    xmlns: "http://www.w3.org/2000/svg",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    "data-name": "Layer 2",
-    id: "Layer_2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    "data-name": "Layer 1",
-    id: "Layer_1-2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M54.94,5.27a36.47,36.47,0,0,1,3.91,2.58",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M49,2.55a36.19,36.19,0,0,1,4.07,1.72",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M2.69,49.39A36.45,36.45,0,0,1,46,1.64",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M11.33,62.83a36.59,36.59,0,0,1-5.14-6.35",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M59.11,65.8a36.43,36.43,0,0,1-44.21.14",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M62.53,11a36.42,36.42,0,0,1,1.19,50.56",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M11.91,51.36A28.74,28.74,0,0,1,8,36.92",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M36.92,65.79A28.82,28.82,0,0,1,14.41,55",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M65.16,30.87a29,29,0,0,1,.63,6",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M61.33,21.5a28.78,28.78,0,0,1,2.38,4.64",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M36.92,8A28.81,28.81,0,0,1,59.24,18.6",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M14.91,41.57a22.58,22.58,0,0,1-.48-4.65",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M24.58,55.73a22.58,22.58,0,0,1-8.15-9.52",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M36.92,59.41A22.41,22.41,0,0,1,28,57.57",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M57.64,28.17a22.42,22.42,0,0,1,1.77,8.75",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M50,18.6a22.61,22.61,0,0,1,6.19,6.66",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M36.92,14.43A22.39,22.39,0,0,1,47,16.82",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
-    className: "cls-1",
-    cx: "36.92",
-    cy: "36.92",
-    r: "13.79",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-2",
-    d: "M36.92,25.67A11.25,11.25,0,1,0,48.17,36.92,11.25,11.25,0,0,0,36.92,25.67Zm0,14.11a2.86,2.86,0,1,1,2.86-2.86A2.86,2.86,0,0,1,36.92,39.78Z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56
-    },
-    __self: this
-  }))));
-};
-var VinylSuccessSVG = function VinylSuccessSVG() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__["VinylSuccess"], {
-    viewBox: "0 0 75 75",
-    xmlns: "http://www.w3.org/2000/svg",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    "data-name": "Layer 2",
-    id: "Layer_2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    "data-name": "Layer 1",
-    id: "Layer_1-2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M54.94,5.27a36.47,36.47,0,0,1,3.91,2.58",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M49,2.55a36.19,36.19,0,0,1,4.07,1.72",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M2.69,49.39A36.45,36.45,0,0,1,46,1.64",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M11.33,62.83a36.59,36.59,0,0,1-5.14-6.35",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M59.11,65.8a36.43,36.43,0,0,1-44.21.14",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M62.53,11a36.42,36.42,0,0,1,1.19,50.56",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M11.91,51.36A28.74,28.74,0,0,1,8,36.92",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M36.92,65.79A28.82,28.82,0,0,1,14.41,55",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M65.16,30.87a29,29,0,0,1,.63,6",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M61.33,21.5a28.78,28.78,0,0,1,2.38,4.64",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M36.92,8A28.81,28.81,0,0,1,59.24,18.6",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M14.91,41.57a22.58,22.58,0,0,1-.48-4.65",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M24.58,55.73a22.58,22.58,0,0,1-8.15-9.52",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M36.92,59.41A22.41,22.41,0,0,1,28,57.57",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M57.64,28.17a22.42,22.42,0,0,1,1.77,8.75",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M50,18.6a22.61,22.61,0,0,1,6.19,6.66",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 84
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-1",
-    d: "M36.92,14.43A22.39,22.39,0,0,1,47,16.82",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
-    className: "cls-1",
-    cx: "36.92",
-    cy: "36.92",
-    r: "13.79",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    className: "cls-2",
-    d: "M36.92,25.67A11.25,11.25,0,1,0,48.17,36.92,11.25,11.25,0,0,0,36.92,25.67Zm0,14.11a2.86,2.86,0,1,1,2.86-2.86A2.86,2.86,0,0,1,36.92,39.78Z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 87
-    },
-    __self: this
-  }))));
-};
-
-/***/ }),
-
 /***/ "./components/styles/Loader.styles.js":
 /*!********************************************!*\
   !*** ./components/styles/Loader.styles.js ***!
@@ -2365,7 +2421,7 @@ var RecordFigure = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].fig
 /*!*****************************************!*\
   !*** ./components/styles/SVG.styles.js ***!
   \*****************************************/
-/*! exports provided: Vinyl, VinylError, VinylSuccess, Garbage */
+/*! exports provided: Vinyl, VinylError, VinylSuccess, Garbage, Social */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2374,6 +2430,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VinylError", function() { return VinylError; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VinylSuccess", function() { return VinylSuccess; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Garbage", function() { return Garbage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Social", function() { return Social; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
 var rotate = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["keyframes"])(["from{transform:rotate(0deg);}to{transform:rotate(360deg);}"]);
@@ -2392,16 +2449,23 @@ var VinylMsg = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])
 var VinylError = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])(VinylMsg).withConfig({
   displayName: "SVGstyles__VinylError",
   componentId: "l14jxn-2"
-})(["stroke:red;fill:rgba(255,255,255,0.7);"]);
+})(["stroke:red;fill:rgba(255,255,255,0.25);"]);
 var VinylSuccess = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])(VinylMsg).withConfig({
   displayName: "SVGstyles__VinylSuccess",
   componentId: "l14jxn-3"
-})(["stroke:green;fill:rgba(255,255,255,0.3);"]);
+})(["stroke:green;fill:rgba(255,255,255,0.25);"]);
 var Garbage = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].svg.withConfig({
   displayName: "SVGstyles__Garbage",
   componentId: "l14jxn-4"
 })(["stroke:", ";cursor:pointer;height:25px;width:25px;transform-origin:bottom-right;position:absolute;bottom:1rem;right:1rem;"], function (_ref2) {
   var colors = _ref2.theme.colors;
+  return colors.whitePrimary;
+});
+var Social = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].svg.withConfig({
+  displayName: "SVGstyles__Social",
+  componentId: "l14jxn-5"
+})(["stroke:", ";fill:rgba(255,255,255,0.75);height:7.5rem;"], function (_ref3) {
+  var colors = _ref3.theme.colors;
   return colors.whitePrimary;
 });
 
@@ -2477,17 +2541,36 @@ var SortList = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].ul.with
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _queries__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./queries */ "./components/styles/queries.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _queries__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./queries */ "./components/styles/queries.js");
 
 
-var Section = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].section.withConfig({
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n        margin-bottom: 5vh;\n      "]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+var Section = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].section.withConfig({
   displayName: "Splashstyles__Section",
   componentId: "sc-10ktuig-0"
-})(["display:grid;grid-template-columns:repeat(auto-fit,minmax(375px,1fr));grid-gap:2vw;div{", ";align-self:stretch;text-align:center;h3{font-size:5rem;font-weight:100;margin-bottom:5vh;}p{font-size:2rem;margin-bottom:10vh;}}"], function (_ref) {
+})(["display:grid;grid-template-columns:repeat(auto-fit,minmax(375px,1fr));grid-gap:2vw;div{", ";align-self:stretch;text-align:center;h3{font-size:5rem;font-weight:100;margin-bottom:5vh;}p{font-size:2rem;margin-bottom:10vh;", "}div{", " ", "}}"], function (_ref) {
   var flexin = _ref.theme.flexin;
   return flexin('center', 'center', 'column');
-});
+}, function (_ref2) {
+  var typo = _ref2.theme.typo;
+  return typo.letterSpacingSecondary;
+}, function (_ref3) {
+  var flexin = _ref3.theme.flexin;
+  return flexin('space-around');
+}, _queries__WEBPACK_IMPORTED_MODULE_2__["default"].eight(_templateObject()));
 /* harmony default export */ __webpack_exports__["default"] = (Section);
 
 /***/ }),
@@ -2665,7 +2748,8 @@ var theme = {
     }
   },
   typo: {
-    letterSpacingPrimary: "letter-spacing: .35rem;"
+    letterSpacingPrimary: "letter-spacing: .35rem;",
+    letterSpacingSecondary: "letter-spacing: .175rem;"
   }
 };
 var Content = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].section.withConfig({
@@ -40505,7 +40589,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Account__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/Account */ "./components/Account.js");
 /* harmony import */ var _components_AddRecord__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/AddRecord */ "./components/AddRecord.js");
 /* harmony import */ var _components_Loader__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/Loader */ "./components/Loader.js");
-/* harmony import */ var _components_VinylSVG__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./../components/VinylSVG */ "./components/VinylSVG.js");
+/* harmony import */ var _components_SVGs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./../components/SVGs */ "./components/SVGs.js");
 
 
 
@@ -40851,13 +40935,13 @@ function (_Component) {
           lineNumber: 138
         },
         __self: this
-      }, this.renderPage(page), error && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_VinylSVG__WEBPACK_IMPORTED_MODULE_20__["VinylErrorSVG"], {
+      }, this.renderPage(page), error && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_20__["VinylErrorSVG"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 140
         },
         __self: this
-      }), success && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_VinylSVG__WEBPACK_IMPORTED_MODULE_20__["VinylSuccessSVG"], {
+      }), success && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_20__["VinylSuccessSVG"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 141

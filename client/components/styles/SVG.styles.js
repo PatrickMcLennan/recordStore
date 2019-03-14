@@ -49,12 +49,12 @@ const VinylMsg = styled(Vinyl)`
 
 export const VinylError = styled(VinylMsg)`
   stroke: red;
-  fill: rgba(255, 255, 255, 0.7);
+  fill: rgba(255, 255, 255, 0.25);
 `;
 
 export const VinylSuccess = styled(VinylMsg)`
   stroke: green;
-  fill: rgba(255, 255, 255, 0.3);
+  fill: rgba(255, 255, 255, 0.25);
 `;
 
 export const Garbage = styled.svg`
@@ -67,3 +67,9 @@ export const Garbage = styled.svg`
   bottom: 1rem;
   right: 1rem;
 `;
+
+export const Social = styled.svg`
+  stroke: ${({ theme: { colors } }) => colors.whitePrimary};
+  fill: rgba(255, 255, 255, 0.75);
+  height: 7.5rem;
+`

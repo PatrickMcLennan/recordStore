@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Section from './styles/Splash.styles';
 import Form from './styles/form.styles';
 import SectionHeader from './SectionHeader';
-import { VinylPrimarySVG } from './VinylSVG';
+import { VinylPrimarySVG, GithubSVG, LinkedInSVG } from './SVGs';
 import PropTypes from 'prop-types';
 
 class Splash extends Component {
@@ -53,8 +53,15 @@ class Splash extends Component {
           <h3>Welcome to recordStore</h3>
           <p>
             recordStore is a digital library for you to upload your record
-            collection.
+            collection.  Enter your email &amp; a password to get started.
           </p>
+          <p>
+            Made by Patrick McLennan
+          </p>
+          <div>
+            <GithubSVG />
+            <LinkedInSVG />
+          </div>
         </div>
         <Form onSubmit={this.handleSubmit}>
           <SectionHeader first="Log In" last="Register" />

@@ -1,6 +1,6 @@
 import RecordFigure from './styles/Record.styles';
 import PropTypes from 'prop-types';
-import GarbageSVG from './GarbageSVG';
+import { GarbageSVG } from './SVGs';
 
 const Record = ({ cover, title, artist, updateStore, id }) => (
   <RecordFigure>
