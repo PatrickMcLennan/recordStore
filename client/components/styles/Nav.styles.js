@@ -2,10 +2,12 @@ import styled from 'styled-components';
 import media from './queries';
 
 const NavBar = styled.nav`
+  position: relative;
   grid-row-start: 1;
   grid-row-end: 2;
-  display: flex;
+  border: 1px solid red;
   height: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2.5vw 2.5vh 2.5vw;
@@ -33,11 +35,16 @@ const NavBar = styled.nav`
   }
 
   ul {
-    position: relative;
+    display: flex;
+    ${media.ten`
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+    `}
   }
 
   li {
-    display: inline-block;
     cursor: pointer;
     font-size: 2rem;
     letter-spacing: 0.25rem;
@@ -58,6 +65,9 @@ const NavBar = styled.nav`
 
     &:not(:first-child) {
       margin-left: 3.5rem;
+      ${media.ten`
+      margin-top: 1rem;
+    `}
     }
 
     &:hover {
@@ -65,13 +75,14 @@ const NavBar = styled.nav`
         transform: scale(1);
       }
     }
+  }
 
-    img {
-      display: none;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
+  img {
+    display: none;
+    ${media.ten`
+      display: inline-block;
+      cursor: pointer;
+    `}
   }
 `;
 

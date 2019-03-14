@@ -29,7 +29,7 @@ class AddRecord extends Component {
     return (
       <div>
         <SectionHeader first="Add" last="Record" />
-        {cover ? <Badge src={cover} alt={title} /> : null}
+        {cover ? <Badge src={cover} alt={title} margin="left" /> : null}
         <Form onSubmit={this.handleSubmit}>
           <label htmlFor="title">
             <input

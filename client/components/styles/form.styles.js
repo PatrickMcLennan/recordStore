@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from './queries'
 
 const Form = styled.form`
   padding: 0 2.5vw;
@@ -94,6 +95,9 @@ const Form = styled.form`
       margin: 3.5vh 0;
       ${({ theme: { typo } }) => typo.letterSpacingPrimary};
       ${({ theme: { transforms } }) => transforms.whiteFill.rest}
+      ${media.six`
+        padding: .75rem 1rem
+      `}
 
       &:hover,
       &:active {
@@ -108,6 +112,17 @@ const Form = styled.form`
         ${({ theme: { transforms } }) => transforms.whiteFill.active}
       }
     }
+  }
+
+  textarea { 
+    background: none;
+    font-size: 2rem;
+    width: 60%;
+    height: 6rem;
+    margin: 0 20%;
+    line-height: 1.3;
+    ${({theme: {typo}}) => typo.letterSpacingSecondary}
+    color: ${({theme: {colors}}) => colors.whitePrimary}
   }
 `;
 

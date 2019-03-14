@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StoreSection = styled.section`
   display: grid;
   grid-template-rows: auto auto minmax(150px, auto);
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
 
   h4 {
     grid-area: 1 / 1 / 2 / -1;

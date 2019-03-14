@@ -33,7 +33,9 @@ class Account extends Component {
     return (
       <div>
         <SectionHeader first="Edit" last="Account" />
-        {picture ? <Badge src={picture} alt={name.first} /> : null}
+        {picture ? (
+          <Badge src={picture} alt={name.first} margin="left" />
+        ) : null}
         <Form onSubmit={this.handleSubmit}>
           <label htmlFor="firstName">
             <input
@@ -75,10 +77,14 @@ class Account extends Component {
             <p>Display Picture URL</p>
           </label>
 
-          <label htmlFor="bio">
-            <textarea value={bio} id="bio" onChange={this.handleChange} />
-            <p>Bio (max 250)</p>
-          </label>
+          <textarea
+            value={bio}
+            id="bio"
+            onChange={this.handleChange}
+            placeholder={
+              name.first ? `About ${name.first}...` : `About ${email}...`
+            }
+          />
 
           <input type="submit" value="Save Changes" />
         </Form>

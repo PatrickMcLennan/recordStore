@@ -3,7 +3,7 @@ import media from './queries';
 
 const Section = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   grid-gap: 2vw;
 
   div {
@@ -24,7 +24,7 @@ const Section = styled.section`
 
     div {
       ${({theme: {flexin}}) => flexin('space-around')}
-      ${media.eight`
+      ${media.twelve`
         margin-bottom: 5vh;
       `}
     }

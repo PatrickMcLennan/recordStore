@@ -39,9 +39,6 @@ class Nav extends Component {
                 current={page === 'add' ? '1' : '0'}>
                 +
               </li>
-              {/* <li>
-                <Badge src={user.picture} alt={user.name.first} />
-              </li> */}
             </>
           ) : (
             <li
@@ -51,6 +48,9 @@ class Nav extends Component {
             </li>
           )}
         </ul>
+        {user && (
+          <Badge src={user.picture} alt={user.name.first} margin="right" />
+        )}
       </NavBar>
     );
   }
