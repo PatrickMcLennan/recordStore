@@ -34,12 +34,18 @@ class Account extends Component {
       <div>
         <SectionHeader first="Edit" last="Account" />
         {picture ? (
-          <Badge src={picture} alt={name.first} margin="left" />
+          <Badge
+            src={picture}
+            alt={name.first}
+            margin="left"
+            data-testid="account_pic"
+          />
         ) : null}
         <Form onSubmit={this.handleSubmit}>
           <label htmlFor="firstName">
             <input
               id="first"
+              data-testid="first"
               type="text"
               value={name.first}
               onChange={this.handleNameChange}
@@ -51,6 +57,7 @@ class Account extends Component {
             <input
               type="text"
               id="last"
+              data-testid="last"
               value={name.last}
               onChange={this.handleNameChange}
             />
@@ -61,6 +68,7 @@ class Account extends Component {
             <input
               type="email"
               id="email"
+              data-testid="email"
               value={email}
               onChange={this.handleChange}
             />
@@ -71,6 +79,7 @@ class Account extends Component {
             <input
               type="text"
               id="picture"
+              data-testid="picture"
               value={picture}
               onChange={this.handleChange}
             />
@@ -80,13 +89,18 @@ class Account extends Component {
           <textarea
             value={bio}
             id="bio"
+            data-testid="bio"
             onChange={this.handleChange}
             placeholder={
               name.first ? `About ${name.first}...` : `About ${email}...`
             }
           />
 
-          <input type="submit" value="Save Changes" />
+          <input
+            type="submit"
+            data-testid="account_submit"
+            value="Save Changes"
+          />
         </Form>
       </div>
     );
@@ -94,9 +108,7 @@ class Account extends Component {
 }
 
 Account.propTypes = {
-  page: PropTypes.string.isRequired,
   user: PropTypes.object.isRequired,
-  changePage: PropTypes.func.isRequired,
   editUser: PropTypes.func.isRequired
 };
 

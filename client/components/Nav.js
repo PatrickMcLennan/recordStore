@@ -15,8 +15,14 @@ class Nav extends Component {
     logout();
   };
 
+  followLink = page => {
+    const { changePage } = this.props;
+    changePage(page);
+    this.setState({ open: !open });
+  };
+
   render() {
-    const { user, page, logout, changePage } = this.props;
+    const { user, page, changePage } = this.props;
     const { open } = this.state;
     return (
       <NavBar>
@@ -29,28 +35,28 @@ class Nav extends Component {
             <>
               <li
                 className={open ? 'opened' : 'closed'}
-                delay="0s"
+                style={{ transitionDelay: '0s' }}
                 onClick={() => this.logout()}
                 current={page === 'splash' ? '1' : '0'}>
                 Sign Out
               </li>
               <li
                 className={open ? 'opened' : 'closed'}
-                delay="0.5s"
+                style={{ transitionDelay: '.1s' }}
                 onClick={() => changePage('account')}
                 current={page === 'account' ? '1' : '0'}>
                 Account
               </li>
               <li
                 className={open ? 'opened' : 'closed'}
-                delay="1s"
+                style={{ transitionDelay: '.2s' }}
                 onClick={() => changePage('store')}
                 current={page === 'store' ? '1' : '0'}>
                 My Store
               </li>
               <li
                 className={open ? 'opened' : 'closed'}
-                delay="1.5s"
+                style={{ transitionDelay: '.3s' }}
                 onClick={() => changePage('add')}
                 current={page === 'add' ? '1' : '0'}>
                 +

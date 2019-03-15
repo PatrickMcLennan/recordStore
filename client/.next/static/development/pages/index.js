@@ -114,6 +114,7 @@ function (_Component) {
         src: picture,
         alt: name.first,
         margin: "left",
+        "data-testid": "account_pic",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 37
@@ -123,117 +124,123 @@ function (_Component) {
         onSubmit: this.handleSubmit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 44
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("label", {
         htmlFor: "firstName",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
         id: "first",
+        "data-testid": "first",
         type: "text",
         value: name.first,
         onChange: this.handleNameChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 46
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 53
         },
         __self: this
       }, "First Name")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("label", {
         htmlFor: "lastName",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
         type: "text",
         id: "last",
+        "data-testid": "last",
         value: name.last,
         onChange: this.handleNameChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 57
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 64
         },
         __self: this
       }, "Last Name")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("label", {
         htmlFor: "email",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 67
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
         type: "email",
         id: "email",
+        "data-testid": "email",
         value: email,
         onChange: this.handleChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 68
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 75
         },
         __self: this
       }, "Email")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("label", {
         htmlFor: "email",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 78
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
         type: "text",
         id: "picture",
+        "data-testid": "picture",
         value: picture,
         onChange: this.handleChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 79
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 86
         },
         __self: this
       }, "Display Picture URL")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("textarea", {
         value: bio,
         id: "bio",
+        "data-testid": "bio",
         onChange: this.handleChange,
         placeholder: name.first ? "About ".concat(name.first, "...") : "About ".concat(email, "..."),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 89
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
         type: "submit",
+        "data-testid": "account_submit",
         value: "Save Changes",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 99
         },
         __self: this
       })));
@@ -244,9 +251,7 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_8__["Component"]);
 
 Account.propTypes = {
-  page: prop_types__WEBPACK_IMPORTED_MODULE_12___default.a.string.isRequired,
   user: prop_types__WEBPACK_IMPORTED_MODULE_12___default.a.object.isRequired,
-  changePage: prop_types__WEBPACK_IMPORTED_MODULE_12___default.a.func.isRequired,
   editUser: prop_types__WEBPACK_IMPORTED_MODULE_12___default.a.func.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Account);
@@ -692,6 +697,15 @@ function (_Component) {
       logout();
     });
 
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "followLink", function (page) {
+      var changePage = _this.props.changePage;
+      changePage(page);
+
+      _this.setState({
+        open: !open
+      });
+    });
+
     return _this;
   }
 
@@ -703,85 +717,92 @@ function (_Component) {
       var _this$props = this.props,
           user = _this$props.user,
           page = _this$props.page,
-          logout = _this$props.logout,
           changePage = _this$props.changePage;
       var open = this.state.open;
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_styles_Nav_styles__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 28
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 29
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 30
         },
         __self: this
       }, "recordStore"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 31
         },
         __self: this
       }, "what are you listening to?")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 33
         },
         __self: this
       }, user && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         className: open ? 'opened' : 'closed',
-        delay: "0s",
+        style: {
+          transitionDelay: '0s'
+        },
         onClick: function onClick() {
           return _this2.logout();
         },
         current: page === 'splash' ? '1' : '0',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 36
         },
         __self: this
       }, "Sign Out"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         className: open ? 'opened' : 'closed',
-        delay: "0.5s",
+        style: {
+          transitionDelay: '.1s'
+        },
         onClick: function onClick() {
           return changePage('account');
         },
         current: page === 'account' ? '1' : '0',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 43
         },
         __self: this
       }, "Account"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         className: open ? 'opened' : 'closed',
-        delay: "1s",
+        style: {
+          transitionDelay: '.2s'
+        },
         onClick: function onClick() {
           return changePage('store');
         },
         current: page === 'store' ? '1' : '0',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 50
         },
         __self: this
       }, "My Store"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         className: open ? 'opened' : 'closed',
-        delay: "1.5s",
+        style: {
+          transitionDelay: '.3s'
+        },
         onClick: function onClick() {
           return changePage('add');
         },
         current: page === 'add' ? '1' : '0',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 57
         },
         __self: this
       }, "+"))), user && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_styles_UserBadge_styles__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -795,7 +816,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 68
         },
         __self: this
       }), open && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Loader__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -806,7 +827,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 75
         },
         __self: this
       }));
@@ -40990,13 +41011,11 @@ function (_Component) {
         });
       } else if (page === 'account') {
         return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Account__WEBPACK_IMPORTED_MODULE_17__["default"], {
-          page: page,
           user: user,
-          changePage: _this.changePage,
           editUser: _this.editUser,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 105
+            lineNumber: 104
           },
           __self: this
         });
@@ -41008,7 +41027,7 @@ function (_Component) {
           createRecord: _this.createRecord,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 114
+            lineNumber: 107
           },
           __self: this
         });
@@ -41030,19 +41049,19 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 121
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["GlobalStyle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 122
         },
         __self: this
       }), loading && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Loader__WEBPACK_IMPORTED_MODULE_19__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 123
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Nav__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -41052,32 +41071,32 @@ function (_Component) {
         page: page,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 124
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_10__["ThemeProvider"], {
         theme: _components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["theme"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137
+          lineNumber: 130
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["Content"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 131
         },
         __self: this
       }, this.renderPage(page), error && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_20__["VinylErrorSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 133
         },
         __self: this
       }), success && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_20__["VinylSuccessSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141
+          lineNumber: 134
         },
         __self: this
       }))));
