@@ -2,14 +2,22 @@ import React, { Component } from 'react';
 import NavBar from './styles/Nav.styles';
 import PropTypes from 'prop-types';
 import Badge from './styles/UserBadge.styles';
+import Backdrop from './Loader';
 
 class Nav extends Component {
   state = {
-    status: 'hidden'
+    open: false
+  };
+
+  logout = () => {
+    const { logout } = this.props;
+    this.setState({ open: false });
+    logout();
   };
 
   render() {
     const { user, page, logout, changePage } = this.props;
+    const { open } = this.state;
     return (
       <NavBar>
         <div>
@@ -17,40 +25,48 @@ class Nav extends Component {
           <h2>what are you listening to?</h2>
         </div>
         <ul>
-          {user ? (
+          {user && (
             <>
               <li
-                onClick={() => logout()}
+                className={open ? 'opened' : 'closed'}
+                delay="0s"
+                onClick={() => this.logout()}
                 current={page === 'splash' ? '1' : '0'}>
                 Sign Out
               </li>
               <li
+                className={open ? 'opened' : 'closed'}
+                delay="0.5s"
                 onClick={() => changePage('account')}
                 current={page === 'account' ? '1' : '0'}>
                 Account
               </li>
               <li
+                className={open ? 'opened' : 'closed'}
+                delay="1s"
                 onClick={() => changePage('store')}
                 current={page === 'store' ? '1' : '0'}>
                 My Store
               </li>
               <li
+                className={open ? 'opened' : 'closed'}
+                delay="1.5s"
                 onClick={() => changePage('add')}
                 current={page === 'add' ? '1' : '0'}>
                 +
               </li>
             </>
-          ) : (
-            <li
-              onClick={() => changePage('splash')}
-              current={page === 'splash' ? '1' : '0'}>
-              Sign In
-            </li>
           )}
         </ul>
         {user && (
-          <Badge src={user.picture} alt={user.name.first} margin="right" />
+          <Badge
+            src={user.picture}
+            alt={user.name.first}
+            margin="right"
+            onClick={() => this.setState({ open: !open })}
+          />
         )}
+        {open && <Backdrop onClick={() => this.setState({ open: !open })} />}
       </NavBar>
     );
   }

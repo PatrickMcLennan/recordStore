@@ -58,7 +58,8 @@ export const theme = {
   flexin: (jc = 'center', ai = 'center', fd = 'row') =>
     `display: flex; justify-content: ${jc}; align-items: ${ai}; flex-direction: ${fd};`,
   transitions: {
-    main: `transition: all 0.4s ease-in-out;`
+    main: `transition: all 0.4s ease-in-out;`,
+    half: `transition: all 0.2s ease-in-out;`
   },
   transforms: {
     whiteFill: {

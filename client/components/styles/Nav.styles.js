@@ -5,7 +5,6 @@ const NavBar = styled.nav`
   position: relative;
   grid-row-start: 1;
   grid-row-end: 2;
-  border: 1px solid red;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -51,7 +50,23 @@ const NavBar = styled.nav`
     padding: 1rem 2rem;
     text-transform: uppercase;
     text-align: center;
+    z-index: 10;
+    transition: all 0.4s ease-out;
+    transform-style: preserve-3d;
+    transform-origin: 100%;
+    transition-delay: ${props => props.delay};
+    ${media.ten`
+      text-align: right;
 
+      &.closed {
+        transform: rotateY(90deg) translateY(50%);
+        opacity: 0;
+      }
+      &.opened {
+        transform: rotateY(0) translateY(0);
+        opacity: 1;
+      }
+    `}
     &::after {
       content: '';
       display: block;
@@ -61,6 +76,10 @@ const NavBar = styled.nav`
       margin: 0.5vh auto 0 auto;
       transition: all 0.3s ease-in-out;
       transform: scale(${props => props.current});
+      ${media.ten`
+        width: 60%;
+        margin: .5vh 0 0 auto;
+      `}
     }
 
     &:not(:first-child) {
