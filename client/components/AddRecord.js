@@ -35,7 +35,7 @@ class AddRecord extends Component {
           alt={title ? title : 'Album Artwork'}
           margin="left"
         />
-        <Form onSubmit={this.handleSubmit}>
+        <Form onSubmit={this.handleSubmit} data-testid="addRecord_form">
           <label htmlFor="title">
             <input
               data-testid="addRecord_title"

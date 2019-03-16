@@ -41,7 +41,7 @@ class Account extends Component {
             data-testid="account_pic"
           />
         ) : null}
-        <Form onSubmit={this.handleSubmit}>
+        <Form onSubmit={this.handleSubmit} data-testid="account_form">
           <label htmlFor="firstName">
             <input
               id="first"

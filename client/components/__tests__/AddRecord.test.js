@@ -1,6 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from 'react-testing-library';
-import 'react-testing-library/cleanup-after-each';
+import { render, fireEvent, cleanup, wait } from 'react-testing-library';
 import { ThemeProvider } from 'styled-components';
 import AddRecord from '../AddRecord';
 import { dummyRecords, dummyEmptyRecord } from '../dummies';
@@ -9,6 +8,8 @@ import { theme, Content } from '../styles/index.styles';
 const placeholder = '../static/img/placeholder.png';
 const createRecord = jest.fn();
 const blink = dummyRecords[0];
+
+afterEach(cleanup);
 
 const renderAddRecord = ({ theme, createRecord }) =>
   render(
@@ -24,6 +25,7 @@ test('<AddRecord />', async () => {
     theme,
     createRecord
   });
+  const form = getByTestId('addRecord_form');
   const title = getByTestId('addRecord_title');
   const artist = getByTestId('addRecord_artist');
   const cover = getByTestId('addRecord_cover');
@@ -40,6 +42,13 @@ test('<AddRecord />', async () => {
   fireEvent.change(cover, { target: { value: blink.cover } });
   expect(badge.getAttribute('src')).toBe(blink.cover);
 
-  fireEvent.click(submit, await createRecord());
-  debug();
+  fireEvent.submit(form);
+
+  await wait(() => {
+    expect(createRecord).toHaveBeenCalledTimes(1);
+    expect(title.value).toBe('');
+    expect(artist.value).toBe('');
+    expect(cover.value).toBe('');
+    expect(badge.getAttribute('src')).toBe(placeholder);
+  });
 });
