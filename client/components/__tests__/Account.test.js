@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, cleanUp } from 'react-testing-library';
+import { render, fireEvent } from 'react-testing-library';
 import 'react-testing-library/cleanup-after-each';
 import { ThemeProvider } from 'styled-components';
 import Account from '../Account';
@@ -10,7 +10,7 @@ const john = dummyPeople[0];
 const stacy = dummyPeople[1];
 const editUser = jest.fn(user => user);
 
-const renderComponent = ({ theme, user, editUser }) =>
+const renderAccount = ({ theme, user, editUser }) =>
   render(
     <ThemeProvider theme={theme}>
       <Content>
@@ -20,12 +20,12 @@ const renderComponent = ({ theme, user, editUser }) =>
   );
 
 test('<Account user="Full User" />', () => {
-  const { getByTestId } = renderComponent({ theme, user: john, editUser });
-  const first = getByTestId('first');
-  const last = getByTestId('last');
-  const email = getByTestId('email');
-  const picture = getByTestId('picture');
-  const bio = getByTestId('bio');
+  const { getByTestId } = renderAccount({ theme, user: john, editUser });
+  const first = getByTestId('account_first');
+  const last = getByTestId('account_last');
+  const email = getByTestId('account_email');
+  const picture = getByTestId('account_picture');
+  const bio = getByTestId('account_bio');
   const submit = getByTestId('account_submit');
 
   expect(first.value).toBe('John');
@@ -34,11 +34,11 @@ test('<Account user="Full User" />', () => {
   expect(picture.value).toBe('Johns picture');
   expect(bio.value).toBe("I'm John - I press records for a living!");
 
-  first.value = stacy.name.first;
-  last.value = stacy.name.last;
-  picture.value = stacy.picture;
-  email.value = stacy.email;
-  bio.value = stacy.bio;
+  fireEvent.change(first, { target: { value: stacy.name.first } });
+  fireEvent.change(last, { target: { value: stacy.name.last } });
+  fireEvent.change(picture, { target: { value: stacy.picture } });
+  fireEvent.change(email, { target: { value: stacy.email } });
+  fireEvent.change(bio, { target: { value: stacy.bio } });
 
   fireEvent.click(submit);
 
@@ -52,16 +52,16 @@ test('<Account user="Full User" />', () => {
 });
 
 test('<Account user="New User" />', () => {
-  const { getByTestId } = renderComponent({
+  const { getByTestId } = renderAccount({
     theme,
     user: dummyNewUser,
     editUser
   });
-  const first = getByTestId('first');
-  const last = getByTestId('last');
-  const email = getByTestId('email');
-  const picture = getByTestId('picture');
-  const bio = getByTestId('bio');
+  const first = getByTestId('account_first');
+  const last = getByTestId('account_last');
+  const email = getByTestId('account_email');
+  const picture = getByTestId('account_picture');
+  const bio = getByTestId('account_bio');
   const submit = getByTestId('account_submit');
 
   expect(first.value).toBe('');
@@ -70,11 +70,11 @@ test('<Account user="New User" />', () => {
   expect(picture.value).toBe('');
   expect(bio.value).toBe('');
 
-  first.value = stacy.name.first;
-  last.value = stacy.name.last;
-  picture.value = stacy.picture;
-  email.value = stacy.email;
-  bio.value = stacy.bio;
+  fireEvent.change(first, { target: { value: stacy.name.first } });
+  fireEvent.change(last, { target: { value: stacy.name.last } });
+  fireEvent.change(picture, { target: { value: stacy.picture } });
+  fireEvent.change(email, { target: { value: stacy.email } });
+  fireEvent.change(bio, { target: { value: stacy.bio } });
 
   fireEvent.click(submit);
 

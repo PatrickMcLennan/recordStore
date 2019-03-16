@@ -136,7 +136,7 @@ function (_Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
         id: "first",
-        "data-testid": "first",
+        "data-testid": "account_first",
         type: "text",
         value: name.first,
         onChange: this.handleNameChange,
@@ -161,7 +161,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
         type: "text",
         id: "last",
-        "data-testid": "last",
+        "data-testid": "account_last",
         value: name.last,
         onChange: this.handleNameChange,
         __source: {
@@ -185,7 +185,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
         type: "email",
         id: "email",
-        "data-testid": "email",
+        "data-testid": "account_email",
         value: email,
         onChange: this.handleChange,
         __source: {
@@ -209,7 +209,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
         type: "text",
         id: "picture",
-        "data-testid": "picture",
+        "data-testid": "account_picture",
         value: picture,
         onChange: this.handleChange,
         __source: {
@@ -226,7 +226,7 @@ function (_Component) {
       }, "Display Picture URL")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("textarea", {
         value: bio,
         id: "bio",
-        "data-testid": "bio",
+        "data-testid": "account_bio",
         onChange: this.handleChange,
         placeholder: name.first ? "About ".concat(name.first, "...") : "About ".concat(email, "..."),
         __source: {
@@ -390,8 +390,9 @@ function (_Component) {
           lineNumber: 31
         },
         __self: this
-      }), cover ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_styles_UserBadge_styles__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        src: cover,
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_styles_UserBadge_styles__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        "data-testid": "addRecord_badge",
+        src: cover ? cover : '../static/img/placeholder.png',
         alt: title,
         margin: "left",
         __source: {
@@ -399,21 +400,22 @@ function (_Component) {
           lineNumber: 32
         },
         __self: this
-      }) : null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_styles_form_styles__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_styles_form_styles__WEBPACK_IMPORTED_MODULE_11__["default"], {
         onSubmit: this.handleSubmit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 38
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("label", {
         htmlFor: "title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
+        "data-testid": "addRecord_title",
         type: "text",
         id: "title",
         value: title,
@@ -421,23 +423,24 @@ function (_Component) {
         onChange: this.handleChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 40
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 48
         },
         __self: this
       }, "Album Title")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("label", {
         htmlFor: "artist",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
+        "data-testid": "addRecord_artist",
         type: "text",
         id: "artist",
         value: artist,
@@ -445,23 +448,24 @@ function (_Component) {
         onChange: this.handleChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 52
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 60
         },
         __self: this
       }, "Artist")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("label", {
         htmlFor: "cover",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 63
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
+        "data-testid": "addRecord_cover",
         type: "text",
         id: "cover",
         value: cover,
@@ -469,21 +473,22 @@ function (_Component) {
         onChange: this.handleChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 64
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 72
         },
         __self: this
       }, "Album Cover URL")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
         type: "submit",
         value: "Add Record",
+        "data-testid": "addRecord_submit",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 75
         },
         __self: this
       })));
@@ -494,9 +499,6 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_9__["Component"]);
 
 AddRecord.propTypes = {
-  page: prop_types__WEBPACK_IMPORTED_MODULE_13___default.a.string.isRequired,
-  user: prop_types__WEBPACK_IMPORTED_MODULE_13___default.a.object.isRequired,
-  changePage: prop_types__WEBPACK_IMPORTED_MODULE_13___default.a.func.isRequired,
   createRecord: prop_types__WEBPACK_IMPORTED_MODULE_13___default.a.func.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (AddRecord);
@@ -41021,13 +41023,10 @@ function (_Component) {
         });
       } else if (page === 'add') {
         return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_AddRecord__WEBPACK_IMPORTED_MODULE_18__["default"], {
-          page: page,
-          user: user,
-          changePage: _this.changePage,
           createRecord: _this.createRecord,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 107
+            lineNumber: 106
           },
           __self: this
         });
@@ -41049,19 +41048,19 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 114
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["GlobalStyle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122
+          lineNumber: 115
         },
         __self: this
       }), loading && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Loader__WEBPACK_IMPORTED_MODULE_19__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 123
+          lineNumber: 116
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Nav__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -41071,32 +41070,32 @@ function (_Component) {
         page: page,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124
+          lineNumber: 117
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_10__["ThemeProvider"], {
         theme: _components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["theme"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 123
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["Content"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 124
         },
         __self: this
       }, this.renderPage(page), error && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_20__["VinylErrorSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 133
+          lineNumber: 126
         },
         __self: this
       }), success && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_20__["VinylSuccessSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134
+          lineNumber: 127
         },
         __self: this
       }))));

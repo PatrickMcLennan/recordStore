@@ -45,7 +45,7 @@ class Account extends Component {
           <label htmlFor="firstName">
             <input
               id="first"
-              data-testid="first"
+              data-testid="account_first"
               type="text"
               value={name.first}
               onChange={this.handleNameChange}
@@ -57,7 +57,7 @@ class Account extends Component {
             <input
               type="text"
               id="last"
-              data-testid="last"
+              data-testid="account_last"
               value={name.last}
               onChange={this.handleNameChange}
             />
@@ -68,7 +68,7 @@ class Account extends Component {
             <input
               type="email"
               id="email"
-              data-testid="email"
+              data-testid="account_email"
               value={email}
               onChange={this.handleChange}
             />
@@ -79,7 +79,7 @@ class Account extends Component {
             <input
               type="text"
               id="picture"
-              data-testid="picture"
+              data-testid="account_picture"
               value={picture}
               onChange={this.handleChange}
             />
@@ -89,7 +89,7 @@ class Account extends Component {
           <textarea
             value={bio}
             id="bio"
-            data-testid="bio"
+            data-testid="account_bio"
             onChange={this.handleChange}
             placeholder={
               name.first ? `About ${name.first}...` : `About ${email}...`

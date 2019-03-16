@@ -29,10 +29,16 @@ class AddRecord extends Component {
     return (
       <div>
         <SectionHeader first="Add" last="Record" />
-        {cover ? <Badge src={cover} alt={title} margin="left" /> : null}
+        <Badge
+          data-testid="addRecord_badge"
+          src={cover ? cover : '../static/img/placeholder.png'}
+          alt={title ? title : 'Album Artwork'}
+          margin="left"
+        />
         <Form onSubmit={this.handleSubmit}>
           <label htmlFor="title">
             <input
+              data-testid="addRecord_title"
               type="text"
               id="title"
               value={title}
@@ -44,6 +50,7 @@ class AddRecord extends Component {
 
           <label htmlFor="artist">
             <input
+              data-testid="addRecord_artist"
               type="text"
               id="artist"
               value={artist}
@@ -55,6 +62,7 @@ class AddRecord extends Component {
 
           <label htmlFor="cover">
             <input
+              data-testid="addRecord_cover"
               type="text"
               id="cover"
               value={cover}
@@ -64,7 +72,11 @@ class AddRecord extends Component {
             <p>Album Cover URL</p>
           </label>
 
-          <input type="submit" value="Add Record" />
+          <input
+            type="submit"
+            value="Add Record"
+            data-testid="addRecord_submit"
+          />
         </Form>
       </div>
     );
@@ -72,9 +84,6 @@ class AddRecord extends Component {
 }
 
 AddRecord.propTypes = {
-  page: PropTypes.string.isRequired,
-  user: PropTypes.object.isRequired,
-  changePage: PropTypes.func.isRequired,
   createRecord: PropTypes.func.isRequired
 };
 

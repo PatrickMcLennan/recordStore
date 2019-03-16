@@ -103,14 +103,7 @@ class Home extends Component {
     } else if (page === 'account') {
       return <Account user={user} editUser={this.editUser} />;
     } else if (page === 'add') {
-      return (
-        <AddRecord
-          page={page}
-          user={user}
-          changePage={this.changePage}
-          createRecord={this.createRecord}
-        />
-      );
+      return <AddRecord createRecord={this.createRecord} />;
     }
   };
 
