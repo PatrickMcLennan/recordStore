@@ -837,13 +837,13 @@ function (_Component) {
           lineNumber: 31
         },
         __self: this
-      }, "what are you listening to?")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
+      }, "what are you listening to?")), user && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 35
         },
         __self: this
-      }, user && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         "data-testid": "nav_signOut",
         className: open ? 'opened' : 'closed',
         style: {
@@ -899,7 +899,7 @@ function (_Component) {
           lineNumber: 57
         },
         __self: this
-      }, "+"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_styles_UserBadge_styles__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      }, "+")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_styles_UserBadge_styles__WEBPACK_IMPORTED_MODULE_10__["default"], {
         "data-testid": "nav_badge",
         src: user && user.picture ? user.picture : '../static/img/placeholder.png',
         alt: user && user.name.first ? user.name.picture : 'User Picture',
@@ -911,10 +911,10 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 65
         },
         __self: this
-      }), open && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Loader__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      })), open && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Loader__WEBPACK_IMPORTED_MODULE_11__["default"], {
         onClick: function onClick() {
           return _this2.setState({
             open: !open
@@ -2407,7 +2407,7 @@ function (_Component) {
       var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
       /*#__PURE__*/
       _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(id) {
-        var deleteRecord, user;
+        var deleteRecord;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -2417,13 +2417,11 @@ function (_Component) {
                 return deleteRecord(id);
 
               case 3:
-                user = _context.sent;
-
                 _this.setState({
-                  records: user.records
+                  records: _this.props.user.records
                 });
 
-              case 5:
+              case 4:
               case "end":
                 return _context.stop();
             }
@@ -2532,7 +2530,7 @@ __webpack_require__.r(__webpack_exports__);
 var Backdrop = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "Loaderstyles__Backdrop",
   componentId: "sc-134611k-0"
-})(["background-color:rgba(0,0,0,0.4);position:fixed;top:0;left:0;bottom:0;right:0;z-index:9;"]);
+})(["background-color:rgba(0,0,0,0.6);position:fixed;top:0;left:0;bottom:0;right:0;z-index:9;"]);
 /* harmony default export */ __webpack_exports__["default"] = (Backdrop);
 
 /***/ }),
@@ -4146,10 +4144,8 @@ function (_Component) {
 
               case 3:
                 user = _context4.sent;
-
-                _this.editUser(user);
-
-                return _context4.abrupt("return", user);
+                _context4.next = 6;
+                return _this.editUser(user);
 
               case 6:
               case "end":
@@ -4173,7 +4169,7 @@ function (_Component) {
           loaded: _this.loaded,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 92
+            lineNumber: 91
           },
           __self: this
         });
@@ -4185,7 +4181,7 @@ function (_Component) {
           deleteRecord: _this.deleteRecord,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 95
+            lineNumber: 94
           },
           __self: this
         });
@@ -4195,7 +4191,7 @@ function (_Component) {
           editUser: _this.editUser,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 103
+            lineNumber: 102
           },
           __self: this
         });
@@ -4204,7 +4200,7 @@ function (_Component) {
           createRecord: _this.createRecord,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 105
+            lineNumber: 104
           },
           __self: this
         });
@@ -4226,19 +4222,19 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 112
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["GlobalStyle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 113
         },
         __self: this
       }), loading && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Loader__WEBPACK_IMPORTED_MODULE_19__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 114
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Nav__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -4247,32 +4243,32 @@ function (_Component) {
         logout: this.logout,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 115
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_10__["ThemeProvider"], {
         theme: _components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["theme"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 120
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["Content"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122
+          lineNumber: 121
         },
         __self: this
       }, this.renderPage(page), error && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_20__["VinylErrorSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124
+          lineNumber: 123
         },
         __self: this
       }), success && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_20__["VinylSuccessSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
+          lineNumber: 124
         },
         __self: this
       }))));

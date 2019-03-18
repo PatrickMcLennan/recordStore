@@ -112,13 +112,13 @@ function (_Component) {
           lineNumber: 31
         },
         __self: this
-      }, "what are you listening to?")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
+      }, "what are you listening to?")), user && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 35
         },
         __self: this
-      }, user && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         "data-testid": "nav_signOut",
         className: open ? 'opened' : 'closed',
         style: {
@@ -174,7 +174,7 @@ function (_Component) {
           lineNumber: 57
         },
         __self: this
-      }, "+"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_styles_UserBadge_styles__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      }, "+")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_styles_UserBadge_styles__WEBPACK_IMPORTED_MODULE_10__["default"], {
         "data-testid": "nav_badge",
         src: user && user.picture ? user.picture : '../static/img/placeholder.png',
         alt: user && user.name.first ? user.name.picture : 'User Picture',
@@ -186,10 +186,10 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 65
         },
         __self: this
-      }), open && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Loader__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      })), open && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Loader__WEBPACK_IMPORTED_MODULE_11__["default"], {
         onClick: function onClick() {
           return _this2.setState({
             open: !open
@@ -217,4 +217,4 @@ Nav.propTypes = {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.8cc7485b44b977ecd20e.hot-update.js.map
+//# sourceMappingURL=index.js.478ff45ac6cc77e94f87.hot-update.js.map

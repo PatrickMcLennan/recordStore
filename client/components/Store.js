@@ -26,8 +26,8 @@ class Store extends Component {
 
   updateStore = async id => {
     const { deleteRecord } = this.props;
-    const user = await deleteRecord(id);
-    this.setState({ records: user.records });
+    await deleteRecord(id);
+    this.setState({ records: this.props.user.records });
   };
 
   render() {

@@ -28,7 +28,7 @@ const renderStore = ({ page, loaded, user, deleteRecord }) =>
   );
 
 test('<Store />', async () => {
-  const { getByTestId, queryAllByTestId } = renderStore({
+  const { queryAllByTestId } = renderStore({
     page,
     loaded,
     deleteRecord,
@@ -38,10 +38,13 @@ test('<Store />', async () => {
 
   const storeRecords = queryAllByTestId('record');
   expect(storeRecords.length).toBe(user.records.length);
-  const garbageSVG = storeRecords[0].querySelector('svg');
 
+  const garbageSVG = storeRecords[0].querySelector('svg');
   fireEvent.click(garbageSVG);
+
   await wait(() => {
+    expect(deleteRecord).toBeCalledTimes(1);
     expect(deleteRecord).toBeCalledWith(user.records[0].id);
+    expect(storeRecords.length).toBe(user.records.length);
   });
 });

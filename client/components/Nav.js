@@ -30,9 +30,9 @@ class Nav extends Component {
           <h1>recordStore</h1>
           <h2>what are you listening to?</h2>
         </div>
-        <ul>
-          {user && (
-            <>
+        {user && (
+          <>
+            <ul>
               <li
                 data-testid="nav_signOut"
                 className={open ? 'opened' : 'closed'}
@@ -61,20 +61,20 @@ class Nav extends Component {
                 onClick={() => this.followLink('add')}>
                 +
               </li>
-            </>
-          )}
-        </ul>
-        <Badge
-          data-testid="nav_badge"
-          src={
-            user && user.picture
-              ? user.picture
-              : '../static/img/placeholder.png'
-          }
-          alt={user && user.name.first ? user.name.picture : 'User Picture'}
-          margin="right"
-          onClick={() => this.setState({ open: !open })}
-        />
+            </ul>
+            <Badge
+              data-testid="nav_badge"
+              src={
+                user && user.picture
+                  ? user.picture
+                  : '../static/img/placeholder.png'
+              }
+              alt={user && user.name.first ? user.name.picture : 'User Picture'}
+              margin="right"
+              onClick={() => this.setState({ open: !open })}
+            />
+          </>
+        )}
         {open && <Loader onClick={() => this.setState({ open: !open })} />}
       </NavBar>
     );
