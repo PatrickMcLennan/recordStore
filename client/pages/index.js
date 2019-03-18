@@ -96,7 +96,6 @@ class Home extends Component {
           page={page}
           loaded={this.loaded}
           user={user}
-          changePage={this.changePage}
           deleteRecord={this.deleteRecord}
         />
       );
@@ -118,7 +117,6 @@ class Home extends Component {
           user={user.email ? user : null}
           changePage={this.changePage}
           logout={this.logout}
-          page={page}
         />
         <ThemeProvider theme={theme}>
           <Content>

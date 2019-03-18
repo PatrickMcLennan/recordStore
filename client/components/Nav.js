@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import NavBar from './styles/Nav.styles';
 import PropTypes from 'prop-types';
 import Badge from './styles/UserBadge.styles';
-import Backdrop from './Loader';
+import Loader from './Loader';
 
 class Nav extends Component {
   state = {
@@ -22,7 +22,7 @@ class Nav extends Component {
   };
 
   render() {
-    const { user, page, changePage } = this.props;
+    const { user } = this.props;
     const { open } = this.state;
     return (
       <NavBar>
@@ -34,45 +34,48 @@ class Nav extends Component {
           {user && (
             <>
               <li
+                data-testid="nav_signOut"
                 className={open ? 'opened' : 'closed'}
                 style={{ transitionDelay: '0s' }}
-                onClick={() => this.logout()}
-                current={page === 'splash' ? '1' : '0'}>
+                onClick={() => this.logout()}>
                 Sign Out
               </li>
               <li
+                data-testid="nav_account"
                 className={open ? 'opened' : 'closed'}
                 style={{ transitionDelay: '.1s' }}
-                onClick={() => changePage('account')}
-                current={page === 'account' ? '1' : '0'}>
+                onClick={() => this.followLink('account')}>
                 Account
               </li>
               <li
+                data-testid="nav_myStore"
                 className={open ? 'opened' : 'closed'}
                 style={{ transitionDelay: '.2s' }}
-                onClick={() => changePage('store')}
-                current={page === 'store' ? '1' : '0'}>
+                onClick={() => this.followLink('store')}>
                 My Store
               </li>
               <li
+                data-testid="nav_addRecord"
                 className={open ? 'opened' : 'closed'}
                 style={{ transitionDelay: '.3s' }}
-                onClick={() => changePage('add')}
-                current={page === 'add' ? '1' : '0'}>
+                onClick={() => this.followLink('add')}>
                 +
               </li>
             </>
           )}
         </ul>
-        {user && (
-          <Badge
-            src={user.picture}
-            alt={user.name.first}
-            margin="right"
-            onClick={() => this.setState({ open: !open })}
-          />
-        )}
-        {open && <Backdrop onClick={() => this.setState({ open: !open })} />}
+        <Badge
+          data-testid="nav_badge"
+          src={
+            user && user.picture
+              ? user.picture
+              : '../static/img/placeholder.png'
+          }
+          alt={user && user.name.first ? user.name.picture : 'User Picture'}
+          margin="right"
+          onClick={() => this.setState({ open: !open })}
+        />
+        {open && <Loader onClick={() => this.setState({ open: !open })} />}
       </NavBar>
     );
   }
@@ -81,8 +84,7 @@ class Nav extends Component {
 Nav.propTypes = {
   user: PropTypes.object,
   changePage: PropTypes.func.isRequired,
-  logout: PropTypes.func.isRequired,
-  page: PropTypes.string.isRequired
+  logout: PropTypes.func.isRequired
 };
 
 export default Nav;

@@ -8,14 +8,21 @@ class Sort extends Component {
     const { show } = this.state;
     const { changeSort } = this.props;
     return (
-      <SortList>
-        <li show={show ? 1 : 0} onClick={() => this.setState({ show: !show })}>
+      <SortList data-testid="sort">
+        <li
+          data-testid="sort_button"
+          show={show ? 1 : 0}
+          onClick={() => this.setState({ show: !show })}>
           Sort
         </li>
         {show && (
           <>
-            <li onClick={() => changeSort('title')}>Album A - Z</li>
-            <li onClick={() => changeSort('artist')}>Artist A - Z</li>
+            <li data-testid="sort_album" onClick={() => changeSort('title')}>
+              Album A - Z
+            </li>
+            <li data-testid="sort_artist" onClick={() => changeSort('artist')}>
+              Artist A - Z
+            </li>
           </>
         )}
       </SortList>

@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 const SectionHeader = ({ first, last }) => (
   <Header>
-    <span>{first}</span>/<span>{last}</span>
+    <span data-testid="sectionHeader_first">{first}</span>/
+    <span data-testid="sectionHeader_last">{last}</span>
   </Header>
 );
 

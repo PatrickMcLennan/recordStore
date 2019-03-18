@@ -2,14 +2,14 @@ import React from 'react';
 import { render, fireEvent, cleanup, wait } from 'react-testing-library';
 import { ThemeProvider } from 'styled-components';
 import Account from '../Account';
-import { dummyPeople, dummyNewUser } from '../dummies';
+import { dummyPeople } from '../dummies';
 import { theme, Content } from '../styles/index.styles';
-
-afterEach(cleanup);
 
 const john = dummyPeople[0];
 const stacy = dummyPeople[1];
 const editUser = jest.fn(user => user);
+
+afterEach(cleanup);
 
 const renderAccount = ({ theme, user, editUser }) =>
   render(
@@ -20,7 +20,7 @@ const renderAccount = ({ theme, user, editUser }) =>
     </ThemeProvider>
   );
 
-test('<Account user="Full User" />', async () => {
+test('<Account />', async () => {
   const { getByTestId } = renderAccount({
     theme,
     user: john,
@@ -32,12 +32,14 @@ test('<Account user="Full User" />', async () => {
   const email = getByTestId('account_email');
   const picture = getByTestId('account_picture');
   const bio = getByTestId('account_bio');
+  const badge = getByTestId('account_badge');
 
-  expect(first.value).toBe('John');
-  expect(last.value).toBe('Doe');
-  expect(email.value).toBe('john@john.com');
-  expect(picture.value).toBe('Johns picture');
-  expect(bio.value).toBe("I'm John - I press records for a living!");
+  expect(first.value).toBe(john.name.first);
+  expect(last.value).toBe(john.name.last);
+  expect(email.value).toBe(john.email);
+  expect(picture.value).toBe(john.picture);
+  expect(bio.value).toBe(john.bio);
+  expect(badge.getAttribute('src')).toBe(john.picture);
 
   fireEvent.change(first, { target: { value: stacy.name.first } });
   fireEvent.change(last, { target: { value: stacy.name.last } });
@@ -49,51 +51,11 @@ test('<Account user="Full User" />', async () => {
 
   await wait(() => {
     expect(editUser).toHaveBeenCalledTimes(1);
-    expect(first.value).toBe('Stacy');
-    expect(last.value).toBe('Smith');
-    expect(email.value).toBe('stacy@stacy.com');
-    expect(picture.value).toBe('Stacys Picture');
-    expect(bio.value).toBe(
-      "Hi I'm Stacy and Pat guilt tripped me into using this site"
-    );
-  });
-});
-
-test('<Account user="New User" />', async () => {
-  const { getByTestId } = renderAccount({
-    theme,
-    user: dummyNewUser,
-    editUser
-  });
-  const form = getByTestId('account_form');
-  const first = getByTestId('account_first');
-  const last = getByTestId('account_last');
-  const email = getByTestId('account_email');
-  const picture = getByTestId('account_picture');
-  const bio = getByTestId('account_bio');
-
-  expect(first.value).toBe('');
-  expect(last.value).toBe('');
-  expect(email.value).toBe('new@new.com');
-  expect(picture.value).toBe('');
-  expect(bio.value).toBe('');
-
-  fireEvent.change(first, { target: { value: stacy.name.first } });
-  fireEvent.change(last, { target: { value: stacy.name.last } });
-  fireEvent.change(picture, { target: { value: stacy.picture } });
-  fireEvent.change(email, { target: { value: stacy.email } });
-  fireEvent.change(bio, { target: { value: stacy.bio } });
-
-  fireEvent.submit(form);
-
-  await wait(() => {
-    expect(editUser).toHaveBeenCalledTimes(2);
-    expect(first.value).toBe('Stacy');
-    expect(last.value).toBe('Smith');
-    expect(email.value).toBe('stacy@stacy.com');
-    expect(picture.value).toBe('Stacys Picture');
-    expect(bio.value).toBe(
-      "Hi I'm Stacy and Pat guilt tripped me into using this site"
-    );
+    expect(first.value).toBe(stacy.name.first);
+    expect(last.value).toBe(stacy.name.last);
+    expect(email.value).toBe(stacy.email);
+    expect(picture.value).toBe(stacy.picture);
+    expect(bio.value).toBe(stacy.bio);
+    expect(badge.getAttribute('src')).toBe(stacy.picture);
   });
 });

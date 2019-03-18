@@ -33,14 +33,12 @@ class Account extends Component {
     return (
       <div>
         <SectionHeader first="Edit" last="Account" />
-        {picture ? (
-          <Badge
-            src={picture}
-            alt={name.first}
-            margin="left"
-            data-testid="account_pic"
-          />
-        ) : null}
+        <Badge
+          src={picture ? picture : '../static/img/placeholder.png'}
+          alt={name.first ? name.first : 'User Picture'}
+          margin="left"
+          data-testid="account_badge"
+        />
         <Form onSubmit={this.handleSubmit} data-testid="account_form">
           <label htmlFor="firstName">
             <input

@@ -1,27 +1,24 @@
-export const dummyEmptyRecord = {
-  title: '',
-  artist: '',
-  cover: ''
-};
-
 export const dummyRecords = [
   {
     artist: 'Blink 182',
     title: 'Take Off your Pants and Jacket',
     cover:
-      'https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Blink-182_-_Take_Off_Your_Pants_and_Jacket_cover.jpg/220px-Blink-182_-_Take_Off_Your_Pants_and_Jacket_cover.jpg'
+      'https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Blink-182_-_Take_Off_Your_Pants_and_Jacket_cover.jpg/220px-Blink-182_-_Take_Off_Your_Pants_and_Jacket_cover.jpg',
+    id: 'blink id'
   },
   {
     artist: 'Johnny Cash',
     title: 'Out Among the Stars',
     cover:
-      'https://upload.wikimedia.org/wikipedia/en/thumb/1/19/Johnny_Cash_-_Out_Among_the_Stars.jpg/220px-Johnny_Cash_-_Out_Among_the_Stars.jpg'
+      'https://upload.wikimedia.org/wikipedia/en/thumb/1/19/Johnny_Cash_-_Out_Among_the_Stars.jpg/220px-Johnny_Cash_-_Out_Among_the_Stars.jpg',
+    id: 'cash id'
   },
   {
     artist: 'Dance Gavin Dance',
     title: 'Mothership',
     cover:
-      'https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/DGD_Mothership.jpeg/220px-DGD_Mothership.jpeg'
+      'https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/DGD_Mothership.jpeg/220px-DGD_Mothership.jpeg',
+    id: 'dance id'
   }
 ];
 

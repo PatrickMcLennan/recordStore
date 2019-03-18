@@ -61,7 +61,6 @@ Store.propTypes = {
   page: PropTypes.string.isRequired,
   loaded: PropTypes.func.isRequired,
   user: PropTypes.object.isRequired,
-  changePage: PropTypes.func.isRequired,
   deleteRecord: PropTypes.func.isRequired
 };
 

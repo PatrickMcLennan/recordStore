@@ -50,24 +50,23 @@ class Splash extends Component {
       <Section>
         <div>
           <VinylPrimarySVG />
-          <h3>Welcome to recordStore</h3>
+          <h3 data-testid="splash_heading">Welcome to recordStore</h3>
           <p>
             recordStore is a digital library for you to upload your record
-            collection.  Enter your email &amp; a password to get started.
+            collection. Enter your email &amp; a password to get started.
           </p>
-          <p>
-            Made by Patrick McLennan
-          </p>
-          <div>
+          <p>Made by Patrick McLennan</p>
+          <div data-testid="splash_socialSVGs">
             <GithubSVG />
             <LinkedInSVG />
           </div>
         </div>
-        <Form onSubmit={this.handleSubmit}>
-          <SectionHeader first="Log In" last="Register" />
 
+        <Form data-testid="splash_form" onSubmit={this.handleSubmit}>
+          <SectionHeader first="Log In" last="Register" />
           <label htmlFor="email">
             <input
+              data-testid="splash_email"
               value={email}
               type="email"
               required
@@ -79,6 +78,7 @@ class Splash extends Component {
 
           <label htmlFor="password">
             <input
+              data-testid="splash_password"
               value={password}
               type="password"
               required
@@ -94,7 +94,7 @@ class Splash extends Component {
             onChange={() => this.setState({ register: !register })}
             id="register"
           />
-          <label htmlFor="register">
+          <label data-testid="splash_registerLabel" htmlFor="register">
             <p>Register This Email</p>
           </label>
 
@@ -105,7 +105,7 @@ class Splash extends Component {
             onChange={() => this.setState({ remember: !remember })}
             id="remember"
           />
-          <label htmlFor="remember">
+          <label data-testid="splash_rememberLabel" htmlFor="remember">
             <p>Remember Me</p>
           </label>
 
