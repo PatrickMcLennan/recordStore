@@ -36,7 +36,7 @@ export const Vinyl = styled.svg`
   fill: rgba(255, 255, 255, 0.25);
   height: 10rem;
   margin-bottom: 5vh;
-  animation: ${rotate} 10s linear infinite;
+  animation: ${rotate} 15s linear infinite;
   z-index: 10;
 `;
 
@@ -72,4 +72,4 @@ export const Social = styled.svg`
   stroke: ${({ theme: { colors } }) => colors.whitePrimary};
   fill: rgba(255, 255, 255, 0.75);
   height: 7.5rem;
-`
+`;

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1552999549091" clover="3.2.0">
-  <project timestamp="1552999549091" name="All files">
-    <metrics statements="165" coveredstatements="151" conditionals="56" coveredconditionals="33" methods="84" coveredmethods="74" elements="305" coveredelements="258" complexity="0" loc="165" ncloc="165" packages="2" files="23" classes="23"/>
+<coverage generated="1553022800313" clover="3.2.0">
+  <project timestamp="1553022800313" name="All files">
+    <metrics statements="186" coveredstatements="167" conditionals="77" coveredconditionals="47" methods="93" coveredmethods="81" elements="356" coveredelements="295" complexity="0" loc="186" ncloc="186" packages="2" files="25" classes="25"/>
     <package name="components">
-      <metrics statements="99" coveredstatements="87" conditionals="49" coveredconditionals="28" methods="42" coveredmethods="34"/>
+      <metrics statements="117" coveredstatements="99" conditionals="70" coveredconditionals="41" methods="49" coveredmethods="38"/>
       <file name="Account.js" path="/Users/patrickmclennan/Documents/record_store/client/components/Account.js">
         <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="4"/>
         <line num="13" count="2" type="stmt"/>
@@ -36,62 +36,83 @@
         <line num="6" count="0" type="stmt"/>
       </file>
       <file name="Nav.js" path="/Users/patrickmclennan/Documents/record_store/client/components/Nav.js">
-        <metrics statements="16" coveredstatements="14" conditionals="20" coveredconditionals="13" methods="9" coveredmethods="7"/>
+        <metrics statements="17" coveredstatements="14" conditionals="22" coveredconditionals="14" methods="10" coveredmethods="7"/>
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="25" count="5" type="stmt"/>
-        <line num="26" count="5" type="stmt"/>
-        <line num="27" count="5" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="27" count="6" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-        <line num="54" count="1" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
         <line num="61" count="1" type="stmt"/>
-        <line num="74" count="0" type="stmt"/>
-        <line num="78" count="0" type="cond" truecount="1" falsecount="1"/>
-        <line num="84" count="1" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="85" count="0" type="cond" truecount="1" falsecount="1"/>
+        <line num="91" count="1" type="stmt"/>
       </file>
       <file name="Record.js" path="/Users/patrickmclennan/Documents/record_store/client/components/Record.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="5" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
       </file>
       <file name="SVGs.js" path="/Users/patrickmclennan/Documents/record_store/client/components/SVGs.js">
         <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="5"/>
-        <line num="10" count="3" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
         <line num="11" count="4" type="stmt"/>
-        <line num="44" count="3" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
-        <line num="78" count="3" type="stmt"/>
+        <line num="78" count="4" type="stmt"/>
         <line num="79" count="0" type="stmt"/>
-        <line num="112" count="3" type="stmt"/>
+        <line num="112" count="4" type="stmt"/>
         <line num="113" count="5" type="stmt"/>
         <line num="115" count="2" type="stmt"/>
-        <line num="147" count="3" type="stmt"/>
-        <line num="152" count="3" type="stmt"/>
+        <line num="147" count="4" type="stmt"/>
+        <line num="152" count="4" type="stmt"/>
         <line num="153" count="4" type="stmt"/>
-        <line num="163" count="3" type="stmt"/>
+        <line num="163" count="4" type="stmt"/>
         <line num="164" count="4" type="stmt"/>
+      </file>
+      <file name="Search.js" path="/Users/patrickmclennan/Documents/record_store/client/components/Search.js">
+        <metrics statements="17" coveredstatements="12" conditionals="17" coveredconditionals="10" methods="6" coveredmethods="4"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
+        <line num="48" count="3" type="stmt"/>
+        <line num="88" count="1" type="stmt"/>
+        <line num="108" count="1" type="stmt"/>
       </file>
       <file name="SectionHeader.js" path="/Users/patrickmclennan/Documents/record_store/client/components/SectionHeader.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="5" type="stmt"/>
-        <line num="5" count="18" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="21" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
       </file>
       <file name="Sort.js" path="/Users/patrickmclennan/Documents/record_store/client/components/Sort.js">
         <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
-        <line num="8" count="5" type="stmt"/>
-        <line num="9" count="5" type="stmt"/>
-        <line num="10" count="5" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="9" count="8" type="stmt"/>
+        <line num="10" count="8" type="stmt"/>
         <line num="15" count="2" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
       </file>
       <file name="Splash.js" path="/Users/patrickmclennan/Documents/record_store/client/components/Splash.js">
         <metrics statements="18" coveredstatements="15" conditionals="8" coveredconditionals="2" methods="6" coveredmethods="5"/>
@@ -128,17 +149,17 @@
         <line num="34" count="2" type="stmt"/>
         <line num="35" count="2" type="stmt"/>
         <line num="42" count="4" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
       </file>
       <file name="dummies.js" path="/Users/patrickmclennan/Documents/record_store/client/components/dummies.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="25" count="5" type="stmt"/>
-        <line num="36" count="5" type="stmt"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
       </file>
     </package>
     <package name="components.styles">
-      <metrics statements="66" coveredstatements="64" conditionals="7" coveredconditionals="5" methods="42" coveredmethods="40"/>
+      <metrics statements="69" coveredstatements="68" conditionals="7" coveredconditionals="6" methods="44" coveredmethods="43"/>
       <file name="Loader.styles.js" path="/Users/patrickmclennan/Documents/record_store/client/components/styles/Loader.styles.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="3" count="1" type="stmt"/>
@@ -146,44 +167,44 @@
       <file name="Nav.styles.js" path="/Users/patrickmclennan/Documents/record_store/client/components/styles/Nav.styles.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="57" count="10" type="stmt"/>
-        <line num="78" count="10" type="stmt"/>
+        <line num="57" count="12" type="stmt"/>
+        <line num="78" count="12" type="stmt"/>
       </file>
       <file name="Record.styles.js" path="/Users/patrickmclennan/Documents/record_store/client/components/styles/Record.styles.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="22" count="10" type="stmt"/>
-        <line num="26" count="10" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
+        <line num="26" count="12" type="stmt"/>
       </file>
       <file name="SVG.styles.js" path="/Users/patrickmclennan/Documents/record_store/client/components/styles/SVG.styles.js">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="34" count="3" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
         <line num="35" count="8" type="stmt"/>
-        <line num="43" count="3" type="stmt"/>
-        <line num="50" count="3" type="stmt"/>
-        <line num="55" count="3" type="stmt"/>
-        <line num="60" count="3" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="55" count="4" type="stmt"/>
+        <line num="60" count="4" type="stmt"/>
         <line num="61" count="10" type="stmt"/>
-        <line num="71" count="3" type="stmt"/>
+        <line num="71" count="4" type="stmt"/>
         <line num="72" count="16" type="stmt"/>
       </file>
       <file name="SectionHeader.styles.js" path="/Users/patrickmclennan/Documents/record_store/client/components/styles/SectionHeader.styles.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="5" type="stmt"/>
-        <line num="11" count="36" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="11" count="42" type="stmt"/>
       </file>
       <file name="Sort.styles.js" path="/Users/patrickmclennan/Documents/record_store/client/components/styles/Sort.styles.js">
         <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="6"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="7" count="10" type="stmt"/>
-        <line num="17" count="10" type="stmt"/>
-        <line num="19" count="10" type="stmt"/>
-        <line num="23" count="10" type="cond" truecount="1" falsecount="1"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="7" count="16" type="stmt"/>
+        <line num="17" count="16" type="stmt"/>
+        <line num="19" count="16" type="stmt"/>
+        <line num="23" count="16" type="cond" truecount="1" falsecount="1"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="25" count="10" type="stmt"/>
-        <line num="43" count="10" type="stmt"/>
+        <line num="25" count="16" type="stmt"/>
+        <line num="43" count="16" type="stmt"/>
       </file>
       <file name="Splash.styles.js" path="/Users/patrickmclennan/Documents/record_store/client/components/styles/Splash.styles.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
@@ -193,53 +214,59 @@
         <line num="26" count="8" type="stmt"/>
       </file>
       <file name="Store.styles.js" path="/Users/patrickmclennan/Documents/record_store/client/components/styles/Store.styles.js">
-        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
       </file>
       <file name="UserBadge.styles.js" path="/Users/patrickmclennan/Documents/record_store/client/components/styles/UserBadge.styles.js">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="13" count="32" type="cond" truecount="2" falsecount="0"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="13" count="36" type="cond" truecount="2" falsecount="0"/>
       </file>
       <file name="form.styles.js" path="/Users/patrickmclennan/Documents/record_store/client/components/styles/form.styles.js">
         <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="19" coveredmethods="19"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="6" count="30" type="stmt"/>
-        <line num="14" count="30" type="stmt"/>
-        <line num="24" count="30" type="stmt"/>
-        <line num="25" count="30" type="stmt"/>
-        <line num="26" count="30" type="stmt"/>
-        <line num="31" count="30" type="stmt"/>
-        <line num="47" count="30" type="stmt"/>
-        <line num="48" count="30" type="stmt"/>
-        <line num="54" count="30" type="stmt"/>
-        <line num="58" count="30" type="stmt"/>
-        <line num="71" count="30" type="stmt"/>
-        <line num="89" count="30" type="stmt"/>
-        <line num="96" count="30" type="stmt"/>
-        <line num="97" count="30" type="stmt"/>
-        <line num="104" count="30" type="stmt"/>
-        <line num="105" count="30" type="stmt"/>
-        <line num="112" count="30" type="stmt"/>
-        <line num="124" count="30" type="stmt"/>
-        <line num="125" count="30" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="6" count="36" type="stmt"/>
+        <line num="14" count="36" type="stmt"/>
+        <line num="24" count="36" type="stmt"/>
+        <line num="25" count="36" type="stmt"/>
+        <line num="26" count="36" type="stmt"/>
+        <line num="31" count="36" type="stmt"/>
+        <line num="47" count="36" type="stmt"/>
+        <line num="48" count="36" type="stmt"/>
+        <line num="54" count="36" type="stmt"/>
+        <line num="58" count="36" type="stmt"/>
+        <line num="71" count="36" type="stmt"/>
+        <line num="89" count="36" type="stmt"/>
+        <line num="96" count="36" type="stmt"/>
+        <line num="97" count="36" type="stmt"/>
+        <line num="104" count="36" type="stmt"/>
+        <line num="105" count="36" type="stmt"/>
+        <line num="112" count="36" type="stmt"/>
+        <line num="124" count="36" type="stmt"/>
+        <line num="125" count="36" type="stmt"/>
       </file>
       <file name="index.styles.js" path="/Users/patrickmclennan/Documents/record_store/client/components/styles/index.styles.js">
-        <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="52" count="7" type="stmt"/>
-        <line num="59" count="66" type="stmt"/>
-        <line num="84" count="7" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="52" count="8" type="stmt"/>
+        <line num="59" count="82" type="stmt"/>
+        <line num="84" count="8" type="stmt"/>
       </file>
       <file name="queries.js" path="/Users/patrickmclennan/Documents/record_store/client/components/styles/queries.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="3" count="8" type="stmt"/>
-        <line num="15" count="8" type="stmt"/>
-        <line num="16" count="72" type="stmt"/>
-        <line num="19" count="19" type="stmt"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="16" count="81" type="stmt"/>
+        <line num="19" count="22" type="stmt"/>
+      </file>
+      <file name="userProfile.styles.js" path="/Users/patrickmclennan/Documents/record_store/client/components/styles/userProfile.styles.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
       </file>
     </package>
   </project>

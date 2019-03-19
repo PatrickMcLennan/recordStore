@@ -35,7 +35,7 @@ const NavBar = styled.nav`
 
   ul {
     display: flex;
-    ${media.ten`
+    ${media.eleven`
       flex-direction: column;
       position: absolute;
       top: 100%;
@@ -55,11 +55,12 @@ const NavBar = styled.nav`
     transform-style: preserve-3d;
     transform-origin: 100%;
     transition-delay: ${props => props.delay};
-    ${media.ten`
+    perspective: 100rem;
+    ${media.eleven`
       text-align: right;
 
       &.closed {
-        transform: rotateY(90deg) translateY(50%);
+        transform: rotateY(90deg) translateY(75%);
         opacity: 0;
       }
       &.opened {
@@ -98,7 +99,7 @@ const NavBar = styled.nav`
 
   img {
     display: none;
-    ${media.ten`
+    ${media.eleven`
       display: inline-block;
       cursor: pointer;
     `}

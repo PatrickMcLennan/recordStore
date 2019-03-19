@@ -228,6 +228,7 @@ function (_Component) {
         value: bio,
         id: "bio",
         "data-testid": "account_bio",
+        maxLength: "50",
         onChange: this.handleChange,
         placeholder: name.first ? "About ".concat(name.first, "...") : "About ".concat(email, "..."),
         __source: {
@@ -241,7 +242,7 @@ function (_Component) {
         value: "Save Changes",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 98
         },
         __self: this
       })));
@@ -820,11 +821,13 @@ function (_Component) {
           lineNumber: 64
         },
         __self: this
-      }, "+")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_styles_UserBadge_styles__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      }, "Add Record")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_styles_UserBadge_styles__WEBPACK_IMPORTED_MODULE_10__["default"], {
         "data-testid": "nav_badge",
         src: user && user.picture ? user.picture : '../static/img/placeholder.png',
         alt: user && user.name.first ? user.name.picture : 'User Picture',
-        margin: "right",
+        style: {
+          margin: '0 0 0 auto'
+        },
         onClick: function onClick() {
           return _this2.setState({
             open: !open
@@ -1751,8 +1754,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Record__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Record */ "./components/Record.js");
 /* harmony import */ var _Sort__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Sort */ "./components/Sort.js");
 /* harmony import */ var _styles_form_styles__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./styles/form.styles */ "./components/styles/form.styles.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _styles_userProfile_styles__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./styles/userProfile.styles */ "./components/styles/userProfile.styles.js");
+/* harmony import */ var _styles_UserBadge_styles_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./styles/UserBadge.styles.js */ "./components/styles/UserBadge.styles.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_17__);
 
 
 
@@ -1763,6 +1768,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/patrickmclennan/Documents/record_store/client/components/Search.js";
+
+
 
 
 
@@ -1791,13 +1798,13 @@ function (_Component) {
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "state", {
       search: '',
-      searchedUser: {},
-      sort: 'artist'
+      sort: 'artist',
+      searchedUser: {}
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "changeSort", function () {
       var property = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'artist';
-      var records = _this.state.records;
+      var records = _this.state.searchedUser.records;
       var sortedRecords = records.sort(function (a, b) {
         return a[property].toLowerCase() > b[property].toLowerCase() ? 1 : -1;
       });
@@ -1829,17 +1836,32 @@ function (_Component) {
               case 0:
                 searchRecords = _this.props.searchRecords;
                 e.preventDefault();
-                _context.next = 4;
-                return searchRecords(_this.state.search);
+
+                if (!(_this.state.search === '')) {
+                  _context.next = 4;
+                  break;
+                }
+
+                return _context.abrupt("return", null);
 
               case 4:
-                searchedUser = _context.sent;
-
-                _this.setState({
-                  records: searchedUser.records
-                });
+                _context.next = 6;
+                return searchRecords(_this.state.search);
 
               case 6:
+                searchedUser = _context.sent;
+
+                if (searchedUser === null) {
+                  _this.setState({
+                    search: ''
+                  });
+                } else if (searchedUser.email) {
+                  _this.setState({
+                    searchedUser: searchedUser
+                  });
+                }
+
+              case 8:
               case "end":
                 return _context.stop();
             }
@@ -1860,22 +1882,25 @@ function (_Component) {
     value: function render() {
       var _this$state = this.state,
           search = _this$state.search,
-          searchedUser = _this$state.searchedUser,
-          records = _this$state.records;
+          searchedUser = _this$state.searchedUser;
+      var records = searchedUser.records,
+          name = searchedUser.name,
+          email = searchedUser.email,
+          picture = searchedUser.picture,
+          bio = searchedUser.bio;
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_SectionHeader__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        "data-testid": "search_header",
-        first: "Find",
-        last: "Stores",
+        first: records ? "".concat(name.first, "'s") || false : 'Find',
+        last: "Store",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 54
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_Sort__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }), records && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_Sort__WEBPACK_IMPORTED_MODULE_13__["default"], {
         changeSort: this.changeSort,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 58
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_styles_form_styles__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -1883,7 +1908,7 @@ function (_Component) {
         onSubmit: this.handleSubmit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 59
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
@@ -1893,7 +1918,7 @@ function (_Component) {
         onChange: this.handleChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 60
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
@@ -1901,17 +1926,54 @@ function (_Component) {
         value: "search",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 66
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_styles_Store_styles__WEBPACK_IMPORTED_MODULE_11__["RecordGrid"], {
         "data-testid": "search_recordGrid",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 68
         },
         __self: this
-      }, records ? records.map(function (record) {
+      }, email && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_styles_userProfile_styles__WEBPACK_IMPORTED_MODULE_15__["default"], {
+        "data-testid": "search_userProfile",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 70
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_styles_UserBadge_styles_js__WEBPACK_IMPORTED_MODULE_16__["default"], {
+        src: picture ? picture : '../static/img/placeholder.png',
+        alt: name.first ? name.first : email,
+        margin: "left",
+        "data-testid": "search_badge",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("figcaption", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h6", {
+        "data-testid": "search_name",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
+        },
+        __self: this
+      }, name.first, " ", name.last), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h6", {
+        "data-testid": "search_bio",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      }, bio))), records ? records.map(function (record) {
         return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_Record__WEBPACK_IMPORTED_MODULE_12__["default"], {
           artist: record.artist,
           title: record.title,
@@ -1921,7 +1983,7 @@ function (_Component) {
           showGarbage: false,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 58
+            lineNumber: 87
           },
           __self: this
         });
@@ -1929,7 +1991,7 @@ function (_Component) {
         "data-testid": "search_addHeader",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 97
         },
         __self: this
       }, "Search for stores by email")));
@@ -1940,7 +2002,7 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_9__["Component"]);
 
 Search.propTypes = {
-  searchRecords: prop_types__WEBPACK_IMPORTED_MODULE_15___default.a.func.isRequired
+  searchRecords: prop_types__WEBPACK_IMPORTED_MODULE_17___default.a.func.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Search);
 
@@ -2609,7 +2671,7 @@ function (_Component) {
           lineNumber: 37
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_Sort__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      }), records && react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_Sort__WEBPACK_IMPORTED_MODULE_14__["default"], {
         changeSort: this.changeSort,
         __source: {
           fileName: _jsxFileName,
@@ -2674,7 +2736,7 @@ __webpack_require__.r(__webpack_exports__);
 var Backdrop = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "Loaderstyles__Backdrop",
   componentId: "sc-134611k-0"
-})(["background-color:rgba(0,0,0,0.6);position:fixed;top:0;left:0;bottom:0;right:0;z-index:9;"]);
+})(["background-color:rgba(0,0,0,0.75);position:fixed;top:0;left:0;bottom:0;right:0;z-index:9;"]);
 /* harmony default export */ __webpack_exports__["default"] = (Backdrop);
 
 /***/ }),
@@ -2724,7 +2786,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      text-align: right;\n\n      &.closed {\n        transform: rotateY(90deg) translateY(50%);\n        opacity: 0;\n      }\n      &.opened {\n        transform: rotateY(0) translateY(0);\n        opacity: 1;\n      }\n    "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      text-align: right;\n\n      &.closed {\n        transform: rotateY(90deg) translateY(75%);\n        opacity: 0;\n      }\n      &.opened {\n        transform: rotateY(0) translateY(0);\n        opacity: 1;\n      }\n    "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -2748,11 +2810,11 @@ function _templateObject() {
 var NavBar = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].nav.withConfig({
   displayName: "Navstyles__NavBar",
   componentId: "qlkqud-0"
-})(["position:relative;grid-row-start:1;grid-row-end:2;height:100%;display:flex;justify-content:space-between;align-items:center;padding:0 2.5vw 2.5vh 2.5vw;div{text-align:center;h1,h2{font-weight:100;letter-spacing:0.3rem;}h1{font-size:5rem;&::after{content:'';display:block;height:1px;background:white;width:80%;margin:0.5vh auto;}}}ul{display:flex;", "}li{cursor:pointer;font-size:2rem;letter-spacing:0.25rem;padding:1rem 2rem;text-transform:uppercase;text-align:center;z-index:10;transition:all 0.4s ease-out;transform-style:preserve-3d;transform-origin:100%;transition-delay:", ";", " &::after{content:'';display:block;height:1px;background:white;width:80%;margin:0.5vh auto 0 auto;transition:all 0.3s ease-in-out;transform:scale(", ");", "}&:not(:first-child){margin-left:3.5rem;", "}&:hover{&::after{transform:scale(1);}}}img{display:none;", "}"], _queries__WEBPACK_IMPORTED_MODULE_2__["default"].ten(_templateObject()), function (props) {
+})(["position:relative;grid-row-start:1;grid-row-end:2;height:100%;display:flex;justify-content:space-between;align-items:center;padding:0 2.5vw 2.5vh 2.5vw;div{text-align:center;h1,h2{font-weight:100;letter-spacing:0.3rem;}h1{font-size:5rem;&::after{content:'';display:block;height:1px;background:white;width:80%;margin:0.5vh auto;}}}ul{display:flex;", "}li{cursor:pointer;font-size:2rem;letter-spacing:0.25rem;padding:1rem 2rem;text-transform:uppercase;text-align:center;z-index:10;transition:all 0.4s ease-out;transform-style:preserve-3d;transform-origin:100%;transition-delay:", ";perspective:100rem;", " &::after{content:'';display:block;height:1px;background:white;width:80%;margin:0.5vh auto 0 auto;transition:all 0.3s ease-in-out;transform:scale(", ");", "}&:not(:first-child){margin-left:3.5rem;", "}&:hover{&::after{transform:scale(1);}}}img{display:none;", "}"], _queries__WEBPACK_IMPORTED_MODULE_2__["default"].eleven(_templateObject()), function (props) {
   return props.delay;
-}, _queries__WEBPACK_IMPORTED_MODULE_2__["default"].ten(_templateObject2()), function (props) {
+}, _queries__WEBPACK_IMPORTED_MODULE_2__["default"].eleven(_templateObject2()), function (props) {
   return props.current;
-}, _queries__WEBPACK_IMPORTED_MODULE_2__["default"].ten(_templateObject3()), _queries__WEBPACK_IMPORTED_MODULE_2__["default"].ten(_templateObject4()), _queries__WEBPACK_IMPORTED_MODULE_2__["default"].ten(_templateObject5()));
+}, _queries__WEBPACK_IMPORTED_MODULE_2__["default"].ten(_templateObject3()), _queries__WEBPACK_IMPORTED_MODULE_2__["default"].ten(_templateObject4()), _queries__WEBPACK_IMPORTED_MODULE_2__["default"].eleven(_templateObject5()));
 /* harmony default export */ __webpack_exports__["default"] = (NavBar);
 
 /***/ }),
@@ -2803,7 +2865,7 @@ var showMsg = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["keyframes"]
 var Vinyl = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].svg.withConfig({
   displayName: "SVGstyles__Vinyl",
   componentId: "l14jxn-0"
-})(["stroke:", ";fill:rgba(255,255,255,0.25);height:10rem;margin-bottom:5vh;animation:", " 10s linear infinite;z-index:10;"], function (_ref) {
+})(["stroke:", ";fill:rgba(255,255,255,0.25);height:10rem;margin-bottom:5vh;animation:", " 15s linear infinite;z-index:10;"], function (_ref) {
   var colors = _ref.theme.colors;
   return colors.whitePrimary;
 }, rotate);
@@ -3037,7 +3099,7 @@ function _templateObject() {
 var Form = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].form.withConfig({
   displayName: "formstyles__Form",
   componentId: "sc-1ubmvyq-0"
-})(["padding:0 2.5vw;", ";label{width:100%;margin:4vh 0;position:relative;> *{", "}p{position:absolute;font-size:2rem;text-transform:uppercase;font-style:italic;top:1.5vh;left:2.5vw;color:", ";", ";", ";}&[for='register'],&[for='remember']{color:", ";font-style:normal;cursor:pointer;p{text-align:right;right:0;top:50%;transform:translateY(-50%);}&::before{content:'';display:block;height:3rem;width:3rem;border:1px solid ", ";", "}}}input{color:", ";padding:1vh;background:none;border:none;border-bottom:1px solid ", ";font-size:2.5rem;width:80%;margin:0 10%;&:not([type='submit']):active + p,&:not([type='submit']):focus + p,&:not([type='checkbox']):valid + p,&[type='checkbox']:checked + label p{font-size:1.75rem;font-style:normal;top:-2.5vh;left:10%;color:", ";letter-spacing:0.75rem;&::before,&::after{content:'';width:1px;height:110%;display:inline-block;background:white;position:absolute;top:0;left:0;left:-1vw;}}&[type='submit']{border:1px solid ", ";padding:0.75rem 3rem;cursor:pointer;font-weight:300;text-transform:uppercase;width:50%;margin:3.5vh 0;", ";", " ", " &:hover,&:active{color:", ";", "}}&[type='checkbox']{visibility:hidden;&:checked + label::before{", "}}}textarea{background:none;font-size:2rem;width:60%;height:6rem;margin:0 20%;line-height:1.3;", " color:", "}"], function (_ref) {
+})(["padding:0 2.5vw;", ";label{width:100%;margin:4vh 0;position:relative;> *{", "}p{position:absolute;font-size:2rem;text-transform:uppercase;font-style:italic;top:1.5vh;left:2.5vw;color:", ";", ";", ";}&[for='register'],&[for='remember']{color:", ";font-style:normal;cursor:pointer;p{text-align:right;right:0;top:50%;transform:translateY(-50%);}&::before{content:'';display:block;height:3rem;width:3rem;border:1px solid ", ";", "}}}input{color:", ";padding:1vh;background:none;border:none;border-bottom:1px solid ", ";font-size:2.5rem;width:80%;margin:0 10%;&:not([type='submit']):active + p,&:not([type='submit']):focus + p,&:not([type='checkbox']):valid + p,&[type='checkbox']:checked + label p{font-size:1.75rem;font-style:normal;top:-2.5vh;left:10%;color:", ";letter-spacing:0.75rem;&::before,&::after{content:'';width:1px;height:110%;display:inline-block;background:white;position:absolute;top:0;left:0;left:-1vw;}}&[type='submit']{border:1px solid ", ";padding:0.75rem 3rem;cursor:pointer;font-weight:300;text-transform:uppercase;width:50%;margin:3.5vh 0;", ";", " ", " &:hover,&:active{color:", ";", "}}&[type='checkbox']{visibility:hidden;&:checked + label::before{", "}}}textarea{background:none;text-align:center;font-size:2rem;width:60%;height:6rem;margin:0 20%;line-height:1.3;", " color:", "}"], function (_ref) {
   var flexin = _ref.theme.flexin;
   return flexin('space-around', 'center', 'column');
 }, function (_ref2) {
@@ -3213,6 +3275,37 @@ var media = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_
 
 /***/ }),
 
+/***/ "./components/styles/userProfile.styles.js":
+/*!*************************************************!*\
+  !*** ./components/styles/userProfile.styles.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var UserProfile = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].figure.withConfig({
+  displayName: "userProfilestyles__UserProfile",
+  componentId: "cwvird-0"
+})(["", ";color:", ";grid-area:1 / 1 / -1 / 2;justify-self:stretch;justify-content:space-evenly;figcaption{flex:1;", " h6{", ";font-size:2.5rem;font-weight:100;text-transform:uppercase;text-align:center;&:nth-of-type(2){font-weight:300;font-size:2rem;margin-top:1rem;text-transform:none;}}}"], function (_ref) {
+  var flexin = _ref.theme.flexin;
+  return flexin();
+}, function (_ref2) {
+  var colors = _ref2.theme.colors;
+  return colors.whitePrimary;
+}, function (_ref3) {
+  var flexin = _ref3.theme.flexin;
+  return flexin('space-evenly', 'center', 'column');
+}, function (_ref4) {
+  var typo = _ref4.theme.typo;
+  return typo.letterSpacingPrimary;
+});
+/* harmony default export */ __webpack_exports__["default"] = (UserProfile);
+
+/***/ }),
+
 /***/ "./firebase.js":
 /*!*********************!*\
   !*** ./firebase.js ***!
@@ -3379,6 +3472,7 @@ function () {
   var _ref6 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
   /*#__PURE__*/
   _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee4(email) {
+    var user;
     return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee4$(_context4) {
       while (1) {
         switch (_context4.prev = _context4.next) {
@@ -3387,9 +3481,10 @@ function () {
             return dbQuery(users, email);
 
           case 2:
-            return _context4.abrupt("return", _context4.sent);
+            user = _context4.sent;
+            return _context4.abrupt("return", user ? user : 'error');
 
-          case 3:
+          case 4:
           case "end":
             return _context4.stop();
         }
@@ -41289,9 +41384,25 @@ function (_Component) {
 
               case 2:
                 searchedUser = _context5.sent;
+
+                if (!searchedUser.email) {
+                  _context5.next = 7;
+                  break;
+                }
+
                 return _context5.abrupt("return", searchedUser);
 
-              case 4:
+              case 7:
+                if (!(searchedUser === 'error')) {
+                  _context5.next = 10;
+                  break;
+                }
+
+                _this.showMessage('error');
+
+                return _context5.abrupt("return", null);
+
+              case 10:
               case "end":
                 return _context5.stop();
             }
@@ -41313,7 +41424,7 @@ function (_Component) {
           loaded: _this.loaded,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 98
+            lineNumber: 103
           },
           __self: this
         });
@@ -41325,7 +41436,7 @@ function (_Component) {
           deleteRecord: _this.deleteRecord,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 101
+            lineNumber: 106
           },
           __self: this
         });
@@ -41335,7 +41446,7 @@ function (_Component) {
           editUser: _this.editUser,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 109
+            lineNumber: 114
           },
           __self: this
         });
@@ -41344,7 +41455,7 @@ function (_Component) {
           searchRecords: _this.searchRecords,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 111
+            lineNumber: 116
           },
           __self: this
         });
@@ -41353,7 +41464,7 @@ function (_Component) {
           createRecord: _this.createRecord,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 113
+            lineNumber: 118
           },
           __self: this
         });
@@ -41375,19 +41486,19 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 126
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["GlobalStyle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122
+          lineNumber: 127
         },
         __self: this
       }), loading && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Loader__WEBPACK_IMPORTED_MODULE_20__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 123
+          lineNumber: 128
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Nav__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -41396,32 +41507,32 @@ function (_Component) {
         logout: this.logout,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124
+          lineNumber: 129
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_10__["ThemeProvider"], {
         theme: _components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["theme"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 134
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["Content"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 135
         },
         __self: this
       }, this.renderPage(page), error && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_21__["VinylErrorSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 132
+          lineNumber: 137
         },
         __self: this
       }), success && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_21__["VinylSuccessSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 133
+          lineNumber: 138
         },
         __self: this
       }))));

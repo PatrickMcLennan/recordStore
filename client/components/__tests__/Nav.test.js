@@ -15,17 +15,21 @@ test('<Nav />', async () => {
   );
   const signOut = getByTestId('nav_signOut');
   const account = getByTestId('nav_account');
-  const search = getByTestId('nav_account');
+  const search = getByTestId('nav_search');
   const store = getByTestId('nav_myStore');
   const addRecord = getByTestId('nav_addRecord');
 
   fireEvent.click(account);
-  fireEvent.click(search);
   fireEvent.click(store);
   fireEvent.click(addRecord);
+  fireEvent.click(search);
   fireEvent.click(signOut);
 
   await wait(() => {
+    expect(changePage).toHaveBeenCalledWith('store');
+    expect(changePage).toHaveBeenCalledWith('add');
+    expect(changePage).toHaveBeenCalledWith('account');
+    expect(changePage).toHaveBeenCalledWith('search');
     expect(changePage).toBeCalledTimes(4);
     expect(logout).toBeCalledTimes(1);
   });

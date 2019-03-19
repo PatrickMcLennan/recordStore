@@ -88,6 +88,7 @@ class Account extends Component {
             value={bio}
             id="bio"
             data-testid="account_bio"
+            maxLength="50"
             onChange={this.handleChange}
             placeholder={
               name.first ? `About ${name.first}...` : `About ${email}...`

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import media from './queries'
+import media from './queries';
 
 const Form = styled.form`
   padding: 0 2.5vw;
@@ -116,13 +116,14 @@ const Form = styled.form`
 
   textarea { 
     background: none;
+    text-align: center;
     font-size: 2rem;
     width: 60%;
     height: 6rem;
     margin: 0 20%;
     line-height: 1.3;
-    ${({theme: {typo}}) => typo.letterSpacingSecondary}
-    color: ${({theme: {colors}}) => colors.whitePrimary}
+    ${({ theme: { typo } }) => typo.letterSpacingSecondary}
+    color: ${({ theme: { colors } }) => colors.whitePrimary}
   }
 `;
 

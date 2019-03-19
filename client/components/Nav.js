@@ -66,7 +66,7 @@ class Nav extends Component {
                 className={open ? 'opened' : 'closed'}
                 style={{ transitionDelay: '.4s' }}
                 onClick={() => this.followLink('add')}>
-                +
+                Add Record
               </li>
             </ul>
             <Badge
@@ -77,7 +77,7 @@ class Nav extends Component {
                   : '../static/img/placeholder.png'
               }
               alt={user && user.name.first ? user.name.picture : 'User Picture'}
-              margin="right"
+              style={{ margin: '0 0 0 auto' }}
               onClick={() => this.setState({ open: !open })}
             />
           </>

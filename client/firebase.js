@@ -54,7 +54,8 @@ export const dbRegister = async ({ email, password }) => {
 };
 
 export const dbUserQuery = async email => {
-  return await dbQuery(users, email);
+  const user = await dbQuery(users, email);
+  return user ? user : 'error';
 };
 
 export const dbLogout = async () => {

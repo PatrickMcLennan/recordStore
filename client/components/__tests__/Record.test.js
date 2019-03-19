@@ -32,6 +32,7 @@ test('<Record />', () => {
     artist: dance.artist,
     title: dance.title,
     updateStore,
+    showGarbage: true,
     id: `fake id`
   });
 

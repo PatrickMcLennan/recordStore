@@ -27,7 +27,7 @@ test('<Splash />', () => {
   const svgBox = getByTestId('splash_socialSVGs');
 
   expect(heading.textContent).toBe('Welcome to recordStore');
-  expect(vinylSVG).toHaveStyle('animation: iVXCSc 10s linear infinite');
+  expect(vinylSVG).toHaveStyle('animation: iVXCSc 15s linear infinite');
   expect(svgBox).toContainElement(
     getByTestId('svg_github'),
     getByTestId('svg_linkedIn')

@@ -35,7 +35,7 @@ class Store extends Component {
     return (
       <StoreSection>
         <SectionHeader first="My" last="Store" />
-        <Sort changeSort={this.changeSort} />
+        {records && <Sort changeSort={this.changeSort} />}
         <RecordGrid>
           {records.length >= 1 ? (
             records.map(record => (

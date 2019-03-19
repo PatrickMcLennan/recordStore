@@ -4,17 +4,19 @@ import { RecordGrid, AddHeader } from './styles/Store.styles';
 import Record from './Record';
 import Sort from './Sort';
 import Form from './styles/form.styles';
+import UserProfile from './styles/userProfile.styles';
+import Badge from './styles/UserBadge.styles.js';
 import PropTypes from 'prop-types';
 
 class Search extends Component {
   state = {
     search: '',
-    searchedUser: {},
-    sort: 'artist'
+    sort: 'artist',
+    searchedUser: {}
   };
 
   changeSort = (property = 'artist') => {
-    const { records } = this.state;
+    const { records } = this.state.searchedUser;
     const sortedRecords = records.sort((a, b) =>
       a[property].toLowerCase() > b[property].toLowerCase() ? 1 : -1
     );
@@ -31,18 +33,29 @@ class Search extends Component {
   handleSubmit = async e => {
     const { searchRecords } = this.props;
     e.preventDefault();
+    if (this.state.search === '') {
+      return null;
+    }
     const searchedUser = await searchRecords(this.state.search);
-    this.setState({
-      records: searchedUser.records
-    });
+    if (searchedUser === null) {
+      this.setState({ search: '' });
+    } else if (searchedUser.email) {
+      this.setState({
+        searchedUser
+      });
+    }
   };
 
   render() {
-    const { search, searchedUser, records } = this.state;
+    const { search, searchedUser } = this.state;
+    const { records, name, email, picture, bio } = searchedUser;
     return (
       <>
-        <SectionHeader data-testid="search_header" first="Find" last="Stores" />
-        <Sort changeSort={this.changeSort} />
+        <SectionHeader
+          first={records ? `${name.first}'s` || `${email}'s` : 'Find'}
+          last="Store"
+        />
+        {records && <Sort changeSort={this.changeSort} />}
         <Form data-testid="search_form" onSubmit={this.handleSubmit}>
           <input
             data-testid="search_input"
@@ -53,6 +66,22 @@ class Search extends Component {
           <input type="submit" value="search" />
         </Form>
         <RecordGrid data-testid="search_recordGrid">
+          {email && (
+            <UserProfile data-testid="search_userProfile">
+              <Badge
+                src={picture ? picture : '../static/img/placeholder.png'}
+                alt={name.first ? name.first : email}
+                margin="left"
+                data-testid="search_badge"
+              />
+              <figcaption>
+                <h6 data-testid="search_name">
+                  {name.first} {name.last}
+                </h6>
+                <h6 data-testid="search_bio">{bio}</h6>
+              </figcaption>
+            </UserProfile>
+          )}
           {records ? (
             records.map(record => (
               <Record

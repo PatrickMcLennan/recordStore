@@ -89,7 +89,12 @@ class Home extends Component {
 
   searchRecords = async email => {
     const searchedUser = await dbUserQuery(email);
-    return searchedUser;
+    if (searchedUser.email) {
+      return searchedUser;
+    } else if (searchedUser === 'error') {
+      this.showMessage('error');
+      return null;
+    }
   };
 
   renderPage = page => {
