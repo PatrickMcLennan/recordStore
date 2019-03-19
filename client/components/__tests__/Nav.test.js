@@ -15,16 +15,18 @@ test('<Nav />', async () => {
   );
   const signOut = getByTestId('nav_signOut');
   const account = getByTestId('nav_account');
+  const search = getByTestId('nav_account');
   const store = getByTestId('nav_myStore');
   const addRecord = getByTestId('nav_addRecord');
 
   fireEvent.click(account);
+  fireEvent.click(search);
   fireEvent.click(store);
   fireEvent.click(addRecord);
   fireEvent.click(signOut);
 
   await wait(() => {
-    expect(changePage).toBeCalledTimes(3);
+    expect(changePage).toBeCalledTimes(4);
     expect(logout).toBeCalledTimes(1);
   });
 });

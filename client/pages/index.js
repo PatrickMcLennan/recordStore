@@ -6,7 +6,8 @@ import {
   dbLogout,
   dbAccountEditor,
   dbCreateRecord,
-  dbDeleteRecord
+  dbDeleteRecord,
+  dbUserQuery
 } from '../firebase';
 import { GlobalStyle, Content, theme } from '../components/styles/index.styles';
 import Meta from '../components/Meta';
@@ -15,6 +16,7 @@ import Splash from '../components/Splash';
 import Store from '../components/Store';
 import Account from '../components/Account';
 import AddRecord from '../components/AddRecord';
+import Search from '../components/Search';
 import Loader from '../components/Loader';
 import { VinylErrorSVG, VinylSuccessSVG } from './../components/SVGs';
 
@@ -85,6 +87,11 @@ class Home extends Component {
     await this.editUser(user);
   };
 
+  searchRecords = async email => {
+    const searchedUser = await dbUserQuery(email);
+    return searchedUser;
+  };
+
   renderPage = page => {
     const { user } = this.state;
     if (page === 'splash') {
@@ -100,6 +107,8 @@ class Home extends Component {
       );
     } else if (page === 'account') {
       return <Account user={user} editUser={this.editUser} />;
+    } else if (page === 'search') {
+      return <Search searchRecords={this.searchRecords} />;
     } else if (page === 'add') {
       return <AddRecord createRecord={this.createRecord} />;
     }

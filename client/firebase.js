@@ -53,6 +53,10 @@ export const dbRegister = async ({ email, password }) => {
   return await dbQuery(users, email);
 };
 
+export const dbUserQuery = async email => {
+  return await dbQuery(users, email);
+};
+
 export const dbLogout = async () => {
   app.auth().signOut();
 };

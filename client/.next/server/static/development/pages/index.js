@@ -858,45 +858,59 @@ function (_Component) {
         },
         __self: this
       }, "Sign Out"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
-        "data-testid": "nav_account",
+        "data-testid": "nav_search",
         className: open ? 'opened' : 'closed',
         style: {
           transitionDelay: '.1s'
         },
         onClick: function onClick() {
-          return _this2.followLink('account');
+          return _this2.followLink('search');
         },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 43
         },
         __self: this
-      }, "Account"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
-        "data-testid": "nav_myStore",
+      }, "Search Stores"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        "data-testid": "nav_account",
         className: open ? 'opened' : 'closed',
         style: {
           transitionDelay: '.2s'
         },
         onClick: function onClick() {
-          return _this2.followLink('store');
+          return _this2.followLink('account');
         },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 50
         },
         __self: this
+      }, "Account"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        "data-testid": "nav_myStore",
+        className: open ? 'opened' : 'closed',
+        style: {
+          transitionDelay: '.3s'
+        },
+        onClick: function onClick() {
+          return _this2.followLink('store');
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
       }, "My Store"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         "data-testid": "nav_addRecord",
         className: open ? 'opened' : 'closed',
         style: {
-          transitionDelay: '.3s'
+          transitionDelay: '.4s'
         },
         onClick: function onClick() {
           return _this2.followLink('add');
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 64
         },
         __self: this
       }, "+")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_styles_UserBadge_styles__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -911,7 +925,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 72
         },
         __self: this
       })), open && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Loader__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -922,7 +936,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 85
         },
         __self: this
       }));
@@ -967,7 +981,8 @@ var Record = function Record(_ref) {
       title = _ref.title,
       artist = _ref.artist,
       updateStore = _ref.updateStore,
-      id = _ref.id;
+      id = _ref.id,
+      showGarbage = _ref.showGarbage;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Record_styles__WEBPACK_IMPORTED_MODULE_1__["default"], {
     "data-testid": "record",
     __source: {
@@ -1010,13 +1025,13 @@ var Record = function Record(_ref) {
       lineNumber: 12
     },
     __self: this
-  }, artist), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SVGs__WEBPACK_IMPORTED_MODULE_3__["GarbageSVG"], {
+  }, artist), showGarbage && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SVGs__WEBPACK_IMPORTED_MODULE_3__["GarbageSVG"], {
     "data-testid": "record_garbage",
     updateStore: updateStore,
     id: id,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   })));
@@ -1026,7 +1041,8 @@ Record.propTypes = {
   cover: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
   title: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
   artist: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
-  updateStore: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
+  showGarbage: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool.isRequired,
+  updateStore: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
   id: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Record);
@@ -1744,7 +1760,7 @@ var GarbageSVG = function GarbageSVG(_ref) {
   }));
 };
 GarbageSVG.propTypes = {
-  updateStore: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
+  updateStore: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
   id: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired
 };
 var GithubSVG = function GithubSVG() {
@@ -1799,6 +1815,227 @@ var LinkedInSVG = function LinkedInSVG() {
     __self: this
   })), ' ');
 };
+
+/***/ }),
+
+/***/ "./components/Search.js":
+/*!******************************!*\
+  !*** ./components/Search.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _SectionHeader__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./SectionHeader */ "./components/SectionHeader.js");
+/* harmony import */ var _styles_Store_styles__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./styles/Store.styles */ "./components/styles/Store.styles.js");
+/* harmony import */ var _Record__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Record */ "./components/Record.js");
+/* harmony import */ var _Sort__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Sort */ "./components/Sort.js");
+/* harmony import */ var _styles_form_styles__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./styles/form.styles */ "./components/styles/form.styles.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_15__);
+
+
+
+
+
+
+
+
+
+var _jsxFileName = "/Users/patrickmclennan/Documents/record_store/client/components/Search.js";
+
+
+
+
+
+
+
+
+var Search =
+/*#__PURE__*/
+function (_Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(Search, _Component);
+
+  function Search() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Search);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Search)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "state", {
+      search: '',
+      searchedUser: {},
+      sort: 'artist'
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "changeSort", function () {
+      var property = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'artist';
+      var records = _this.state.records;
+      var sortedRecords = records.sort(function (a, b) {
+        return a[property].toLowerCase() > b[property].toLowerCase() ? 1 : -1;
+      });
+
+      _this.setState({
+        records: sortedRecords,
+        sort: property
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "handleChange", function (e) {
+      var value = e.target.value;
+
+      _this.setState({
+        search: value
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "handleSubmit",
+    /*#__PURE__*/
+    function () {
+      var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(e) {
+        var searchRecords, searchedUser;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                searchRecords = _this.props.searchRecords;
+                e.preventDefault();
+                _context.next = 4;
+                return searchRecords(_this.state.search);
+
+              case 4:
+                searchedUser = _context.sent;
+
+                _this.setState({
+                  records: searchedUser.records
+                });
+
+              case 6:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      return function (_x) {
+        return _ref.apply(this, arguments);
+      };
+    }());
+
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Search, [{
+    key: "render",
+    value: function render() {
+      var _this$state = this.state,
+          search = _this$state.search,
+          searchedUser = _this$state.searchedUser,
+          records = _this$state.records;
+      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_SectionHeader__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        "data-testid": "search_header",
+        first: "Find",
+        last: "Stores",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_Sort__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        changeSort: this.changeSort,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_styles_form_styles__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        "data-testid": "search_form",
+        onSubmit: this.handleSubmit,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
+        "data-testid": "search_input",
+        type: "text",
+        value: search,
+        onChange: this.handleChange,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
+        type: "submit",
+        value: "search",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_styles_Store_styles__WEBPACK_IMPORTED_MODULE_11__["RecordGrid"], {
+        "data-testid": "search_recordGrid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }, records ? records.map(function (record) {
+        return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_Record__WEBPACK_IMPORTED_MODULE_12__["default"], {
+          artist: record.artist,
+          title: record.title,
+          cover: record.cover,
+          key: record.id,
+          id: record.id,
+          showGarbage: false,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 58
+          },
+          __self: this
+        });
+      }) : react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_styles_Store_styles__WEBPACK_IMPORTED_MODULE_11__["AddHeader"], {
+        "data-testid": "search_addHeader",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        },
+        __self: this
+      }, "Search for stores by email")));
+    }
+  }]);
+
+  return Search;
+}(react__WEBPACK_IMPORTED_MODULE_9__["Component"]);
+
+Search.propTypes = {
+  searchRecords: prop_types__WEBPACK_IMPORTED_MODULE_15___default.a.func.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (Search);
 
 /***/ }),
 
@@ -2486,6 +2723,7 @@ function (_Component) {
           key: record.id,
           id: record.id,
           updateStore: _this2.updateStore,
+          showGarbage: true,
           __source: {
             fileName: _jsxFileName,
             lineNumber: 42
@@ -2495,7 +2733,7 @@ function (_Component) {
       }) : react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_styles_Store_styles__WEBPACK_IMPORTED_MODULE_12__["AddHeader"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 53
         },
         __self: this
       }, "Get Started by adding some records!")));
@@ -3084,13 +3322,14 @@ var media = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_
 /*!*********************!*\
   !*** ./firebase.js ***!
   \*********************/
-/*! exports provided: dbLogin, dbRegister, dbLogout, dbAccountEditor, dbCreateRecord, dbDeleteRecord */
+/*! exports provided: dbLogin, dbRegister, dbUserQuery, dbLogout, dbAccountEditor, dbCreateRecord, dbDeleteRecord */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dbLogin", function() { return dbLogin; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dbRegister", function() { return dbRegister; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dbUserQuery", function() { return dbUserQuery; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dbLogout", function() { return dbLogout; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dbAccountEditor", function() { return dbAccountEditor; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dbCreateRecord", function() { return dbCreateRecord; });
@@ -3241,19 +3480,23 @@ function () {
     return _ref5.apply(this, arguments);
   };
 }();
-var dbLogout =
+var dbUserQuery =
 /*#__PURE__*/
 function () {
   var _ref6 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
   /*#__PURE__*/
-  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee4() {
+  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee4(email) {
     return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee4$(_context4) {
       while (1) {
         switch (_context4.prev = _context4.next) {
           case 0:
-            app.auth().signOut();
+            _context4.next = 2;
+            return dbQuery(users, email);
 
-          case 1:
+          case 2:
+            return _context4.abrupt("return", _context4.sent);
+
+          case 3:
           case "end":
             return _context4.stop();
         }
@@ -3261,33 +3504,23 @@ function () {
     }, _callee4);
   }));
 
-  return function dbLogout() {
+  return function dbUserQuery(_x5) {
     return _ref6.apply(this, arguments);
   };
 }();
-var dbAccountEditor =
+var dbLogout =
 /*#__PURE__*/
 function () {
   var _ref7 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
   /*#__PURE__*/
-  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee5(user) {
-    var email;
+  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee5() {
     return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee5$(_context5) {
       while (1) {
         switch (_context5.prev = _context5.next) {
           case 0:
-            email = user.email;
-            _context5.next = 3;
-            return users.doc(email).set(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, user));
+            app.auth().signOut();
 
-          case 3:
-            _context5.next = 5;
-            return dbQuery(users, email);
-
-          case 5:
-            return _context5.abrupt("return", _context5.sent);
-
-          case 6:
+          case 1:
           case "end":
             return _context5.stop();
         }
@@ -3295,33 +3528,33 @@ function () {
     }, _callee5);
   }));
 
-  return function dbAccountEditor(_x5) {
+  return function dbLogout() {
     return _ref7.apply(this, arguments);
   };
 }();
-var dbCreateRecord =
+var dbAccountEditor =
 /*#__PURE__*/
 function () {
   var _ref8 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
   /*#__PURE__*/
-  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee6(record) {
+  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee6(user) {
+    var email;
     return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee6$(_context6) {
       while (1) {
         switch (_context6.prev = _context6.next) {
           case 0:
-            _context6.next = 2;
-            return records.doc(record.title).set(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, record, {
-              id: uuid__WEBPACK_IMPORTED_MODULE_6___default.a.v4()
-            }));
+            email = user.email;
+            _context6.next = 3;
+            return users.doc(email).set(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, user));
 
-          case 2:
-            _context6.next = 4;
-            return dbQuery(records, record.title);
-
-          case 4:
-            return _context6.abrupt("return", _context6.sent);
+          case 3:
+            _context6.next = 5;
+            return dbQuery(users, email);
 
           case 5:
+            return _context6.abrupt("return", _context6.sent);
+
+          case 6:
           case "end":
             return _context6.stop();
         }
@@ -3329,30 +3562,31 @@ function () {
     }, _callee6);
   }));
 
-  return function dbCreateRecord(_x6) {
+  return function dbAccountEditor(_x6) {
     return _ref8.apply(this, arguments);
   };
 }();
-var dbDeleteRecord =
+var dbCreateRecord =
 /*#__PURE__*/
 function () {
   var _ref9 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
   /*#__PURE__*/
-  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee7(id, email) {
-    var user;
+  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee7(record) {
     return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee7$(_context7) {
       while (1) {
         switch (_context7.prev = _context7.next) {
           case 0:
             _context7.next = 2;
-            return dbQuery(users, email);
+            return records.doc(record.title).set(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, record, {
+              id: uuid__WEBPACK_IMPORTED_MODULE_6___default.a.v4()
+            }));
 
           case 2:
-            user = _context7.sent;
-            user.records = user.records.filter(function (record) {
-              return record.id !== id;
-            });
-            return _context7.abrupt("return", user);
+            _context7.next = 4;
+            return dbQuery(records, record.title);
+
+          case 4:
+            return _context7.abrupt("return", _context7.sent);
 
           case 5:
           case "end":
@@ -3362,8 +3596,41 @@ function () {
     }, _callee7);
   }));
 
-  return function dbDeleteRecord(_x7, _x8) {
+  return function dbCreateRecord(_x7) {
     return _ref9.apply(this, arguments);
+  };
+}();
+var dbDeleteRecord =
+/*#__PURE__*/
+function () {
+  var _ref10 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  /*#__PURE__*/
+  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee8(id, email) {
+    var user;
+    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee8$(_context8) {
+      while (1) {
+        switch (_context8.prev = _context8.next) {
+          case 0:
+            _context8.next = 2;
+            return dbQuery(users, email);
+
+          case 2:
+            user = _context8.sent;
+            user.records = user.records.filter(function (record) {
+              return record.id !== id;
+            });
+            return _context8.abrupt("return", user);
+
+          case 5:
+          case "end":
+            return _context8.stop();
+        }
+      }
+    }, _callee8);
+  }));
+
+  return function dbDeleteRecord(_x8, _x9) {
+    return _ref10.apply(this, arguments);
   };
 }();
 
@@ -3921,8 +4188,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Store__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/Store */ "./components/Store.js");
 /* harmony import */ var _components_Account__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/Account */ "./components/Account.js");
 /* harmony import */ var _components_AddRecord__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/AddRecord */ "./components/AddRecord.js");
-/* harmony import */ var _components_Loader__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/Loader */ "./components/Loader.js");
-/* harmony import */ var _components_SVGs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./../components/SVGs */ "./components/SVGs.js");
+/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/Search */ "./components/Search.js");
+/* harmony import */ var _components_Loader__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../components/Loader */ "./components/Loader.js");
+/* harmony import */ var _components_SVGs__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./../components/SVGs */ "./components/SVGs.js");
 
 
 
@@ -3933,6 +4201,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/patrickmclennan/Documents/record_store/client/pages/index.js";
+
 
 
 
@@ -4160,6 +4429,37 @@ function (_Component) {
       };
     }());
 
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "searchRecords",
+    /*#__PURE__*/
+    function () {
+      var _ref6 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5(email) {
+        var searchedUser;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee5$(_context5) {
+          while (1) {
+            switch (_context5.prev = _context5.next) {
+              case 0:
+                _context5.next = 2;
+                return Object(_firebase__WEBPACK_IMPORTED_MODULE_11__["dbUserQuery"])(email);
+
+              case 2:
+                searchedUser = _context5.sent;
+                return _context5.abrupt("return", searchedUser);
+
+              case 4:
+              case "end":
+                return _context5.stop();
+            }
+          }
+        }, _callee5);
+      }));
+
+      return function (_x5) {
+        return _ref6.apply(this, arguments);
+      };
+    }());
+
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "renderPage", function (page) {
       var user = _this.state.user;
 
@@ -4169,7 +4469,7 @@ function (_Component) {
           loaded: _this.loaded,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 91
+            lineNumber: 98
           },
           __self: this
         });
@@ -4181,7 +4481,7 @@ function (_Component) {
           deleteRecord: _this.deleteRecord,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 94
+            lineNumber: 101
           },
           __self: this
         });
@@ -4191,7 +4491,16 @@ function (_Component) {
           editUser: _this.editUser,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 102
+            lineNumber: 109
+          },
+          __self: this
+        });
+      } else if (page === 'search') {
+        return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_19__["default"], {
+          searchRecords: _this.searchRecords,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 111
           },
           __self: this
         });
@@ -4200,7 +4509,7 @@ function (_Component) {
           createRecord: _this.createRecord,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 104
+            lineNumber: 113
           },
           __self: this
         });
@@ -4222,19 +4531,19 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 121
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["GlobalStyle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 122
         },
         __self: this
-      }), loading && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Loader__WEBPACK_IMPORTED_MODULE_19__["default"], {
+      }), loading && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Loader__WEBPACK_IMPORTED_MODULE_20__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 123
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Nav__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -4243,32 +4552,32 @@ function (_Component) {
         logout: this.logout,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 124
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_10__["ThemeProvider"], {
         theme: _components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["theme"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 120
+          lineNumber: 129
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["Content"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 130
         },
         __self: this
-      }, this.renderPage(page), error && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_20__["VinylErrorSVG"], {
+      }, this.renderPage(page), error && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_21__["VinylErrorSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 123
+          lineNumber: 132
         },
         __self: this
-      }), success && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_20__["VinylSuccessSVG"], {
+      }), success && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_21__["VinylSuccessSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124
+          lineNumber: 133
         },
         __self: this
       }))));

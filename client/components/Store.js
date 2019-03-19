@@ -46,6 +46,7 @@ class Store extends Component {
                 key={record.id}
                 id={record.id}
                 updateStore={this.updateStore}
+                showGarbage={true}
               />
             ))
           ) : (

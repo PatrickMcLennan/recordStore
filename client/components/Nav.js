@@ -41,23 +41,30 @@ class Nav extends Component {
                 Sign Out
               </li>
               <li
-                data-testid="nav_account"
+                data-testid="nav_search"
                 className={open ? 'opened' : 'closed'}
                 style={{ transitionDelay: '.1s' }}
+                onClick={() => this.followLink('search')}>
+                Search Stores
+              </li>
+              <li
+                data-testid="nav_account"
+                className={open ? 'opened' : 'closed'}
+                style={{ transitionDelay: '.2s' }}
                 onClick={() => this.followLink('account')}>
                 Account
               </li>
               <li
                 data-testid="nav_myStore"
                 className={open ? 'opened' : 'closed'}
-                style={{ transitionDelay: '.2s' }}
+                style={{ transitionDelay: '.3s' }}
                 onClick={() => this.followLink('store')}>
                 My Store
               </li>
               <li
                 data-testid="nav_addRecord"
                 className={open ? 'opened' : 'closed'}
-                style={{ transitionDelay: '.3s' }}
+                style={{ transitionDelay: '.4s' }}
                 onClick={() => this.followLink('add')}>
                 +
               </li>

@@ -145,7 +145,7 @@ export const GarbageSVG = ({ updateStore, id }) => (
   </Garbage>
 );
 GarbageSVG.propTypes = {
-  updateStore: PropTypes.func.isRequired,
+  updateStore: PropTypes.func,
   id: PropTypes.string.isRequired
 };
 
