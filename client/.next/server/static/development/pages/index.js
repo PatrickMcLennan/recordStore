@@ -2905,11 +2905,9 @@ function _templateObject() {
 var NavBar = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.nav.withConfig({
   displayName: "Navstyles__NavBar",
   componentId: "qlkqud-0"
-})(["position:relative;grid-row-start:1;grid-row-end:2;height:100%;display:flex;justify-content:space-between;align-items:center;padding:0 2.5vw 2.5vh 2.5vw;div{text-align:center;h1,h2{font-weight:100;letter-spacing:0.3rem;}h1{font-size:5rem;&::after{content:'';display:block;height:1px;background:white;width:80%;margin:0.5vh auto;}}}ul{display:flex;", "}li{cursor:pointer;font-size:2rem;letter-spacing:0.25rem;padding:1rem 2rem;text-transform:uppercase;text-align:center;z-index:10;transition:all 0.4s ease-out;transform-style:preserve-3d;transform-origin:100%;transition-delay:", ";perspective:100rem;", " &::after{content:'';display:block;height:1px;background:white;width:80%;margin:0.5vh auto 0 auto;transition:all 0.3s ease-in-out;transform:scale(", ");", "}&:not(:first-child){margin-left:3.5rem;", "}&:hover{&::after{transform:scale(1);}}}img{display:none;", "}"], _queries__WEBPACK_IMPORTED_MODULE_2__["default"].eleven(_templateObject()), function (props) {
+})(["position:relative;grid-row-start:1;grid-row-end:2;height:100%;display:flex;justify-content:space-between;align-items:center;padding:0 2.5vw 2.5vh 2.5vw;div{text-align:center;h1,h2{font-weight:100;letter-spacing:0.3rem;}h1{font-size:5rem;&::after{content:'';display:block;height:1px;background:white;width:80%;margin:0.5vh auto;}}}ul{display:flex;", "}li{cursor:pointer;font-size:2rem;letter-spacing:0.25rem;padding:1rem 2rem;text-transform:uppercase;text-align:center;z-index:10;transition:all 0.4s ease-out;transform-style:preserve-3d;transform-origin:100%;transition-delay:", ";perspective:100rem;", " &::after{content:'';display:block;height:1px;background:white;width:80%;margin:0.5vh auto 0 auto;transition:all 0.3s ease-in-out;transform:scale(0);", "}&:not(:first-child){margin-left:3.5rem;", "}&:hover{&::after{transform:scale(1);}}}img{display:none;", "}"], _queries__WEBPACK_IMPORTED_MODULE_2__["default"].eleven(_templateObject()), function (props) {
   return props.delay;
-}, _queries__WEBPACK_IMPORTED_MODULE_2__["default"].eleven(_templateObject2()), function (props) {
-  return props.current;
-}, _queries__WEBPACK_IMPORTED_MODULE_2__["default"].ten(_templateObject3()), _queries__WEBPACK_IMPORTED_MODULE_2__["default"].ten(_templateObject4()), _queries__WEBPACK_IMPORTED_MODULE_2__["default"].eleven(_templateObject5()));
+}, _queries__WEBPACK_IMPORTED_MODULE_2__["default"].eleven(_templateObject2()), _queries__WEBPACK_IMPORTED_MODULE_2__["default"].eleven(_templateObject3()), _queries__WEBPACK_IMPORTED_MODULE_2__["default"].eleven(_templateObject4()), _queries__WEBPACK_IMPORTED_MODULE_2__["default"].eleven(_templateObject5()));
 /* harmony default export */ __webpack_exports__["default"] = (NavBar);
 
 /***/ }),
@@ -2988,7 +2986,7 @@ var Garbage = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.svg.withC
 var Social = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.svg.withConfig({
   displayName: "SVGstyles__Social",
   componentId: "l14jxn-5"
-})(["stroke:", ";fill:rgba(255,255,255,0.75);height:7.5rem;"], function (_ref3) {
+})(["stroke:", ";fill:rgba(255,255,255,0.75);height:6rem;padding:1rem;"], function (_ref3) {
   var colors = _ref3.theme.colors;
   return colors.whitePrimary;
 });
@@ -3073,8 +3071,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _queries__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./queries */ "./components/styles/queries.js");
 
 
-function _templateObject() {
+function _templateObject2() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n        margin-bottom: 5vh;\n      "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n        margin-bottom: 2.5vh;\n      "]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -3088,16 +3096,16 @@ function _templateObject() {
 var Section = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.section.withConfig({
   displayName: "Splashstyles__Section",
   componentId: "sc-10ktuig-0"
-})(["display:grid;grid-template-columns:repeat(auto-fit,minmax(550px,1fr));grid-gap:2vw;div{", ";align-self:stretch;text-align:center;h3{font-size:5rem;font-weight:100;margin-bottom:5vh;}p{font-size:2rem;margin-bottom:10vh;", "}div{", " ", "}}"], function (_ref) {
+})(["display:grid;grid-template-columns:repeat(auto-fit,minmax(650px,1fr));grid-gap:2vw;div{", ";align-self:stretch;text-align:center;h3{font-size:5rem;font-weight:100;margin-bottom:5vh;}p{font-size:2rem;margin-bottom:10vh;", " ", "}div{", " ", "}}"], function (_ref) {
   var flexin = _ref.theme.flexin;
   return flexin('center', 'center', 'column');
 }, function (_ref2) {
   var typo = _ref2.theme.typo;
   return typo.letterSpacingSecondary;
-}, function (_ref3) {
+}, _queries__WEBPACK_IMPORTED_MODULE_2__["default"].thirteen(_templateObject()), function (_ref3) {
   var flexin = _ref3.theme.flexin;
-  return flexin('space-around');
-}, _queries__WEBPACK_IMPORTED_MODULE_2__["default"].twelve(_templateObject()));
+  return flexin('center');
+}, _queries__WEBPACK_IMPORTED_MODULE_2__["default"].thirteen(_templateObject2()));
 /* harmony default export */ __webpack_exports__["default"] = (Section);
 
 /***/ }),
@@ -3202,7 +3210,7 @@ function _templateObject() {
 var Form = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.form.withConfig({
   displayName: "formstyles__Form",
   componentId: "sc-1ubmvyq-0"
-})(["padding:0 2.5vw;", ";label{width:100%;margin:4vh 0;position:relative;> *{", "}p{position:absolute;font-size:2rem;text-transform:uppercase;font-style:italic;top:1.5vh;left:2.5vw;color:", ";", ";", ";}&[for='register'],&[for='remember']{color:", ";font-style:normal;cursor:pointer;p{text-align:right;right:0;top:50%;transform:translateY(-50%);}&::before{content:'';display:block;height:3rem;width:3rem;border:1px solid ", ";", "}}}input{color:", ";padding:1vh;background:none;border:none;border-bottom:1px solid ", ";font-size:2.5rem;width:80%;margin:0 10%;&:not([type='submit']):active + p,&:not([type='submit']):focus + p,&:not([type='checkbox']):valid + p,&[type='checkbox']:checked + label p{font-size:1.75rem;font-style:normal;top:-2.5vh;left:10%;color:", ";letter-spacing:0.75rem;&::before,&::after{content:'';width:1px;height:110%;display:inline-block;background:white;position:absolute;top:0;left:0;left:-1vw;}}&[type='submit']{border:1px solid ", ";padding:0.75rem 3rem;cursor:pointer;font-weight:300;text-transform:uppercase;width:50%;margin:3.5vh 0;", ";", " ", " &:hover,&:active{color:", ";", "}}&[type='checkbox']{visibility:hidden;&:checked + label::before{", "}}}textarea{background:none;text-align:center;font-size:2rem;width:60%;height:6rem;margin:0 20%;line-height:1.3;", " color:", "}"], function (_ref) {
+})(["padding:0 2.5vw;", ";label{width:100%;margin:4vh 0;position:relative;> *{", "}p{position:absolute;font-size:2rem;text-transform:uppercase;font-style:italic;top:1.5vh;left:8rem;color:", ";", ";", ";}&[for='register'],&[for='remember']{color:", ";font-style:normal;cursor:pointer;p{text-align:right;right:0;top:50%;transform:translateY(-50%);}&::before{content:'';display:block;height:3rem;width:3rem;border:1px solid ", ";", "}}}input{color:", ";padding:1vh;background:none;border:none;border-bottom:1px solid ", ";font-size:2.5rem;width:80%;margin:0 10%;&:not([type='submit']):active + p,&:not([type='submit']):focus + p,&:not([type='checkbox']):valid + p,&[type='checkbox']:checked + label p{font-size:1.75rem;font-style:normal;top:-2.5vh;left:8rem;color:", ";letter-spacing:0.75rem;&::before,&::after{content:'';width:1px;height:110%;display:inline-block;background:white;position:absolute;top:0;left:-1vw;}}&[type='submit']{border:1px solid ", ";padding:0.75rem 3rem;cursor:pointer;font-weight:300;text-transform:uppercase;width:50%;margin:3.5vh 0;", ";", " ", " &:hover,&:active{color:", ";", "}}&[type='checkbox']{visibility:hidden;&:checked + label::before{", "}}}textarea{background:none;text-align:center;font-size:2rem;width:60%;height:6rem;margin:0 20%;line-height:1.3;", " color:", "}"], function (_ref) {
   var flexin = _ref.theme.flexin;
   return flexin('space-around', 'center', 'column');
 }, function (_ref2) {
@@ -3359,6 +3367,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var sizes = {
+  thirteen: 1300,
   twelve: 1200,
   eleven: 1100,
   ten: 1000,
@@ -4543,15 +4552,17 @@ function (_Component) {
                 searchedUser = _context5.sent;
 
                 if (!searchedUser.email) {
-                  _context5.next = 7;
+                  _context5.next = 8;
                   break;
                 }
 
+                _this.showMessage('success');
+
                 return _context5.abrupt("return", searchedUser);
 
-              case 7:
+              case 8:
                 if (!(searchedUser === 'error')) {
-                  _context5.next = 10;
+                  _context5.next = 11;
                   break;
                 }
 
@@ -4559,7 +4570,7 @@ function (_Component) {
 
                 return _context5.abrupt("return", null);
 
-              case 10:
+              case 11:
               case "end":
                 return _context5.stop();
             }
@@ -4581,7 +4592,7 @@ function (_Component) {
           loaded: _this.loaded,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 103
+            lineNumber: 104
           },
           __self: this
         });
@@ -4593,7 +4604,7 @@ function (_Component) {
           deleteRecord: _this.deleteRecord,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 106
+            lineNumber: 107
           },
           __self: this
         });
@@ -4603,7 +4614,7 @@ function (_Component) {
           editUser: _this.editUser,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 114
+            lineNumber: 115
           },
           __self: this
         });
@@ -4612,7 +4623,7 @@ function (_Component) {
           searchRecords: _this.searchRecords,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 116
+            lineNumber: 117
           },
           __self: this
         });
@@ -4621,7 +4632,7 @@ function (_Component) {
           createRecord: _this.createRecord,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 118
+            lineNumber: 119
           },
           __self: this
         });
@@ -4643,19 +4654,19 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126
+          lineNumber: 127
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["GlobalStyle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 128
         },
         __self: this
       }), loading && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Loader__WEBPACK_IMPORTED_MODULE_20__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 129
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Nav__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -4664,32 +4675,32 @@ function (_Component) {
         logout: this.logout,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 130
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_10__["ThemeProvider"], {
         theme: _components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["theme"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134
+          lineNumber: 135
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_styles_index_styles__WEBPACK_IMPORTED_MODULE_12__["Content"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135
+          lineNumber: 136
         },
         __self: this
       }, this.renderPage(page), error && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_21__["VinylErrorSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137
+          lineNumber: 138
         },
         __self: this
       }), success && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_SVGs__WEBPACK_IMPORTED_MODULE_21__["VinylSuccessSVG"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 139
         },
         __self: this
       }))));

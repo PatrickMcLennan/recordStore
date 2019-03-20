@@ -20,7 +20,7 @@ const Form = styled.form`
       text-transform: uppercase;
       font-style: italic;
       top: 1.5vh;
-      left: 2.5vw;
+      left: 8rem;
       color: ${({ theme: { colors } }) => colors.whiteOpaque};
       ${({ theme: { transitions } }) => transitions.main};
       ${({ theme: { typo } }) => typo.letterSpacingPrimary};
@@ -67,7 +67,7 @@ const Form = styled.form`
       font-size: 1.75rem;
       font-style: normal;
       top: -2.5vh;
-      left: 10%;
+      left: 8rem;
       color: ${({ theme: { colors } }) => colors.whitePrimary};
       letter-spacing: 0.75rem;
 
@@ -80,7 +80,6 @@ const Form = styled.form`
         background: white;
         position: absolute;
         top: 0;
-        left: 0;
         left: -1vw;
       }
     }

@@ -71,5 +71,6 @@ export const Garbage = styled.svg`
 export const Social = styled.svg`
   stroke: ${({ theme: { colors } }) => colors.whitePrimary};
   fill: rgba(255, 255, 255, 0.75);
-  height: 7.5rem;
+  height: 6rem;
+  padding: 1rem;
 `;

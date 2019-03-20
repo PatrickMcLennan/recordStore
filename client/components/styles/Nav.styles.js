@@ -76,8 +76,8 @@ const NavBar = styled.nav`
       width: 80%;
       margin: 0.5vh auto 0 auto;
       transition: all 0.3s ease-in-out;
-      transform: scale(${props => props.current});
-      ${media.ten`
+      transform: scale(0);
+      ${media.eleven`
         width: 60%;
         margin: .5vh 0 0 auto;
       `}
@@ -85,7 +85,7 @@ const NavBar = styled.nav`
 
     &:not(:first-child) {
       margin-left: 3.5rem;
-      ${media.ten`
+      ${media.eleven`
       margin-top: 1rem;
     `}
     }
