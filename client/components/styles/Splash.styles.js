@@ -8,6 +8,7 @@ const Section = styled.section`
 
   & > * {
     text-align: center;
+    border: 1px solid red;
   }
 
   div {
@@ -27,9 +28,6 @@ const Section = styled.section`
       ${({ theme: { typo } }) => typo.letterSpacingSecondary}
       ${media.thirteen`
         margin-bottom: 2.5vh;
-      `}
-      ${media.five`
-        font-size: 1.75rem;
       `}
     }
 
