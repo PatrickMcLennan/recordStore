@@ -3,7 +3,7 @@ import media from './queries';
 
 const Section = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(675px, 1fr));
   grid-gap: 2vw;
 
   & > * {
