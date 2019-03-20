@@ -22,6 +22,7 @@ export const RecordGrid = styled.div`
   justify-content: center;
   align-content: center;
   padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 `;
 
 export const AddHeader = styled.h6`

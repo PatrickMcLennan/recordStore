@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 
 const sizes = {
-  thirteen: 1400,
+  fourteen: 1400,
   thirteen: 1300,
   twelve: 1200,
   eleven: 1100,

@@ -11,10 +11,28 @@ export default class MyDocument extends Document {
     return { ...page, styleTags };
   }
 
+  setGoogleTags = () => {
+    return {
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-136664868-1')
+    `
+    };
+  };
+
   render() {
     return (
       <html>
         {this.props.styleTags}
+        <>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-136664868-1"
+          />
+          <script dangerouslySetInnerHTML={this.setGoogleTags()} />
+        </>
         <body>
           <Main />
           <NextScript />

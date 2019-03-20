@@ -63,10 +63,12 @@ var Meta = function Meta() {
       lineNumber: 12
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
+  }), window.dataLayer = window.dataLayer || [], function gtag() {
+    dataLayer.push(arguments);
+  }, gtag('js', new Date()), " ", gtag('config', 'UA-136664868-1'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 21
     },
     __self: this
   }, "recordStore"));
@@ -77,4 +79,4 @@ var Meta = function Meta() {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.fcafc20370382d560754.hot-update.js.map
+//# sourceMappingURL=index.js.d011872c1c53418e0658.hot-update.js.map
