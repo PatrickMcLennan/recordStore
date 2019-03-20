@@ -5,6 +5,10 @@ const Section = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   grid-gap: 2vw;
+  ${media.ten`
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(2, 1fr);
+  `}
 
   & > * {
     text-align: center;
