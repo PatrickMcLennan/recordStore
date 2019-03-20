@@ -5,7 +5,6 @@ const Section = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   grid-gap: 2vw;
-  max-width: 100vw;
 
   & > * {
     text-align: center;
@@ -28,6 +27,9 @@ const Section = styled.section`
       ${({ theme: { typo } }) => typo.letterSpacingSecondary}
       ${media.thirteen`
         margin-bottom: 2.5vh;
+      `}
+      ${media.five`
+        font-size: 1.75rem;
       `}
     }
 
