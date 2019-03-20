@@ -8,7 +8,6 @@ const Section = styled.section`
 
   & > * {
     text-align: center;
-    border: 1px solid red;
     width: 100vw;
   }
 
