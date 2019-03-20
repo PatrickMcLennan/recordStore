@@ -87,5 +87,5 @@ export const Content = styled.section`
   grid-row-start: 2;
   grid-row-end: -1;
   align-self: center;
-  padding: 0 2vw;
+  /* padding: 0 ; */
 `;
