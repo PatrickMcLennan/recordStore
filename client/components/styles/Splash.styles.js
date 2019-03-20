@@ -8,7 +8,6 @@ const Section = styled.section`
 
   & > * {
     text-align: center;
-    width: 100vw;
   }
 
   div {
@@ -26,14 +25,14 @@ const Section = styled.section`
       font-size: 2rem;
       margin-bottom: 10vh;
       ${({ theme: { typo } }) => typo.letterSpacingSecondary}
-      ${media.thirteen`
+      ${media.fourteen`
         margin-bottom: 2.5vh;
       `}
     }
 
     div {
       ${({ theme: { flexin } }) => flexin('center')}
-      ${media.thirteen`
+      ${media.fourteen`
         margin-bottom: 5vh;
       `}
     }
