@@ -33,7 +33,7 @@ const showMsg = keyframes`
 
 export const Vinyl = styled.svg`
   stroke: ${({ theme: { colors } }) => colors.whitePrimary};
-  fill: rgba(255, 255, 255, 0.25);
+  fill: rgba(255, 255, 255, 0.1);
   height: 10rem;
   margin-bottom: 5vh;
   animation: ${rotate} 15s linear infinite;
@@ -49,12 +49,12 @@ const VinylMsg = styled(Vinyl)`
 
 export const VinylError = styled(VinylMsg)`
   stroke: red;
-  fill: rgba(255, 255, 255, 0.25);
+  fill: rgba(255, 255, 255, 0.1);
 `;
 
 export const VinylSuccess = styled(VinylMsg)`
   stroke: green;
-  fill: rgba(255, 255, 255, 0.25);
+  fill: rgba(255, 255, 255, 0.1);
 `;
 
 export const Garbage = styled.svg`

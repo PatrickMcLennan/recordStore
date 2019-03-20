@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 const UserProfile = styled.figure`
-  ${({ theme: { flexin } }) => flexin()};
+  ${({ theme: { flexin } }) => flexin('space-evenly')};
   color: ${({ theme: { colors } }) => colors.whitePrimary};
   grid-area: 1 / 1 / -1 / 2;
   justify-self: stretch;
-  justify-content: space-evenly;
 
   figcaption {
     flex: 1;

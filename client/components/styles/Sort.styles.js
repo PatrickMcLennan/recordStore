@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from './queries';
 
 const SortList = styled.ul`
   text-align: center;
@@ -17,31 +18,37 @@ const SortList = styled.ul`
     ${({ theme: { typo } }) => typo.letterSpacingPrimary}
     ${({ theme: { transforms } }) =>
       transforms.whiteFill.rest}
-      
-    &:first-of-type {
-      ${props =>
-        props.show
-          ? ({ theme: { transforms } }) => transforms.whiteFill.active
-          : ({ theme: { transforms } }) => transforms.whiteFill.rest}
-    }
 
     &:nth-of-type(2),
     &:nth-of-type(3) {
       position: absolute;
-      top: -100%;
+      top: 0;
     }
 
     &:nth-of-type(2) {
-      right: 50%;
+      right: 70%;
+      ${media.five`
+        right: 65%;
+      `}
     }
     &:nth-of-type(3) {
-      left: 50%;
+      left: 70%;
+      ${media.five`
+        left: 65%;
+      `}
     }
 
     &:hover,
+    &:focus,
     &:active {
       ${({ theme: { transforms } }) => transforms.whiteFill.active}
     }
+
+    ${media.seven`
+      span {
+        display: block;
+      }
+    `}
   }
 `;
 

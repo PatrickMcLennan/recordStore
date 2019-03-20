@@ -57,12 +57,16 @@ class Search extends Component {
         />
         {records && <Sort changeSort={this.changeSort} />}
         <Form data-testid="search_form" onSubmit={this.handleSubmit}>
-          <input
-            data-testid="search_input"
-            type="text"
-            value={search}
-            onChange={this.handleChange}
-          />
+          <label htmlFor="search">
+            <input
+              data-testid="search_input"
+              id="search"
+              type="text"
+              value={search}
+              onChange={this.handleChange}
+            />
+            <p>users email</p>
+          </label>
           <input type="submit" value="search" />
         </Form>
         <RecordGrid data-testid="search_recordGrid">

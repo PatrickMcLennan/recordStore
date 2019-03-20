@@ -5,9 +5,17 @@ const Form = styled.form`
   padding: 0 2.5vw;
   ${({ theme: { flexin } }) => flexin('space-around', 'center', 'column')};
 
+  .errorMsg {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    ${({ theme: { typo } }) => typo.letterSpacingSecondary}
+  }
+
   label {
     width: 100%;
-    margin: 4vh 0;
+    margin: 5vh 0;
     position: relative;
 
     > * {
@@ -20,7 +28,7 @@ const Form = styled.form`
       text-transform: uppercase;
       font-style: italic;
       top: 1.5vh;
-      left: 8rem;
+      left: 10%;
       color: ${({ theme: { colors } }) => colors.whiteOpaque};
       ${({ theme: { transitions } }) => transitions.main};
       ${({ theme: { typo } }) => typo.letterSpacingPrimary};
@@ -57,8 +65,15 @@ const Form = styled.form`
     border: none;
     border-bottom: 1px solid ${({ theme: { colors } }) => colors.whitePrimary};
     font-size: 2.5rem;
+    display: block;
     width: 80%;
-    margin: 0 10%;
+    margin: 0 auto;
+    ${media.seven`
+      width: 90%;
+    `}
+    ${media.four`
+      font-size: 2rem;
+    `}
 
     &:not([type='submit']):active + p,
     &:not([type='submit']):focus + p,
@@ -66,21 +81,20 @@ const Form = styled.form`
     &[type='checkbox']:checked + label p {
       font-size: 1.75rem;
       font-style: normal;
-      top: -2.5vh;
-      left: 8rem;
+      top: -3.5rem;
+      left: 10%;
       color: ${({ theme: { colors } }) => colors.whitePrimary};
       letter-spacing: 0.75rem;
 
-      &::before,
-      &::after {
+      &::before {
         content: '';
         width: 1px;
-        height: 110%;
+        height: 120%;
         display: inline-block;
         background: white;
         position: absolute;
         top: 0;
-        left: -1vw;
+        left: -1rem;
       }
     }
 
@@ -99,6 +113,7 @@ const Form = styled.form`
       `}
 
       &:hover,
+      &:focus,
       &:active {
         color: ${({ theme: { colors } }) => colors.blackPrimary};
         ${({ theme: { transforms } }) => transforms.whiteFill.active}
@@ -122,7 +137,7 @@ const Form = styled.form`
     margin: 0 20%;
     line-height: 1.3;
     ${({ theme: { typo } }) => typo.letterSpacingSecondary}
-    color: ${({ theme: { colors } }) => colors.whitePrimary}
+    color: ${({ theme: { colors } }) => colors.whitePrimary};
   }
 `;
 

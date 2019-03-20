@@ -11,17 +11,16 @@ class Sort extends Component {
       <SortList data-testid="sort">
         <li
           data-testid="sort_button"
-          show={show ? 1 : 0}
           onClick={() => this.setState({ show: !show })}>
           Sort
         </li>
         {show && (
           <>
             <li data-testid="sort_album" onClick={() => changeSort('title')}>
-              Album A - Z
+              Album <span>A - Z</span>
             </li>
             <li data-testid="sort_artist" onClick={() => changeSort('artist')}>
-              Artist A - Z
+              Artist <span>A - Z</span>
             </li>
           </>
         )}

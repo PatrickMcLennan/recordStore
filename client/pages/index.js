@@ -26,7 +26,8 @@ class Home extends Component {
     page: 'splash',
     loading: false,
     error: false,
-    success: false
+    success: false,
+    errorMsg: ''
   };
 
   loaded = () => {
@@ -63,9 +64,14 @@ class Home extends Component {
     this.setState({ loading: true });
     const attempt = { email, password };
     const call = await (register ? dbRegister(attempt) : dbLogin(attempt));
-    call.email ? this.showMessage('success') : this.showMessage('error');
-    this.setState({ user: call });
-    this.changePage('store');
+    if (call.email) {
+      this.showMessage('success');
+      this.setState({ page: 'store', user: call, errorMsg: '' });
+    } else if (call) {
+      console.log(typeof call);
+      this.showMessage('error');
+      this.setState({ errorMsg: call });
+    }
   };
 
   editUser = async user => {
@@ -99,9 +105,15 @@ class Home extends Component {
   };
 
   renderPage = page => {
-    const { user } = this.state;
+    const { user, errorMsg } = this.state;
     if (page === 'splash') {
-      return <Splash getUser={this.getUser} loaded={this.loaded} />;
+      return (
+        <Splash
+          getUser={this.getUser}
+          loaded={this.loaded}
+          errorMsg={errorMsg}
+        />
+      );
     } else if (page === 'store') {
       return (
         <Store

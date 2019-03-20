@@ -46,14 +46,15 @@ class Splash extends Component {
 
   render() {
     const { email, password, register, remember } = this.state;
+    const { errorMsg } = this.props;
     return (
       <Section>
         <div>
           <VinylPrimarySVG />
           <h3 data-testid="splash_heading">Welcome to recordStore</h3>
           <p>
-            recordStore is a digital library for you to upload your record
-            collection. Enter your email &amp; a password to get started.
+            recordStore is a digital library for you to upload and share your
+            record collection. Enter your email &amp; a password to get started.
           </p>
           <p>Made by Patrick McLennan</p>
           <div data-testid="splash_socialSVGs">
@@ -64,6 +65,7 @@ class Splash extends Component {
 
         <Form data-testid="splash_form" onSubmit={this.handleSubmit}>
           <SectionHeader first="Log In" last="Register" />
+          {errorMsg && <p className="errorMsg">{errorMsg}</p>}
           <label htmlFor="email">
             <input
               data-testid="splash_email"
@@ -118,7 +120,8 @@ class Splash extends Component {
 
 Splash.propTypes = {
   getUser: PropTypes.func.isRequired,
-  loaded: PropTypes.func.isRequired
+  loaded: PropTypes.func.isRequired,
+  errorMsg: PropTypes.string
 };
 
 export default Splash;

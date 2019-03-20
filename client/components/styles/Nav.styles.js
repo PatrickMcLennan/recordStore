@@ -9,10 +9,11 @@ const NavBar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2.5vw 2.5vh 2.5vw;
+  padding: 2.5rem 2.5vw;
 
   div {
     text-align: center;
+    height: 100%;
 
     h1,
     h2 {
@@ -54,13 +55,12 @@ const NavBar = styled.nav`
     transition: all 0.4s ease-out;
     transform-style: preserve-3d;
     transform-origin: 100%;
-    transition-delay: ${props => props.delay};
     perspective: 100rem;
     ${media.eleven`
       text-align: right;
 
       &.closed {
-        transform: rotateY(90deg) translateY(75%);
+        transform: rotateY(90deg) translateY(200%);
         opacity: 0;
       }
       &.opened {
@@ -90,7 +90,9 @@ const NavBar = styled.nav`
     `}
     }
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
       &::after {
         transform: scale(1);
       }

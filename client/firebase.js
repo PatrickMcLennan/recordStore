@@ -28,12 +28,22 @@ const dbQuery = async (collection, query) => {
   return item;
 };
 
+export const dbUserQuery = async email => {
+  const user = await dbQuery(users, email);
+  return user ? user : 'error';
+};
+
 export const dbLogin = async ({ email, password }) => {
-  await app.auth().signInWithEmailAndPassword(email, password);
-  return await dbQuery(users, email);
+  let error = '';
+  await app
+    .auth()
+    .signInWithEmailAndPassword(email, password)
+    .catch(({ message }) => (error = message));
+  return error.length >= 1 ? error : await dbQuery(users, email);
 };
 
 export const dbRegister = async ({ email, password }) => {
+  let error = '';
   await app
     .auth()
     .createUserWithEmailAndPassword(email, password)
@@ -45,17 +55,14 @@ export const dbRegister = async ({ email, password }) => {
           last: ''
         },
         email,
-        picture: '',
+        picture:
+          'https://immedilet-invest.com/wp-content/uploads/2016/01/user-placeholder.jpg',
         bio: '',
         records: []
       });
-    });
-  return await dbQuery(users, email);
-};
-
-export const dbUserQuery = async email => {
-  const user = await dbQuery(users, email);
-  return user ? user : 'error';
+    })
+    .catch(({ message }) => (error = message));
+  return error.length >= 1 ? error : await dbUserQuery(email);
 };
 
 export const dbLogout = async () => {
