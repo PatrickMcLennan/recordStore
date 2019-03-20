@@ -25,6 +25,7 @@ html {
 body {
   display: grid;
   min-height: 100vh;
+  max-width: 100vw;
   grid-template-rows: 15vh 75vh;
   background-image: linear-gradient(to right bottom, rgba(0,0,0,.75), rgba(0,0,0,.75)), url('./static/img/background.jpg');
   background-repeat: no-repeat;
