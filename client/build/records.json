@@ -11,10 +11,10 @@
     "byName": {
       "commons": 0,
       "static/runtime/webpack.js": 1,
-      "static/runtime/main.js": 2,
-      "static/~veTdgAF1XiJSuNjoLjY3/pages/_app.js": 3,
-      "static/~veTdgAF1XiJSuNjoLjY3/pages/_error.js": 4,
-      "static/~veTdgAF1XiJSuNjoLjY3/pages/index.js": 5
+      "static/NTEoVrt2bUbkY3l_xlKSc/pages/_app.js": 2,
+      "static/NTEoVrt2bUbkY3l_xlKSc/pages/_error.js": 3,
+      "static/NTEoVrt2bUbkY3l_xlKSc/pages/index.js": 4,
+      "static/runtime/main.js": 5
     },
     "bySource": {},
     "usedIds": [

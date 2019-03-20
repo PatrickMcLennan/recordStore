@@ -4,22 +4,22 @@
     "/index": [
       "static/runtime/webpack-f0c6edbea5b547edc23f.js",
       "static/chunks/commons.89c94d54d1b6cd29962e.js",
-      "static/runtime/main-3133c15a26caa81fa72e.js"
+      "static/runtime/main-778dfb5cfad185873df1.js"
     ],
     "/_app": [
       "static/runtime/webpack-f0c6edbea5b547edc23f.js",
       "static/chunks/commons.89c94d54d1b6cd29962e.js",
-      "static/runtime/main-3133c15a26caa81fa72e.js"
+      "static/runtime/main-778dfb5cfad185873df1.js"
     ],
     "/_error": [
       "static/runtime/webpack-f0c6edbea5b547edc23f.js",
       "static/chunks/commons.89c94d54d1b6cd29962e.js",
-      "static/runtime/main-3133c15a26caa81fa72e.js"
+      "static/runtime/main-778dfb5cfad185873df1.js"
     ],
     "/": [
       "static/runtime/webpack-f0c6edbea5b547edc23f.js",
       "static/chunks/commons.89c94d54d1b6cd29962e.js",
-      "static/runtime/main-3133c15a26caa81fa72e.js"
+      "static/runtime/main-778dfb5cfad185873df1.js"
     ]
   }
 }
