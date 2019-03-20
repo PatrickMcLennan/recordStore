@@ -3,13 +3,13 @@ import media from './queries';
 
 const Section = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
   grid-gap: 2vw;
 
   & > * {
     text-align: center;
     border: 1px solid red;
-    max-width: 100vw;
+    width: 100vw;
   }
 
   div {
