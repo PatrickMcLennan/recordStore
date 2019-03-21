@@ -160,6 +160,7 @@ GarbageSVG.propTypes = {
 export const GithubSVG = () => (
   <a
     data-testid="svg_github"
+    aria-label="Github"
     href="https://github.com/PatrickMcLennan"
     rel="noreferrer"
     target="_blank">
@@ -173,6 +174,7 @@ export const GithubSVG = () => (
 export const LinkedInSVG = () => (
   <a
     data-testid="svg_linkedIn"
+    aria-label="LinkedIn"
     href="https://linkedin.com/in/patrick-mclennan-42002a172"
     rel="noreferrer"
     target="_blank">

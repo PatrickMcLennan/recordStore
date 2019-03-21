@@ -699,11 +699,19 @@ var Meta = function Meta() {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "theme-color",
+    content: "#FFFFFF",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
     name: "Description",
     content: "A web app for you to share your personal record store with others",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -711,7 +719,7 @@ var Meta = function Meta() {
     content: "ie=edge",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -719,13 +727,13 @@ var Meta = function Meta() {
     rel: "stylesheet",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
   }, "recordStore"));
@@ -928,8 +936,7 @@ function (_Component) {
         src: user && user.picture ? user.picture : '../static/img/placeholder.png',
         alt: user && user.name.first ? user.name.picture : 'User Picture',
         style: {
-          margin: '0 0 0 auto',
-          position: 'fixed'
+          margin: '0 0 0 auto'
         },
         onClick: function onClick() {
           return _this2.setState({
@@ -1807,7 +1814,9 @@ GarbageSVG.propTypes = {
 var GithubSVG = function GithubSVG() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     "data-testid": "svg_github",
+    "aria-label": "Github",
     href: "https://github.com/PatrickMcLennan",
+    rel: "noreferrer",
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
@@ -1819,20 +1828,20 @@ var GithubSVG = function GithubSVG() {
     role: "img",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 165
+      lineNumber: 167
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166
+      lineNumber: 168
     },
     __self: this
   }, "Github"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "m256 0c-140.609375 0-256 115.390625-256 256 0 119.988281 84.195312 228.984375 196 256v-84.695312c-11.078125 2.425781-21.273438 2.496093-32.550781-.828126-15.128907-4.464843-27.421875-14.542968-36.546875-29.910156-5.816406-9.8125-16.125-20.453125-26.878906-19.671875l-2.636719-29.882812c23.253906-1.992188 43.371093 14.167969 55.3125 34.230469 5.304687 8.921874 11.410156 14.152343 19.246093 16.464843 7.574219 2.230469 15.707032 1.160157 25.183594-2.1875 2.378906-18.972656 11.070313-26.074219 17.636719-36.074219v-.015624c-66.679687-9.945313-93.253906-45.320313-103.800781-73.242188-13.976563-37.074219-6.476563-83.390625 18.238281-112.660156.480469-.570313 1.347656-2.0625 1.011719-3.105469-11.332032-34.230469 2.476562-62.546875 2.984375-65.550781 13.078125 3.867187 15.203125-3.890625 56.808593 21.386718l7.191407 4.320313c3.007812 1.792969 2.0625.769531 5.070312.542969 17.371094-4.71875 35.683594-7.324219 53.726563-7.558594 18.179687.234375 36.375 2.839844 54.464844 7.75l2.328124.234375c-.203124-.03125.632813-.148437 2.035157-.984375 51.972656-31.480469 50.105469-21.191406 64.042969-25.722656.503906 3.007812 14.128906 31.785156 2.917968 65.582031-1.511718 4.65625 45.058594 47.300781 19.246094 115.753906-10.546875 27.933594-37.117188 63.308594-103.796875 73.253907v.015624c8.546875 13.027344 18.816406 19.957032 18.761719 46.832032v105.722656c111.808594-27.015625 196-136.011719 196-256 .003906-140.609375-115.386719-256-255.996094-256zm0 0",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167
+      lineNumber: 169
     },
     __self: this
   })));
@@ -1840,12 +1849,13 @@ var GithubSVG = function GithubSVG() {
 var LinkedInSVG = function LinkedInSVG() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     "data-testid": "svg_linkedIn",
+    "aria-label": "LinkedIn",
     href: "https://linkedin.com/in/patrick-mclennan-42002a172",
-    rel: "noopener",
+    rel: "noreferrer",
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 173
+      lineNumber: 175
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SVG_styles__WEBPACK_IMPORTED_MODULE_1__["Social"], {
@@ -1853,20 +1863,20 @@ var LinkedInSVG = function LinkedInSVG() {
     role: "img",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 178
+      lineNumber: 181
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 179
+      lineNumber: 182
     },
     __self: this
   }, "LinkedIn"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 180
+      lineNumber: 183
     },
     __self: this
   })), ' ');
@@ -2938,7 +2948,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject5() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      display: inline-block;\n      cursor: pointer;\n    "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      display: inline-block;\n      position: fixed;\n      top: 3rem;\n      right: 3rem;\n      cursor: pointer;\n    "]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -3436,7 +3446,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: inherit;\n  font-family: 'Lato';\n  max-width: 100vw;\n}\n::selection {\n  background-color: white;\n  color: white;\n}\nhtml {\n  font-size: 62.5%;\n  box-sizing: border-box;\n  ", "\n}\nbody {\n  display: grid;\n  min-height: 100vh;\n  max-width: 100vw;\n  grid-template-rows: 15vh 75vh;\n  background-image: linear-gradient(to right bottom, rgba(0,0,0,.75), rgba(0,0,0,.75)), url('./static/img/background.jpg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: bottom;\n  background-attachment: fixed;\n  color: white;\n}\na,\na:visited {\n  text-decoration: none;\n  color: currentColor\n}\nul {\n  list-style-type: none;\n}\nbutton {\n  background: none;\n  font-family: inherit;\n  color: currentColor;\n  border: none;\n  cursor: pointer;\n}\ninput:-webkit-autofill,\ninput:-webkit-autofill:hover,\ninput:-webkit-autofill:focus,\ninput:-webkit-autofill:active {\n    transition: all 5000s ease-in-out 0s;\n    transition-property: background-color, color;\n}\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n@font-face {\n  font-family: 'Lato';\n  font-display: auto;\n  src: local('Lato'), url(\"https://fonts.googleapis.com/css?family=Lato:100,300,400\") format('woff2');\n}\n*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: inherit;\n  font-family: 'Lato', Arial, Helvetica, sans-serif;\n  max-width: 100vw;\n}\n::selection {\n  background-color: white;\n  color: white;\n}\nhtml {\n  font-size: 62.5%;\n  box-sizing: border-box;\n  ", "\n}\nbody {\n  display: grid;\n  min-height: 100vh;\n  max-width: 100vw;\n  grid-template-rows: 15vh 75vh;\n  background-image: linear-gradient(to right bottom, rgba(0,0,0,.75), rgba(0,0,0,.75)), url('./static/img/background.jpg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: bottom;\n  background-attachment: fixed;\n  color: white;\n}\na,\na:visited {\n  text-decoration: none;\n  color: currentColor\n}\nul {\n  list-style-type: none;\n}\nbutton {\n  background: none;\n  font-family: inherit;\n  color: currentColor;\n  border: none;\n  cursor: pointer;\n}\ninput:-webkit-autofill,\ninput:-webkit-autofill:hover,\ninput:-webkit-autofill:focus,\ninput:-webkit-autofill:active {\n    transition: all 5000s ease-in-out 0s;\n    transition-property: background-color, color;\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;

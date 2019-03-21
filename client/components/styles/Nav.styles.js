@@ -103,6 +103,9 @@ const NavBar = styled.nav`
     display: none;
     ${media.eleven`
       display: inline-block;
+      position: fixed;
+      top: 3rem;
+      right: 3rem;
       cursor: pointer;
     `}
   }

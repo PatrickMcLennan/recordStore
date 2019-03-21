@@ -2177,6 +2177,7 @@ function (_Document) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("html", {
+        lang: "en",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 27

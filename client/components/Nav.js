@@ -77,7 +77,7 @@ class Nav extends Component {
                   : '../static/img/placeholder.png'
               }
               alt={user && user.name.first ? user.name.picture : 'User Picture'}
-              style={{ margin: '0 0 0 auto', position: 'fixed' }}
+              style={{ margin: '0 0 0 auto' }}
               onClick={() => this.setState({ open: !open })}
             />
           </>
