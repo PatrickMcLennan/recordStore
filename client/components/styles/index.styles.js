@@ -49,6 +49,13 @@ button {
   border: none;
   cursor: pointer;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: all 5000s ease-in-out 0s;
+    transition-property: background-color, color;
+}
 `;
 
 export const theme = {

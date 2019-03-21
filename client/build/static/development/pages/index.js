@@ -3280,7 +3280,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: inherit;\n  font-family: 'Lato';\n  max-width: 100vw;\n}\n::selection {\n  background-color: white;\n  color: white;\n}\nhtml {\n  font-size: 62.5%;\n  box-sizing: border-box;\n  ", "\n}\nbody {\n  display: grid;\n  min-height: 100vh;\n  max-width: 100vw;\n  grid-template-rows: 15vh 75vh;\n  background-image: linear-gradient(to right bottom, rgba(0,0,0,.75), rgba(0,0,0,.75)), url('./static/img/background.jpg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: bottom;\n  background-attachment: fixed;\n  color: white;\n}\na,\na:visited {\n  text-decoration: none;\n  color: currentColor\n}\nul {\n  list-style-type: none;\n}\nbutton {\n  background: none;\n  font-family: inherit;\n  color: currentColor;\n  border: none;\n  cursor: pointer;\n}\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: inherit;\n  font-family: 'Lato';\n  max-width: 100vw;\n}\n::selection {\n  background-color: white;\n  color: white;\n}\nhtml {\n  font-size: 62.5%;\n  box-sizing: border-box;\n  ", "\n}\nbody {\n  display: grid;\n  min-height: 100vh;\n  max-width: 100vw;\n  grid-template-rows: 15vh 75vh;\n  background-image: linear-gradient(to right bottom, rgba(0,0,0,.75), rgba(0,0,0,.75)), url('./static/img/background.jpg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: bottom;\n  background-attachment: fixed;\n  color: white;\n}\na,\na:visited {\n  text-decoration: none;\n  color: currentColor\n}\nul {\n  list-style-type: none;\n}\nbutton {\n  background: none;\n  font-family: inherit;\n  color: currentColor;\n  border: none;\n  cursor: pointer;\n}\ninput:-webkit-autofill,\ninput:-webkit-autofill:hover,\ninput:-webkit-autofill:focus,\ninput:-webkit-autofill:active {\n    transition: all 5000s ease-in-out 0s;\n    transition-property: background-color, color;\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -41692,7 +41692,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!**************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fpatrickmclennan%2FDocuments%2Frecord_store%2Fclient%2Fpages%2Findex.js ***!
   \**************************************************************************************************************************************************/
@@ -41715,5 +41715,5 @@ module.exports = dll_92862a29917dee4fb2b1;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map
