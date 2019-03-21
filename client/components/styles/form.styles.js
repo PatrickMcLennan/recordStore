@@ -81,7 +81,7 @@ const Form = styled.form`
     &[type='checkbox']:checked + label p {
       font-size: 1.75rem;
       font-style: normal;
-      top: -3.5rem;
+      top: -2.25rem;
       left: 10%;
       color: ${({ theme: { colors } }) => colors.whitePrimary};
       letter-spacing: 0.75rem;
