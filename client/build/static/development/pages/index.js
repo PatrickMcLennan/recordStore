@@ -2893,7 +2893,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      flex-direction: column;\n      position: fixed;\n      top: 100%;\n      right: 0;\n    "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      flex-direction: column;\n      position: fixed;\n      top: 17.5rem;\n      right: 0;\n      z-index: 10;\n    "]);
 
   _templateObject = function _templateObject() {
     return data;

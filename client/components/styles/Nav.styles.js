@@ -39,8 +39,9 @@ const NavBar = styled.nav`
     ${media.eleven`
       flex-direction: column;
       position: fixed;
-      top: 100%;
+      top: 17.5rem;
       right: 0;
+      z-index: 10;
     `}
   }
 
