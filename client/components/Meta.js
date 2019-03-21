@@ -4,6 +4,7 @@ const Meta = () => (
   <Head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FFFFFF" />
     <meta
       name="Description"
       content="A web app for you to share your personal record store with others"

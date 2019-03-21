@@ -2,6 +2,12 @@ import styled, { createGlobalStyle } from 'styled-components';
 import media from './queries';
 
 export const GlobalStyle = createGlobalStyle`
+
+@font-face {
+  font-family: 'Lato';
+  font-display: auto;
+  src: local('Lato'), url("https://fonts.googleapis.com/css?family=Lato:100,300,400") format('woff2');
+}
 *,
 *::before,
 *::after {
