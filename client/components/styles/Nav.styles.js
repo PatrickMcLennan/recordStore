@@ -38,7 +38,7 @@ const NavBar = styled.nav`
     display: flex;
     ${media.eleven`
       flex-direction: column;
-      position: absolute;
+      position: fixed;
       top: 100%;
       right: 0;
     `}
