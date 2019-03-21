@@ -39,7 +39,7 @@ const NavBar = styled.nav`
     ${media.eleven`
       flex-direction: column;
       position: absolute;
-      top: calc(100% + 13rem);
+      top: 100%;
       right: 0;
     `}
   }
