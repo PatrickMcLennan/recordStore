@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: 'Lato';
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
   max-width: 100vw;
 }
 ::selection {

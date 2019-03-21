@@ -161,6 +161,7 @@ export const GithubSVG = () => (
   <a
     data-testid="svg_github"
     href="https://github.com/PatrickMcLennan"
+    rel="noreferrer"
     target="_blank">
     <Social viewBox="0 0 512 512" role="img">
       <title>Github</title>
@@ -173,7 +174,7 @@ export const LinkedInSVG = () => (
   <a
     data-testid="svg_linkedIn"
     href="https://linkedin.com/in/patrick-mclennan-42002a172"
-    rel="noopener"
+    rel="noreferrer"
     target="_blank">
     <Social viewBox="0 0 512 512" role="img">
       <title>LinkedIn</title>
