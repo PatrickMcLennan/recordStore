@@ -28,7 +28,7 @@ class Splash extends Component {
   handleChange = e => {
     const { id, value } = e.target;
     this.setState({
-      [id]: value
+      [id]: value.trim().toLowerCase()
     });
   };
 

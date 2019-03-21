@@ -19,6 +19,7 @@ class AddRecord extends Component {
 
   handleChange = e => {
     const { id, value } = e.target;
+    id === 'cover' ? value : value.trim().toLowerCase();
     this.setState({
       [id]: value
     });

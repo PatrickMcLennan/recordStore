@@ -26,7 +26,7 @@ class Search extends Component {
   handleChange = e => {
     const { value } = e.target;
     this.setState({
-      search: value
+      search: value.trim().toLowerCase()
     });
   };
 

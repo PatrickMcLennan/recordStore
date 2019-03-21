@@ -12,14 +12,16 @@ class Account extends Component {
   handleNameChange = e => {
     const { id, value } = e.target;
     const newState = this.state;
-    newState.name[id] = value;
+    newState.name[id] = value.trim().toLowerCase();
     this.setState({ ...newState });
   };
 
   handleChange = e => {
     const { id, value } = e.target;
     const newState = this.state;
-    newState[id] = value;
+    id === 'picture' || 'bio'
+      ? (newState[id] = value)
+      : (newState[id] = value.trim().toLowerCase());
     this.setState({ ...newState });
   };
 
