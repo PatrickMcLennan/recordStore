@@ -42,6 +42,7 @@ const NavBar = styled.nav`
       top: 17.5rem;
       right: 0;
       z-index: 10;
+      visibility: hidden;
     `}
   }
 
@@ -63,10 +64,14 @@ const NavBar = styled.nav`
       &.closed {
         transform: rotateY(90deg) translateY(200%);
         opacity: 0;
+        visibility: visible;
       }
       &.opened {
         transform: rotateY(0) translateY(0);
         opacity: 1;
+        z-index: 10;
+        visibility: visible;
+
       }
     `}
     &::after {

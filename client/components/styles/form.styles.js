@@ -39,6 +39,7 @@ const Form = styled.form`
       color: ${({ theme: { colors } }) => colors.whitePrimary};
       font-style: normal;
       cursor: pointer;
+      width: 60%;
 
       p {
         text-align: right;
@@ -81,7 +82,7 @@ const Form = styled.form`
     &[type='checkbox']:checked + label p {
       font-size: 1.75rem;
       font-style: normal;
-      top: -2.25rem;
+      top: -3rem;
       left: 10%;
       color: ${({ theme: { colors } }) => colors.whitePrimary};
       letter-spacing: 0.75rem;

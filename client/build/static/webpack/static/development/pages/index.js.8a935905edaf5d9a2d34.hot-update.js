@@ -45,7 +45,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      text-align: right;\n\n      &.closed {\n        transform: rotateY(90deg) translateY(200%);\n        opacity: 0;\n      }\n      &.opened {\n        transform: rotateY(0) translateY(0);\n        opacity: 1;\n      }\n    "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      text-align: right;\n\n      &.closed {\n        transform: rotateY(90deg) translateY(200%);\n        opacity: 0;\n        visibility: visible;\n      }\n      &.opened {\n        transform: rotateY(0) translateY(0);\n        opacity: 1;\n        z-index: 10;\n        visibility: visible;\n\n      }\n    "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -55,7 +55,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      flex-direction: column;\n      position: fixed;\n      top: 15rem;\n      right: 0;\n      z-index: 10;\n    "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      flex-direction: column;\n      position: fixed;\n      top: 17.5rem;\n      right: 0;\n      z-index: 10;\n      visibility: hidden;\n    "]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -75,4 +75,4 @@ var NavBar = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].nav.withC
 /***/ })
 
 })
-//# sourceMappingURL=index.js.5fb19bdac55eca681b3f.hot-update.js.map
+//# sourceMappingURL=index.js.8a935905edaf5d9a2d34.hot-update.js.map

@@ -45,7 +45,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      text-align: right;\n\n      &.closed {\n        transform: rotateY(90deg) translateY(200%);\n        opacity: 0;\n      }\n      &.opened {\n        transform: rotateY(0) translateY(0);\n        opacity: 1;\n      }\n    "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      text-align: right;\n      display: none;\n\n      &.closed {\n        transform: rotateY(90deg) translateY(200%);\n        opacity: 0;\n        display: visible;\n      }\n      &.opened {\n        display: visible;\n        transform: rotateY(0) translateY(0);\n        opacity: 1;\n      }\n    "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -75,4 +75,4 @@ var NavBar = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].nav.withC
 /***/ })
 
 })
-//# sourceMappingURL=index.js.de7e4d43ff2e1906d785.hot-update.js.map
+//# sourceMappingURL=index.js.9d2b9dbd8cf3e32dc05e.hot-update.js.map
