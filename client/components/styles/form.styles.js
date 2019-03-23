@@ -39,7 +39,7 @@ const Form = styled.form`
       color: ${({ theme: { colors } }) => colors.whitePrimary};
       font-style: normal;
       cursor: pointer;
-      width: 65%;
+      width: 60%;
 
       p {
         text-align: right;
